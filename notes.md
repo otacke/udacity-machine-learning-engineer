@@ -1,4 +1,7 @@
 # Course notes
+
+Might be useful: [old notes from a Stanford online course at Coursera](https://de.wikiversity.org/wiki/Benutzer:O.tacke/2015/Machine_Learning)
+
 ## Getting started: From Artificial Intelligence to Machine Learning
 * heuristic by *Thrun*: Inteprtet AI as uncertainty management: "What to do, when you don't know what to do"
 * heuristic by *Albus*: ""A useful definition of intelligence ... should include both biological and machine embodiments, and these should span an intellectual range from that of an insect to that of an Einstein, from that of a thermostat to that of the most sophisticated computer system that could ever be built."

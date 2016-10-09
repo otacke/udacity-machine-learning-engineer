@@ -29,3 +29,24 @@
   * Hacking -(Machine Learning)- Math/Statistics
   * Math/Statistics -(Traditional Research)- Substantive Expertise
   * Substantive Expertise -(Danger Zone)- Hacking
+* Definition of Machine Learning: Dealing with computational artifacts that learn over time based on experience using mathematics, science and engineering.
+* Supervised Learning
+  * I LOVE the "hip to be square" reference in https://www.youtube.com/watch?v=Ki2iHgKxRBo :-D
+  * supervised learning as (inductive) function approximation that fits to data, e.g. regression
+  * Nice explanation for deduction, induction, and abduction: Using cause, effect and a rule...
+    * deduction: cause + rule => *deduce* an effect (truth preserving)
+    * induction: cause + effect => *induce* a rule (prone to error)
+    * abduction: rule + effect => *abduce* a cause (prone to error)
+* Unsupervised Learning
+  * Describing "a problem" compactly, making up categories, e.g. clustering
+* Reinforcement Learning
+  * Learning from delayed reward
+* Taxonomy
+  * *What?* parameters, structure, hidden concepts
+  * *What from?* target labels (supervised), replacement principles (unsupervised), feedback (reinforcement)
+  * *What for?* prediction, diagnostics, explanation, summarization
+  * *How?* passive, active, on-the-fly, after data generation
+  * *Outputs?* classification, regression
+  * *Details?* generative, discrimitative
+* Occam's Razor
+  * Beware of overfitting!!!

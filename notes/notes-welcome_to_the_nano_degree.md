@@ -1,4 +1,4 @@
-# Course notes
+# Welcome to the Nanodegree
 
 Might be useful: [old notes from a Stanford online course at Coursera](https://de.wikiversity.org/wiki/Benutzer:O.tacke/2015/Machine_Learning)
 

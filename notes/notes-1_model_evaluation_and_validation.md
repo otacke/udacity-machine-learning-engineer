@@ -14,6 +14,7 @@
 * git experience (check)
 
 ## Measures of Central Tendency
+* just very basic terms of descriptive statistics: mode, mean, median, ...
 
 ## Variability of Data
 

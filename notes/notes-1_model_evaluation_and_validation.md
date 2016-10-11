@@ -17,6 +17,11 @@
 * just very basic terms of descriptive statistics: mode, mean, median, ...
 
 ## Variability of Data
+* range, inter quartile range, outlier = Q_1 - 1.5 * IQR OR Q_3 + 1.5 * IQR, boxplots
+* deviation from mean, standard deviation = sqrt(variance) = sqrt(sum(x-x_bar)/n)
+* In standard deviation, 68% of the data lie within median+/- standard deviation
+* In standard deviation, 95% of the data lie within median+/- 2 times standard deviation
+* Bessel's Correction for approximating the standard deviation of the population of a sample: use n-1 for calculating variance and thus standard deviation (s instead of sigma)
 
 ## Numpy & Pandas Tutorials
 

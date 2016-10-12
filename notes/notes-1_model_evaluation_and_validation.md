@@ -33,6 +33,13 @@ Pretty basic description of some functions from numpy and pandas.
 * Very rudimentary introduction to sklearn...
 
 ## Evaluation Metrics
+* Accuracy here is described as the proportion of items classified or labeled correctly:
+  * accuracy = number of correctly identified instances / all instances
+  * .score() in *sklearn*
+* Confusion matrix: actual class (pos/neg) VS predicted (pos/neg)
+* Recall: True Positive / (True Positive + False Negative). Out of all the items that are truly positive, how many were correctly classified as positive. Or simply, how many positive items were 'recalled' from the dataset.
+* Precision: True Positive / (True Positive + False Positive). Out of all the items labeled as positive, how many truly belong to the positive class.
+* F1-Score: 2 * (precision * recall) / (precision + recall)
 
 ## Causes of Error
 

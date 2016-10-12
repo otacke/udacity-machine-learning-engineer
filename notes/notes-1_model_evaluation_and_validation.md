@@ -42,6 +42,9 @@ Pretty basic description of some functions from numpy and pandas.
 * F1-Score: 2 * (precision * recall) / (precision + recall)
 
 ## Causes of Error
+* Main causes of error
+  * Bias due to a model being unable to represent the complexity of the underlying data / underfitting
+  * variance due to a model being overly sensitive to the limited data it has been trained on / overfitting
 
 ## Nature of Data and Model Building
 

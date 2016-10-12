@@ -47,11 +47,23 @@ Pretty basic description of some functions from numpy and pandas.
   * variance due to a model being overly sensitive to the limited data it has been trained on / overfitting
 
 ## Nature of Data and Model Building
+* Numeric Data (quantitative data), may be discrete or continuous
+* Categorical Data (nominal data/ordinal data)
+* Time Series, data collected repeatedly
 
 ## Training & Testing
+* use independent datasets for training and testing for performance checks and checks for overfitting
 
 ## Cross Validation
+* when splitting data into training and testing sets: use k datasets for k different learning experiments, afterwards average the k results = k-fold cross validation
+* shuffling the data might be a good idea
+* where's the central theme of this lesson?
 
 ## Representative Power of a Model
+* if the number of features grows, the amount of data needed to generalize accurately grows exponentially
 
 ## Learning Curves and Model Complexity
+* Learning Curves
+  * training error and testing error converge (and are high): bias
+  * training error and testing error have a gap: high variance
+  * testing and training curves converge at similar values: ideal

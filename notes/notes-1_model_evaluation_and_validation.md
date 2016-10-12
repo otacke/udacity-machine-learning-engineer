@@ -17,7 +17,7 @@
 * just very basic terms of descriptive statistics: mode, mean, median, ...
 
 ## Variability of Data
-* range, inter quartile range, outlier = Q_1 - 1.5 * IQR OR Q_3 + 1.5 * IQR, boxplots
+* range, inter quartile range, outlier < Q_1 - 1.5 * IQR OR outlier > Q_3 + 1.5 * IQR, boxplots
 * deviation from mean, standard deviation = sqrt(variance) = sqrt(sum(x-x_bar)/n)
 * In standard deviation, 68% of the data lie within median+/- standard deviation
 * In standard deviation, 95% of the data lie within median+/- 2 times standard deviation
@@ -30,6 +30,7 @@
 Pretty basic description of some functions from numpy and pandas.
 
 ## scikit-learn Tutorial
+* Very rudimentary introduction to sklearn...
 
 ## Evaluation Metrics
 

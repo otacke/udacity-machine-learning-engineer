@@ -24,6 +24,10 @@
 * Bessel's Correction for approximating the standard deviation of the population of a sample: use n-1 for calculating variance and thus standard deviation (s instead of sigma)
 
 ## Numpy & Pandas Tutorials
+* [Intro Docs for numpy](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
+* [Intro Docs for pandas](http://pandas.pydata.org/pandas-docs/version/0.17.0/)
+
+Pretty basic description of some functions from numpy and pandas.
 
 ## scikit-learn Tutorial
 

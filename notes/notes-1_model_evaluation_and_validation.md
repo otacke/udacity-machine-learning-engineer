@@ -55,7 +55,7 @@ Pretty basic description of some functions from numpy and pandas.
 * use independent datasets for training and testing for performance checks and checks for overfitting
 
 ## Cross Validation
-* when splitting data into training and testing sets: use k datasets for k different learning experiments, afterwards average the k results = k-fold cross validation
+* when splitting data into training and testing sets: use k datasets for k different learning experiments, each time one of the k datasets is meant to be the test set, while the remaining k-1 form the training set. Afterwards average the k results (for score/error) = k-fold cross validation
 * shuffling the data might be a good idea
 * where's the central theme of this lesson?
 

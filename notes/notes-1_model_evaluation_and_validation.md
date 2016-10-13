@@ -57,7 +57,7 @@ Pretty basic description of some functions from numpy and pandas.
 ## Cross Validation
 * when splitting data into training and testing sets: use k datasets for k different learning experiments, each time one of the k datasets is meant to be the test set, while the remaining k-1 form the training set. Afterwards average the k results (for score/error) = k-fold cross validation
 * shuffling the data might be a good idea
-* where's the central theme of this lesson?
+* GridSearchCV is a way of systematically working through multiple combinations of parameter tunes, cross-validating as it goes to determine which tune gives the best performance. 
 
 ## Representative Power of a Model
 * if the number of features grows, the amount of data needed to generalize accurately grows exponentially

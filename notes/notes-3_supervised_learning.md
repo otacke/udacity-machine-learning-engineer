@@ -23,3 +23,10 @@
 * two algorithms for finding the smallest error: ordinary least squares and gradient descent
 * error metrics: sum of squared errors (SSE) and R².
 * multi-variate-regression = multi-dimensional
+
+## More Regressions
+* k nearest neighbor (KNN) = non paramatric regegression
+  * find k nearest data points to an x and use their average y for prediction
+  * this way, find predictions for every x in X
+* kernel regression
+  * weighted KNN using the distance of the values

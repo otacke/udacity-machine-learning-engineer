@@ -17,3 +17,9 @@
 * errors come from... sensors/measuring, transcription, transfer, maliciously, merging data sets that don't match perfectly, unmodeled influence, ... => again: cross validation
 
 * 'The goal of Machine Learning is "Generalization"'. Science!
+
+## Regressions
+* vocabulary: slope (Steigung) + intercept (Abschnitt)
+* two algorithms for finding the smallest error: ordinary least squares and gradient descent
+* error metrics: sum of squared errors (SSE) and R².
+* multi-variate-regression = multi-dimensional

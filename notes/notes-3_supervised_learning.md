@@ -30,3 +30,27 @@
   * this way, find predictions for every x in X
 * kernel regression
   * weighted KNN using the distance of the values
+
+## Decision Trees
+* Terms of Classification
+  * Instances = Input
+  * Concept = Function that'll do the mapping to discrete values
+  * Target Concept = Answer
+  * Hypothesis Class = Set of all possible Concepts that we could choose
+  * Sample = Training Set
+  * Candidate = Concept that might be the target concept
+  * Testing Set = will determine if the candidate is the target concept
+* Decision Tree: What you would expect...
+  # pick best attribute and ask a question
+  # follow the path
+  # repeat (until answer)
+* Expressiveness
+  * any (or) = linear VS parity (x-or, odd or even) = O(2^N)
+* D3
+  * [Wikipedia](https://de.wikipedia.org/wiki/ID3)
+  * using entropy/gain to identify nodes to be chosen next
+  * Bias: restriction bias (we limit the number of functions we're considering) VS preference bias (what type of functions from the hypothethis class do we prefer, e.g. those that split better at the top for ID3)
+* For continuous values...
+    * it can make sense to ask different questions about it deeper down in the tree
+    * break criteria: everything classified correctly, no more attributes, no overfitting; Or pruning
+    * Regression: average, variance, voting...

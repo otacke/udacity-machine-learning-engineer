@@ -54,3 +54,14 @@
     * it can make sense to ask different questions about it deeper down in the tree
     * break criteria: everything classified correctly, no more attributes, no overfitting; Or pruning
     * Regression: average, variance, voting...
+
+## More Decision Trees
+* Calculate the decision trees by hand "via a table"...
+* Using Decision Trees is like using a linear boundary several times
+* Entropy
+  * measure of impurity
+  * = sum_i{-p_i * log_2(p_i)} where p_i is the fraction of samples within a class
+* Information Gain
+  * = entropy(parent) - [weighted average] entropy(children) (weighted means the fraction that went to that node)
+  * to be maximized
+* prone to overfitting

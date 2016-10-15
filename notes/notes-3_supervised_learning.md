@@ -65,3 +65,22 @@
   * = entropy(parent) - [weighted average] entropy(children) (weighted means the fraction that went to that node)
   * to be maximized
 * prone to overfitting
+
+## Neural Networks
+* Perceptron
+  * input = sum_i(w_i * x_i)
+  * output = (input >= theta) ? 1 : 0
+  * can represent AND, OR and NOT
+* Perceptron Rule
+  * use theta as an "additional parameter"
+  * calculate delta_w = learning_rate * (y - y*) * input_value (where y* = actual output > 0; not theta, because we have theta as a parameter now)
+  * w = w + delta w
+  * do until done
+* Gradient descent
+  * a = input
+  * Error(w) = 1/2 * sum_{x,y}( (y-a)² )
+  * minimize the error
+* sigmoid function (as a threshold)
+  * \sigma(a) = \frac{1}{1+e^{-a}}
+  * \sigma(a)' = \frac{1}{1+e^{-a}} (1 - \frac{1}{1+e^{-a}})
+* Backpropagation

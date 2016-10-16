@@ -101,3 +101,10 @@
   * kernel
   * C: penalty, controlling smooth vs. precise boundary (larger => more precise)
   * gamma
+
+## Nonparametric Models
+* Instance Based Learning
+  * store the data, just lookup results
+  * + no training, keep original values, it's simple
+  * - prone to overfitting, no generalization, fix by k-nearest-neighbors with reasonable notion of distance (~similarity in general) and feasible notion of "mean/vote"
+  * learning is quick, but querying is not (lazy)

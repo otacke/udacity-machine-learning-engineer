@@ -93,3 +93,11 @@
 
 * Since not every sample can be split in a linear fashion, the problem can be transferred to higher dimensional vector spaces so linear splits are possible. Afterwards, the problem is projected to the original vector space - allowing non linear splits
 * Computation costs of the "dimension transfer" are high, but there's the kernel trick that allows to avoid that. A kernel function may describe the split in a higher dimension, but look "nice" in lower dimensions - and computation between dimensions is not necessary.
+
+## SVM
+* Correct classification is the prime directive for a SVM
+* Outliers can be tolerated
+* parameters
+  * kernel
+  * C: penalty, controlling smooth vs. precise boundary (larger => more precise)
+  * gamma

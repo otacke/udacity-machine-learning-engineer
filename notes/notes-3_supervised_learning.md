@@ -108,3 +108,18 @@
   * + no training, keep original values, it's simple
   * - prone to overfitting, no generalization, fix by k-nearest-neighbors with reasonable notion of distance (~similarity in general) and feasible notion of "mean/vote"
   * learning is quick, but querying is not (lazy)
+
+## Bayesian Methods
+
+### Naive Bayes
+* Example: Cancer Test
+  * Probability of having cancer: P(C) = 0.01 or P(!C) = 0.99
+  * Probability of the test showing positive if you have cancer: P(pos|C) = 0.9
+  * Probability of the test showing negative if you don't have cancer: P(neg|!C) = 0.9 or P(pos|!C) = 0.1
+  * What't the probability P(pos) of actually having cancer if you get a positive result?
+    * P(pos) = P(C|pos) / ( P(C|pos) + P(!C|pos) )
+    * 1) calculate P(C|pos) = P(C) * P(pos|C) = 0.01 * 0.9 = 0.09
+    * 2) calculate P(!C|pos) = P(!C) * P(pos|!C) = 0.99 * 0.1 = 0.099
+    * 3) divide P(C|pos) by sum of P(C|pos) and P(!C|pos), e.g. normalizing the probability.
+    * P(pos) = 1/12
+* **Bayes in general: P(A|B) = P(A) * P(B|A) / P(B)**

@@ -84,3 +84,12 @@
   * \sigma(a) = \frac{1}{1+e^{-a}}
   * \sigma(a)' = \frac{1}{1+e^{-a}} (1 - \frac{1}{1+e^{-a}})
 * Backpropagation
+
+## Kernel Methods & SVMs
+* The idea behind SVMs is to find a linear margin between different items within a sample.
+* The distance between the items and the margin shall be as large as possible.
+* SVMs only take into account the nearest items to the margin.
+* Items are represented by a vector in a vector space, that are the foundation of the margin - hence support vector machine.
+
+* Since not every sample can be split in a linear fashion, the problem can be transferred to higher dimensional vector spaces so linear splits are possible. Afterwards, the problem is projected to the original vector space - allowing non linear splits
+* Computation costs of the "dimension transfer" are high, but there's the kernel trick that allows to avoid that. A kernel function may describe the split in a higher dimension, but look "nice" in lower dimensions - and computation between dimensions is not necessary.

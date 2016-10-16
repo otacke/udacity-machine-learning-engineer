@@ -123,3 +123,10 @@
     * 3) divide P(C|pos) by sum of P(C|pos) and P(!C|pos), e.g. normalizing the probability.
     * P(pos) = 1/12
 * **Bayes in general: P(A|B) = P(A) * P(B|A) / P(B)**
+
+### Bayesian Learning
+* Best hypothesis h given the data D that we see -- or maximize P(h|D) for h in H
+* intuitive approach:
+  * ```for h in H { calculate P(h|D) }; output h = maxarg ( P(h|D) )```
+  * not practical for large H
+* lots of math stuff...

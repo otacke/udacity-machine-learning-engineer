@@ -136,3 +136,12 @@
   * X is conditionally independent of Y given Z, P(X|Y,Z) = P(X|Z)
 * Bayesian Networks/Inference
   * [Wikipedia article](https://en.wikipedia.org/wiki/Bayesian_network)
+
+## Ensemble B&B
+* Ensemble Learning
+  * German [Wikipedia article](https://de.wikipedia.org/wiki/Ensemble_learning)
+  * simple rules (on subsets) that are okayish and slapped together (combining), boom, they work for the whole population
+  * bagging: uniformly random samples, combining via meaning, German [Wikipedia article](https://de.wikipedia.org/wiki/Bagging)
+  * boosting: subsets with hard examples, even with weak hypotheses, combining via weighted meaning, German [Wikipedia article](https://de.wikipedia.org/wiki/Boosting)
+  * weak learner: no matter what the distribution is, the error is below 1/2 (so you're always better than chance)
+  * boosting tends to overfit

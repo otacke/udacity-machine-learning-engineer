@@ -130,3 +130,9 @@
   * ```for h in H { calculate P(h|D) }; output h = maxarg ( P(h|D) )```
   * not practical for large H
 * lots of math stuff...
+
+### Bayesian Inference
+* Conditional Independence: 
+  * X is conditionally independent of Y given Z, P(X|Y,Z) = P(X|Z)
+* Bayesian Networks/Inference
+  * [Wikipedia article](https://en.wikipedia.org/wiki/Bayesian_network)

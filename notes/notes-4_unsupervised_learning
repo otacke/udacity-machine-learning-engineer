@@ -1,0 +1,26 @@
+# Unsupervised Learning
+* Finding patterns in unlabeled data
+
+## Clusters
+* K-Means algorithm
+  * Define number of clusters and (randomly) choose centers
+  * Sort points to centers and compute the "force vectors"
+  * Move centers according to "force vectors"
+  * Repeat until stable or max iterations exceeded
+
+## More Clusters
+* Single Linkage Clustering
+  * Define number of clusters k
+  * Do n-k steps of building a minimal spanning tree
+  * alternative distance measures might be average or median
+  * can produce strange clusters
+* Soft Clustering
+  * propabilistic, two clusters can share a point
+  * Maximum Gaussian Likelihood, mean of all points = center
+  * Expection / Maximization (EM)
+  * won't diverge, but can can stuck
+* Properties
+  * richness: there is some distance matrix that can produce any desired outcome
+  * scale-invariance: scaling the distance with a positive integer doesn't change clustering
+  * consistency: shrinking the intra-clustering distance and expanding the inter-clustering distance does not change the clustering
+  * There's no clustering algorithm thas has all three properties (Impossibility Theorem)

@@ -24,3 +24,24 @@
   * scale-invariance: scaling the distance with a positive integer doesn't change clustering
   * consistency: shrinking the intra-clustering distance and expanding the inter-clustering distance does not change the clustering
   * There's no clustering algorithm thas has all three properties (Impossibility Theorem)
+
+## Feature Scaling
+* instead of x use x' = (x- x_min) / (x_max - x_min)
+* may produce better results because no feature can dominate another
+* outliers may mess up scaling, so remove them first
+* will affect SVM and K-Means clustering
+
+## Feature Selection
+* Removing unnecessary features will make models better and give you more insight
+* Filtering: search for relevant features first, then let the learning algorith do some magic
+  * fast, but ignores the learning problem and dependencies between features
+  * Decision Tree might be used to reduce the number of features
+  * algorithms looking fo
+  * information gain per feature
+  * high variance values/entropy/gini
+  * redundancy
+* Wrapping: search for relevant features while running the learning algorithm: gets feedback from the learning algorithm, but is slow
+  * hill climbing/gradient search
+  * randomization, genetic algorithms, ...
+  * forward search: check for best feature, use, repeat until score doesn't increase
+  * backward search: remove worst feature, score, repeat while score is still good

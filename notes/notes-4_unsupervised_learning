@@ -52,3 +52,10 @@
 * create a feature projection
 * minimizes information loss this way
 * visualize the data, reduce dimensionality, reduce noise => use principal components as features and improve other algorithm's runtime
+
+## Feature Transformation
+* PCA ~ find correlation by maximizing variance 0> reconstruction (builds averages of the whole image)
+* ICA ~ find independence, resembles Cocktail Party problem with microphones, pretty cool! (finds parts of an image as selectors)
+* RCA ~ random directions... It works.
+* LDA ~ Linear Discriminate Analysis, find a projection that discriminates based upon the label
+

@@ -45,3 +45,10 @@
   * randomization, genetic algorithms, ...
   * forward search: check for best feature, use, repeat until score doesn't increase
   * backward search: remove worst feature, score, repeat while score is still good
+
+## PCA
+* Principal Component Analysis
+* Move 0/0 to the center of the data, shift x-axis in direction with most variation, y-axis orthogonally
+* create a feature projection
+* minimizes information loss this way
+* visualize the data, reduce dimensionality, reduce noise => use principal components as features and improve other algorithm's runtime

@@ -9,7 +9,7 @@ Making decisions based on behavior-esque training using rewards and punishments
 ### in a nutshell
 - States: S
 - Actions: A(s), A
-- Model: T(s,a,s') ~ Pr(s'|s,a) = probability of being in s' given s,a after transaction T
+- Model: T(s,a,s') ~ Pr(s'|s,a) = probability of being in s' given s,a after transition T
 - Reward: R(s), R(s,a), R(s,a,s')
 - Policy: pi(s) -> a = 'rule' what to do
 - Policy: pi* = policy that maximizes the long term expected reward
@@ -25,3 +25,11 @@ Making decisions based on behavior-esque training using rewards and punishments
 * U^{pi}(s) = E[ sum_{t=0}^{\infty}{y^t R(s_t)} | pi, s_0 = s ]
 * pi*(s) = argmax_a( sum_{s'}{ T(s,a,s') U(s') } )
 * U(s) = R(s) + y * max_a sum_s' T(s, a, s') U(s')
+
+## Reinforcement Learning
+- policy search: state -> (Policy) -> action
+- value search: state -> (Utility) -> value
+- model based: state, action -> (Transaction, Reward) -> state', reward
+
+- Q-Learning
+- Learning rate adaption

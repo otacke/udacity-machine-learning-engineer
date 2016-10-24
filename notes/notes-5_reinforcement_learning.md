@@ -33,3 +33,14 @@ Making decisions based on behavior-esque training using rewards and punishments
 
 - Q-Learning
 - Learning rate adaption
+
+## Game Theory
+- "mathematics of conflicts of interests"
+- multiple agents
+
+### Minimax
+- [Minimax algorithm](https://en.wikipedia.org/wiki/Minimax) viable in 2-player, zero-sum games with perfect information (deterministic and non-deterministic)
+
+### Strategy
+- pure VS mixed = distribution over strategies
+- Nash equilibrium

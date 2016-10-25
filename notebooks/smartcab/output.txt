@@ -1,0 +1,31 @@
+Simulator.run(): Trial 0
+Environment.reset(): Trial set up with start = (3, 5), destination = (7, 2), deadline = 35
+RoutePlanner.route_to(): destination = (7, 2)
+Environment.step(): Primary agent hit hard time limit (-100)! Trial aborted.
+Simulator.run(): Trial 1
+Environment.reset(): Trial set up with start = (2, 2), destination = (4, 4), deadline = 20
+RoutePlanner.route_to(): destination = (4, 4)
+Environment.act(): Primary agent has reached destination!
+Simulator.run(): Trial 2
+Environment.reset(): Trial set up with start = (3, 5), destination = (6, 1), deadline = 35
+RoutePlanner.route_to(): destination = (6, 1)
+Environment.step(): Primary agent hit hard time limit (-100)! Trial aborted.
+Simulator.run(): Trial 3
+Environment.reset(): Trial set up with start = (8, 2), destination = (5, 5), deadline = 30
+RoutePlanner.route_to(): destination = (5, 5)
+Environment.step(): Primary agent hit hard time limit (-100)! Trial aborted.
+Simulator.run(): Trial 4
+Environment.reset(): Trial set up with start = (4, 1), destination = (7, 5), deadline = 35
+RoutePlanner.route_to(): destination = (7, 5)
+Environment.act(): Primary agent has reached destination!
+Simulator.run(): Trial 5
+Environment.reset(): Trial set up with start = (7, 5), destination = (8, 2), deadline = 20
+RoutePlanner.route_to(): destination = (8, 2)
+Environment.act(): Primary agent has reached destination!
+Simulator.run(): Trial 6
+Environment.reset(): Trial set up with start = (4, 5), destination = (4, 1), deadline = 20
+RoutePlanner.route_to(): destination = (4, 1)
+Environment.act(): Primary agent has reached destination!
+Simulator.run(): Trial 7
+Environment.reset(): Trial set up with start = (6, 1), destination = (2, 4), deadline = 35
+RoutePlanner.route_to(): destination = (2, 4)

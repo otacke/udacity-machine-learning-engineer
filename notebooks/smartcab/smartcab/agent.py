@@ -96,19 +96,29 @@ def run():
     """Run the agent for a finite number of trials."""
 
     # parameters for grid search #1
-    alphas   = [0.5]
-    gammas   = [0.5]
-    epsilons = [0.25]
+    #alphas   = [1]
+    #gammas   = [0]
+    #epsilons = [1]
 
     # parameters for grid search #2
+    #alphas   = [random.random()]
+    #gammas   = [random.random()]
+    #epsilons = [random.random()]
+
+    # parameters for grid search #3
+    #alphas   = [0.5]
+    #gammas   = [0.5]
+    #epsilons = [0.25]
+
+    # parameters for grid search #4
     alphas   = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
     gammas   = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
     epsilons = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 
-    # parameters for grid search #3
-    alphas   = [0.33, 0.37, 0.4, 0.43, 0.47]
-    gammas   = [0.03, 0.07, 0.1, 0.13, 0.17]
-    epsilons = [0.03, 0.07, 0.1, 0.13, 0.17]
+    # parameters for grid search #5
+    #alphas   = [0.33, 0.37, 0.4, 0.43, 0.47]
+    #gammas   = [0.03, 0.07, 0.1, 0.13, 0.17]
+    #epsilons = [0.03, 0.07, 0.1, 0.13, 0.17]
 
     # number of runs to average the success rates
     n_runs = 100

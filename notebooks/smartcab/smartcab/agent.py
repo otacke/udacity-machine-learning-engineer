@@ -28,10 +28,12 @@ class LearningAgent(Agent):
         
         # exploration rate [0 = average Hobbit up to 1 = Kirk]
         self.epsilon = 0 # will be set by grid search later
-               
+        
+        #store the number or our successes
+        self.success = 0
+
     def reset(self, destination=None):
         self.planner.route_to(destination)
-        self.env.trial_reward = 0
         
         # TODO: Prepare for a new trip; reset any variables here, if required
 
@@ -50,12 +52,14 @@ class LearningAgent(Agent):
         # Execute action and get reward
         reward = self.env.act(self, action)
         
-        self.env.trial_reward += reward
-
         # TODO: Learn policy based on state, action, reward
-        self.q_learn(self.state, action, reward, self.build_state(self.env.sense(self), self.planner.next_waypoint()))        
+        self.q[(self.state, action)] = self.q_learn(self.state, action, reward, self.build_state(self.env.sense(self), self.planner.next_waypoint()))        
+     
+        # Final Destination?
+        if self.planner.next_waypoint() is None:
+            self.success += 1
 
-        #print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}".format(deadline, inputs, action, reward)  # [debug]       
+        #print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}".format(deadline, inputs, action, reward)  # [debug]
 
     # build state tuple from relevant variables
     def build_state(self, inputs, waypoint):
@@ -79,7 +83,7 @@ class LearningAgent(Agent):
     # q-learning if not in uncharted territory
     def q_learn(self, state, action, reward, next_state):
         old_q = self.q.get((state, action))
-        self.q[(state, action)] = reward if (old_q is None) else self.compute_bellman(old_q, state, action, reward, next_state)
+        return reward if (old_q is None) else self.compute_bellman(old_q, state, action, reward, next_state)
 
     # compute the bellman equation
     # cmp. https://classroom.udacity.com/nanodegrees/nd009/parts/0091345409/modules/e64f9a65-fdb5-4e60-81a9-72813beebb7e/lessons/5446820041/concepts/6348990570923
@@ -91,13 +95,23 @@ class LearningAgent(Agent):
 def run():
     """Run the agent for a finite number of trials."""
 
-    # parameters for grid search
+    # parameters for grid search #1
+    alphas   = [0.5]
+    gammas   = [0.5]
+    epsilons = [0.25]
+
+    # parameters for grid search #2
     alphas   = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
     gammas   = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
     epsilons = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 
+    # parameters for grid search #3
+    alphas   = [0.33, 0.37, 0.4, 0.43, 0.47]
+    gammas   = [0.03, 0.07, 0.1, 0.13, 0.17]
+    epsilons = [0.03, 0.07, 0.1, 0.13, 0.17]
+
     # number of runs to average the success rates
-    n_runs = 25
+    n_runs = 100
     
     # grid results
     grid = {}
@@ -130,7 +144,7 @@ def run():
 
                     sim.run(n_trials=100)  # run for a specified number of trials
                     # NOTE: To quit midway, press Esc or close pygame window, or hit Ctrl+C on the command-line
-                    success.append(a.env.success)
+                    success.append(a.success)
                 
                 # store each result for a combination
                 grid[(a.alpha, a.gamma, a.epsilon)] = np.mean(success)

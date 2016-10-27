@@ -1,4 +1,7 @@
 import random
+import numpy as np
+
+import operator
 from environment import Agent, Environment
 from planner import RoutePlanner
 from simulator import Simulator
@@ -18,19 +21,17 @@ class LearningAgent(Agent):
         self.q = {}
         
         # learning rate [0 = "Doh!" (Homer Simpson) up to 1 = "New is always better!" (Barney Stinson)]
-        self.alpha = 0.5
+        self.alpha = 0 # will be set by grid search later
         
         # discount factor [0 = "I want it all, I want it now" (Queen) vs. 1 = "Someday Never Comes" (Creedence Clearwater Revival)]
-        self.gamma = 0.5
+        self.gamma = 0 # will be set by grid search later
         
         # exploration rate [0 = average Hobbit up to 1 = Kirk]
-        self.epsilon = 0.25
-        
-        # show parameters
-        print 'alpha: {:.2f}, gamma: {:.2f}, epsilon: {:.2f}'.format(self.alpha, self.gamma, self.epsilon)
-        
+        self.epsilon = 0 # will be set by grid search later
+               
     def reset(self, destination=None):
         self.planner.route_to(destination)
+        self.env.trial_reward = 0
         
         # TODO: Prepare for a new trip; reset any variables here, if required
 
@@ -48,6 +49,8 @@ class LearningAgent(Agent):
 
         # Execute action and get reward
         reward = self.env.act(self, action)
+        
+        self.env.trial_reward += reward
 
         # TODO: Learn policy based on state, action, reward
         self.q_learn(self.state, action, reward, self.build_state(self.env.sense(self), self.planner.next_waypoint()))        
@@ -56,7 +59,8 @@ class LearningAgent(Agent):
 
     # build state tuple from relevant variables
     def build_state(self, inputs, waypoint):
-        return (inputs['light'], inputs['oncoming'], inputs['left'], inputs['right'], self.next_waypoint)
+        # return (inputs['light'], self.next_waypoint) # ignore other cars
+        return (inputs['light'], inputs['oncoming'], inputs['left'], inputs['right'], self.next_waypoint) #initial version
 
     # compute next action depending on daring
     def compute_next_action(self, state):
@@ -87,19 +91,58 @@ class LearningAgent(Agent):
 def run():
     """Run the agent for a finite number of trials."""
 
-    # Set up environment and agent
-    e = Environment()  # create environment (also adds some dummy traffic)
-    a = e.create_agent(LearningAgent)  # create agent
-    e.set_primary_agent(a, enforce_deadline=True)  # specify agent to track
-    # NOTE: You can set enforce_deadline=False while debugging to allow longer trials
+    # parameters for grid search
+    alphas   = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    gammas   = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    epsilons = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 
-    # Now simulate it
-    sim = Simulator(e, update_delay=0.0, display=False)  # create simulator (uses pygame when display=True, if available)
-    # NOTE: To speed up simulation, reduce update_delay and/or set display=False
+    # number of runs to average the success rates
+    n_runs = 25
+    
+    # grid results
+    grid = {}
+    
+    # the naive grid search
+    for trial_alpha in alphas:
+        for trial_gamma in gammas:
+            for trial_epsilon in epsilons:
+                
+                # for letting me know where we are...
+                print 'probing alpha: {:.2f}, gamma: {:.2f}, epsilon: {:.2f}'.format(trial_alpha, trial_gamma, trial_epsilon)
+    
+                success = []
+                for run in range(n_runs):
+                
+                    # Set up environment and agent
+                    e = Environment()  # create environment (also adds some dummy traffic)
+                    a = e.create_agent(LearningAgent)  # create agent
+                    e.set_primary_agent(a, enforce_deadline=True)  # specify agent to track
+                    # NOTE: You can set enforce_deadline=False while debugging to allow longer trials
 
-    sim.run(n_trials=100)  # run for a specified number of trials
-    # NOTE: To quit midway, press Esc or close pygame window, or hit Ctrl+C on the command-line
+                    # give parameters to agent
+                    a.alpha = trial_alpha
+                    a.gamma = trial_gamma
+                    a.epsilon = trial_epsilon                   
 
+                    # Now simulate it
+                    sim = Simulator(e, update_delay=0.0, display=False)  # create simulator (uses pygame when display=True, if available)
+                    # NOTE: To speed up simulation, reduce update_delay and/or set display=False
+
+                    sim.run(n_trials=100)  # run for a specified number of trials
+                    # NOTE: To quit midway, press Esc or close pygame window, or hit Ctrl+C on the command-line
+                    success.append(a.env.success)
+                
+                # store each result for a combination
+                grid[(a.alpha, a.gamma, a.epsilon)] = np.mean(success)
+    
+    # show grid, might be useful elsewhere
+    print grid
+    
+    # get best results
+    best_tupel = max(grid.iteritems(), key=operator.itemgetter(1))[0]
+    best_value = max(grid.iteritems(), key=operator.itemgetter(1))[1]
+
+    print "Highest success rate is {:.2f}% for alpha={}, gamma={}, and epsilon={}.".format(best_value, best_tupel[0], best_tupel[1], best_tupel[2],)
 
 if __name__ == '__main__':
     run()

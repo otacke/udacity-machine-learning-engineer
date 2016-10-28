@@ -29,19 +29,39 @@ class LearningAgent(Agent):
         # exploration rate [0 = average Hobbit up to 1 = Kirk]
         self.epsilon = 0 # will be set by grid search later
         
-        #store the number or our successes
+        # number of our successes in trial
         self.success = 0
-
+        
+        # number of actions leading to a penalty in trial
+        self.violations = 0
+        
+        # net reward of trial
+        self.net_reward = []
+        
+        # number of actions diverging from the shortest path within a trial
+        self.moves_made = 0
+        self.min_distance = 0
+        self.was_reset = True
+        
     def reset(self, destination=None):
         self.planner.route_to(destination)
         
         # TODO: Prepare for a new trip; reset any variables here, if required
+        self.was_reset = True
 
     def update(self, t):
         # Gather inputs
         self.next_waypoint = self.planner.next_waypoint()  # from route planner, also displayed by simulator
         inputs = self.env.sense(self)
         deadline = self.env.get_deadline(self)
+
+        # compute minimal trip distance
+        if self.was_reset:
+            self.min_distance += deadline / 5
+            self.was_reset = False
+        
+        # store the number of actions "over par"
+        self.moves_made += 1
 
         # TODO: Update state   
         self.state = self.build_state(inputs, self.next_waypoint)
@@ -51,6 +71,13 @@ class LearningAgent(Agent):
 
         # Execute action and get reward
         reward = self.env.act(self, action)
+        
+        # store net reward
+        self.net_reward.append(reward)
+        
+        # register traffic violations
+        if reward == -1:
+            self.violations += 1
         
         # TODO: Learn policy based on state, action, reward
         self.q[(self.state, action)] = self.q_learn(self.state, action, reward, self.build_state(self.env.sense(self), self.planner.next_waypoint()))        
@@ -63,8 +90,8 @@ class LearningAgent(Agent):
 
     # build state tuple from relevant variables
     def build_state(self, inputs, waypoint):
-        # return (inputs['light'], self.next_waypoint) # ignore other cars
-        return (inputs['light'], inputs['oncoming'], inputs['left'], inputs['right'], self.next_waypoint) #initial version
+        return (inputs['light'], inputs['oncoming'], inputs['left'], self.next_waypoint) # initial version without 'right' and 'deadline'
+        #return (inputs['light'], self.next_waypoint) # ignore other cars totally???
 
     # compute next action depending on daring
     def compute_next_action(self, state):
@@ -111,20 +138,31 @@ def run():
     #epsilons = [0.25]
 
     # parameters for grid search #4
-    #alphas   = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
-    #gammas   = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
-    #epsilons = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    alphas   = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    gammas   = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+    epsilons = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
 
     # parameters for grid search #5
-    alphas   = [0.03, 0.07, 0.1, 0.13, 0.17]
-    gammas   = [0.23, 0.27, 0.2, 0.23, 0.27]
-    epsilons = [0.23, 0.27, 0.2, 0.23, 0.27]
+    #alphas   = [0.03, 0.07, 0.1, 0.13, 0.17]
+    #gammas   = [0.23, 0.27, 0.2, 0.23, 0.27]
+    #epsilons = [0.23, 0.27, 0.2, 0.23, 0.27]
 
-    # number of runs to average the success rates
+    # number of runs to average the trials
     n_runs = 100
     
+    # number of trials/cab rides for training
+    n_trials = 100
+    
+    success    = [] # number of successes in all trials
+    violations = [] # average violations per cab ride within whole trial
+    net_reward = [] # net_reward of whole trial
+    detour     = [] # average actions "over par" per cab ride within whole trial    
+    
     # grid results
-    grid = {}
+    grid_success     = {}
+    grid_violations  = {}
+    grid_net_rewards = {}
+    grid_detour      = {}
     
     # the naive grid search
     for trial_alpha in alphas:
@@ -133,8 +171,7 @@ def run():
                 
                 # for letting me know where we are...
                 print 'probing alpha: {:.2f}, gamma: {:.2f}, epsilon: {:.2f}'.format(trial_alpha, trial_gamma, trial_epsilon)
-    
-                success = []
+                
                 for run in range(n_runs):
                 
                     # Set up environment and agent
@@ -152,21 +189,31 @@ def run():
                     sim = Simulator(e, update_delay=0.0, display=False)  # create simulator (uses pygame when display=True, if available)
                     # NOTE: To speed up simulation, reduce update_delay and/or set display=False
 
-                    sim.run(n_trials=100)  # run for a specified number of trials
+                    sim.run(n_trials=n_trials)  # run for a specified number of trials
                     # NOTE: To quit midway, press Esc or close pygame window, or hit Ctrl+C on the command-line
-                    success.append(a.success)
+                    
+                    success.append(float(a.success)/n_trials)
+                    violations.append(float(a.violations)/n_trials)
+                    net_reward.append(np.sum(a.net_reward))
+                    # we cannot detect the last move of a trial directly, but by adding the number of failed trials
+                    detour.append(float(a.moves_made - a.min_distance)/n_trials)
                 
                 # store each result for a combination
-                grid[(a.alpha, a.gamma, a.epsilon)] = np.mean(success)
-    
-    # show grid, might be useful elsewhere
-    print grid
-    
+                grid_success[(a.alpha, a.gamma, a.epsilon)] = np.mean(success)
+                grid_violations[(a.alpha, a.gamma, a.epsilon)] = np.mean(violations)
+                grid_net_rewards[(a.alpha, a.gamma, a.epsilon)] = np.mean(net_reward)
+                grid_detour[(a.alpha, a.gamma, a.epsilon)] = np.mean(detour)
+                       
     # get best results
-    best_tupel = max(grid.iteritems(), key=operator.itemgetter(1))[0]
-    best_value = max(grid.iteritems(), key=operator.itemgetter(1))[1]
+    best_tupel = max(grid_success.iteritems(), key=operator.itemgetter(1))[0]
 
-    print "Highest success rate is {:.2f}% for alpha={}, gamma={}, and epsilon={}.".format(best_value, best_tupel[0], best_tupel[1], best_tupel[2],)
+    print "========================================"
+    print "RESULTS FOR {} RUNS WITH {} TRIALS EACH".format(n_runs, n_trials)
+    print "Highest success rate is {:.2f} for alpha={}, gamma={}, and epsilon={}.".format(grid_success[(best_tupel)], best_tupel[0], best_tupel[1], best_tupel[2],)
+    print "with average traffic violations per cab ride: {:.2f}". format(grid_violations[(best_tupel)])
+    print "with total net reward over all {} trials: {:.2f}". format(n_trials, grid_net_rewards[(best_tupel)])
+    print "with average moves above optimum per cab ride: {:.2f}". format(grid_detour[(best_tupel)])
+
 
 if __name__ == '__main__':
     run()

@@ -40,7 +40,11 @@ class LearningAgent(Agent):
         
         # number of actions diverging from the shortest path within a trial
         self.moves_made = 0
+        
+        # minimal distance
         self.min_distance = 0
+        
+        # indicates if the agent was reset
         self.was_reset = True
         
     def reset(self, destination=None):
@@ -55,14 +59,6 @@ class LearningAgent(Agent):
         inputs = self.env.sense(self)
         deadline = self.env.get_deadline(self)
 
-        # compute minimal trip distance
-        if self.was_reset:
-            self.min_distance += deadline / 5
-            self.was_reset = False
-        
-        # store the number of actions "over par"
-        self.moves_made += 1
-
         # TODO: Update state   
         self.state = self.build_state(inputs, self.next_waypoint)
         
@@ -71,22 +67,36 @@ class LearningAgent(Agent):
 
         # Execute action and get reward
         reward = self.env.act(self, action)
-        
+
+        # TODO: Learn policy based on state, action, reward
+        self.q[(self.state, action)] = self.q_learn(self.state, action, reward, self.build_state(self.env.sense(self), self.planner.next_waypoint()))        
+     
+        #print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}".format(deadline, inputs, action, reward)  # [debug]
+
+        # do computation for stats
+        self.do_stats(reward, deadline)
+
+    def do_stats(self, reward, deadline):
+        # Final Destination?
+        if self.planner.next_waypoint() is None:
+            self.success += 1
+
         # store net reward
         self.net_reward.append(reward)
         
         # register traffic violations
         if reward == -1:
             self.violations += 1
-        
-        # TODO: Learn policy based on state, action, reward
-        self.q[(self.state, action)] = self.q_learn(self.state, action, reward, self.build_state(self.env.sense(self), self.planner.next_waypoint()))        
-     
-        # Final Destination?
-        if self.planner.next_waypoint() is None:
-            self.success += 1
 
-        #print "LearningAgent.update(): deadline = {}, inputs = {}, action = {}, reward = {}".format(deadline, inputs, action, reward)  # [debug]
+        # compute minimal trip distance
+        if self.was_reset:
+            self.min_distance += deadline / 5
+            self.was_reset = False
+        
+        # store the number of actions "over par"
+        self.moves_made += 1
+
+        return
 
     # build state tuple from relevant variables
     def build_state(self, inputs, waypoint):
@@ -209,7 +219,7 @@ def run():
 
     print "========================================"
     print "RESULTS FOR {} RUNS WITH {} TRIALS EACH".format(n_runs, n_trials)
-    print "Highest success rate is {:.2f} for alpha={}, gamma={}, and epsilon={}.".format(grid_success[(best_tupel)], best_tupel[0], best_tupel[1], best_tupel[2],)
+    print "Highest success rate is {} for alpha={}, gamma={}, and epsilon={}.".format(grid_success[(best_tupel)], best_tupel[0], best_tupel[1], best_tupel[2],)
     print "with average traffic violations per cab ride: {:.2f}". format(grid_violations[(best_tupel)])
     print "with total net reward over all {} trials: {:.2f}". format(n_trials, grid_net_rewards[(best_tupel)])
     print "with average moves above optimum per cab ride: {:.2f}". format(grid_detour[(best_tupel)])

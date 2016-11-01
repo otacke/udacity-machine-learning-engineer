@@ -5,8 +5,6 @@
 - OpenSNP
   - predict origin based on genome? http://www.internationalgenome.org/
   - phenotype tag clustering
-- Something using the data pool of the coolest German city?
-  - http://transparenz.hamburg.de/open-data/
 - Maybe something from here...
   - http://data.deutschebahn.com/
   - https://www.govdata.de/

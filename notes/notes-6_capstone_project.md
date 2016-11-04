@@ -1,4 +1,6 @@
 # ideas
+You may donate ideas here! [Tell me more!](http://www.olivertacke.de/2016/10/25/braucht-ihr-unterstuetzung-gebt-her-eure-daten/)
+
 
 - Something related to education
   - https://docs.google.com/document/d/1vjerjRQnWs1kLbZagDYT6rNqiwAG23Yj45oUY88IAxI/pub

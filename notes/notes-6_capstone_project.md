@@ -9,6 +9,7 @@ You may donate ideas here! [Tell me more!](http://www.olivertacke.de/2016/10/25/
   - phenotype tag clustering
 - Maybe something from here...
   - https://www.govdata.de/
+  - https://www.wikidata.org/ (hot candidate!?)
 - Something on one of those nice competition platforms (probably too complicated for a beginner?)
   - https://www.crowdai.org
   - https://www.kaggle.com

@@ -11,6 +11,7 @@ You may donate ideas here! [Tell me more!](http://www.olivertacke.de/2016/10/25/
   - https://www.govdata.de/
   - https://www.wikidata.org/
   - http://opendata.cern.ch/ would be pretty cool
+  - https://medium.com/@olivercameron/20-weird-wonderful-datasets-for-machine-learning-c70fc89b73d5
 - Something on one of those nice competition platforms (probably too complicated for a beginner?)
   - https://www.crowdai.org
   - https://www.kaggle.com

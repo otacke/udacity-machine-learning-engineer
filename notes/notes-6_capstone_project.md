@@ -1,6 +1,5 @@
 # ideas
-You may donate ideas here! [Tell me more!](http://www.olivertacke.de/2016/10/25/braucht-ihr-unterstuetzung-gebt-her-eure-daten/)
-
+I am about to finish the [nanodegree program "machine learning engineer"](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009), and I am still looking for a nice topic for the capstone project. You may donate ideas here! [Tell me more!](http://www.olivertacke.de/2016/10/25/braucht-ihr-unterstuetzung-gebt-her-eure-daten/)
 
 - Something related to education
   - https://docs.google.com/document/d/1vjerjRQnWs1kLbZagDYT6rNqiwAG23Yj45oUY88IAxI/pub

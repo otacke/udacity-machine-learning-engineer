@@ -3,7 +3,7 @@ I am about to finish the [nanodegree program "machine learning engineer"](https:
 
 - Something related to education
   - https://docs.google.com/document/d/1vjerjRQnWs1kLbZagDYT6rNqiwAG23Yj45oUY88IAxI/pub
-  - What about my own results from http://www.olivertacke.de/2013/08/09/offentliche-seminare-in-wikis-fall-geschlossen/
+  - <strike>What about my own results from http://www.olivertacke.de/2013/08/09/offentliche-seminare-in-wikis-fall-geschlossen/</strike> (not enough data)
 - OpenSNP
   - predict origin based on genome? http://www.internationalgenome.org/
   - phenotype tag clustering

@@ -16,6 +16,5 @@ I am about to finish the [nanodegree program "machine learning engineer"](https:
   - [Heart Sounds => Diseases](http://mldata.org/repository/data/viewslug/record-of-heart-sound/)
   - [Prostate Cancer](http://mldata.org/repository/data/viewslug/prostate-cancer/) could be linked with data from OpenSNP
 - Something on one of those nice competition platforms (probably too complicated for a beginner?)
-  - <strike>https://www.crowdai.org</
-  strike> too ambituous
+  - <strike>https://www.crowdai.org</strike> too ambituous
   - <strike>https://www.kaggle.com</strike> too ambituous

@@ -4,7 +4,7 @@ I am about to finish the [nanodegree program "machine learning engineer"](https:
 - Something related to education
   - https://docs.google.com/document/d/1vjerjRQnWs1kLbZagDYT6rNqiwAG23Yj45oUY88IAxI/pub
   - <strike>What about my own results from http://www.olivertacke.de/2013/08/09/offentliche-seminare-in-wikis-fall-geschlossen/</strike> (not enough data)
-  - [Dynamics of undergraduate student generic problem-solving skills captured by a campus-wide study](http://link.springer.com/article/10.1007/s10734-016-0082-0) (contacted Andis Klegeris)
+  - [Dynamics of undergraduate student generic problem-solving skills captured by a campus-wide study](http://link.springer.com/article/10.1007/s10734-016-0082-0) (contact established to Andis Klegeris)
 - OpenSNP
   - predict origin based on genome? http://www.internationalgenome.org/
   - phenotype tag clustering

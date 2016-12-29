@@ -12,6 +12,7 @@ I am about to finish the [nanodegree program "machine learning engineer"](https:
   - https://www.govdata.de/
   - https://www.wikidata.org/
   - http://opendata.cern.ch/ would be pretty cool
+  - https://opendatacity.de
   - [UFO Reportings](https://github.com/planetsig/ufo-reports)
   - [Audio Features of Songs](http://labrosa.ee.columbia.edu/millionsong/) compare with paper cited by [minkorrekt](http://minkorrekt.de/minkorrekt-folge-85-glasfaser-silikonklos/): [Dissecting an Earworm: Melodic Features and Song Popularity Predict Involuntary Musical Imagery](http://sci-hub.cc/10.1037/aca0000090)
   - [Heart Sounds => Diseases](http://mldata.org/repository/data/viewslug/record-of-heart-sound/)

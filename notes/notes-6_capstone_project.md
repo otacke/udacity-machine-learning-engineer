@@ -10,6 +10,7 @@ I am about to finish the [nanodegree program "machine learning engineer"](https:
   - phenotype tag clustering
 - Maybe something from here...
   - https://www.govdata.de/
+  - http://wiki.dbpedia.org/
   - https://www.wikidata.org/
   - http://opendata.cern.ch/ would be pretty cool
   - [UFO Reportings](https://github.com/planetsig/ufo-reports)

@@ -1,6 +1,10 @@
 # ideas
 I am about to finish the [nanodegree program "machine learning engineer"](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009), and I am still looking for a nice topic for the capstone project. You may donate ideas here! [Tell me more!](http://www.olivertacke.de/2016/10/25/braucht-ihr-unterstuetzung-gebt-her-eure-daten/)
 
+## Best Candidate so far:
+https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0002
+
+## Nice sources
 - Something related to education
   - https://docs.google.com/document/d/1vjerjRQnWs1kLbZagDYT6rNqiwAG23Yj45oUY88IAxI/pub
   - <strike>What about my own results from http://www.olivertacke.de/2013/08/09/offentliche-seminare-in-wikis-fall-geschlossen/</strike> (not enough data)

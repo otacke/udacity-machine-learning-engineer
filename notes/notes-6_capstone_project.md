@@ -2,7 +2,13 @@
 I am about to finish the [nanodegree program "machine learning engineer"](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009), and I am still looking for a nice topic for the capstone project. You may donate ideas here! [Tell me more!](http://www.olivertacke.de/2016/10/25/braucht-ihr-unterstuetzung-gebt-her-eure-daten/)
 
 ## Best Candidate so far:
-https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0002
+Combination of
+- https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0001
+- https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0002
+- https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0003
+- https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0004
+- https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0005
+- https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0006
 
 ## Nice sources
 - Something related to education

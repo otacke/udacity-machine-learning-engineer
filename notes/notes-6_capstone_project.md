@@ -11,12 +11,13 @@ I am about to finish the [nanodegree program "machine learning engineer"](https:
 - Maybe something from here...
   - https://www.govdata.de/
   - http://wiki.dbpedia.org/
+  - https://github.com/opendata-stuttgart
   - https://www.wikidata.org/
-  - <strike>http://opendata.cern.ch/ would be pretty cool</strike> domain knowledge needed
+  - <strike>http://opendata.cern.ch/ would be pretty cool</strike> (domain knowledge needed)
   - [UFO Reportings](https://github.com/planetsig/ufo-reports)
   - [Audio Features of Songs](http://labrosa.ee.columbia.edu/millionsong/) compare with paper cited by [minkorrekt](http://minkorrekt.de/minkorrekt-folge-85-glasfaser-silikonklos/): [Dissecting an Earworm: Melodic Features and Song Popularity Predict Involuntary Musical Imagery](http://sci-hub.cc/10.1037/aca0000090)
   - [Heart Sounds => Diseases](http://mldata.org/repository/data/viewslug/record-of-heart-sound/)
   - [Prostate Cancer](http://mldata.org/repository/data/viewslug/prostate-cancer/) could be linked with data from OpenSNP
 - Something on one of those nice competition platforms (probably too complicated for a beginner?)
-  - <strike>https://www.crowdai.org</strike> too ambituous
-  - <strike>https://www.kaggle.com</strike> too ambituous
+  - <strike>https://www.crowdai.org</strike> (too ambituous)
+  - <strike>https://www.kaggle.com</strike> (too ambituous)

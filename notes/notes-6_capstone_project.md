@@ -3,7 +3,9 @@ I am about to finish the [nanodegree program "machine learning engineer"](https:
 
 ## Best Candidate(s) so far:
 1. Predict the sales based on ratings: https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings
-2. Combination of (but I'm not sure if there's really something to do beyond clustering, might rather be nice for Data Science)
+2. Predict the category of crimes that occurred in the city by the bay: https://www.kaggle.com/c/sf-crime/data
+3. Compute sentiments score based on movie reviews: https://www.kaggle.com/c/word2vec-nlp-tutorial
+4. Combination of (but I'm not sure if there's really something to do beyond clustering, might rather be nice for Data Science)
   - https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0001
   - https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0002
   - https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0003

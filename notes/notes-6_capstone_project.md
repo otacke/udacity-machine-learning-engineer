@@ -2,7 +2,8 @@
 I am about to finish the [nanodegree program "machine learning engineer"](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009), and I am still looking for a nice topic for the capstone project. You may donate ideas here! [Tell me more!](http://www.olivertacke.de/2016/10/25/braucht-ihr-unterstuetzung-gebt-her-eure-daten/)
 
 ## Best Candidate(s) so far:
-1. Combination of (but I'm not sure if there's really something to do beyond clustering, might rather be nice for Data Science)
+1. Predict the sales based on ratings: https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings
+2. Combination of (but I'm not sure if there's really something to do beyond clustering, might rather be nice for Data Science)
   - https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0001
   - https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0002
   - https://www.govdata.de/web/guest/suchen/-/details/destatis-service-21321-0003

@@ -2,7 +2,7 @@
 I am about to finish the [nanodegree program "machine learning engineer"](https://www.udacity.com/course/machine-learning-engineer-nanodegree--nd009), and I am still looking for a nice topic for the capstone project. You may donate ideas here! [Tell me more!](http://www.olivertacke.de/2016/10/25/braucht-ihr-unterstuetzung-gebt-her-eure-daten/)
 
 ## Best Candidate(s) so far:
-1. Predict the sales based on ratings: https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings in combination with https://github.com/egrinstein/crawl_ign/tree/master/crawl_ign
+1. Predict the sales based on ratings: https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings in combination with https://www.kaggle.com/egrinstein/20-years-of-games/discussion / https://github.com/egrinstein/crawl_ign/tree/master/crawl_ign
 2. Predict the category of crimes that occurred in the city by the bay: https://www.kaggle.com/c/sf-crime/data
 3. Compute sentiments score based on movie reviews: https://www.kaggle.com/c/word2vec-nlp-tutorial
 4. Combination of (but I'm not sure if there's really something to do beyond clustering, might rather be nice for Data Science)

@@ -45,7 +45,7 @@ There's also a dataset that contains ratings from Imagine Games Network (IGN).
 
 Both data sets might be merged, and there may be similar sets that could be obtained by scraping some other sources. By combining them it could be possible to train a model that uses information about the game's genre, platform, year of release, and the different ratings to predict the sales volume.
 
-Merging several datasets will require to cleanse them. Also, some fuzzy string comparison might be beneficial in order to identify matching entries across the datasets. As a side project, using machine learning for tuning string distance metrics such as [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau–Levenshtein_distance) or [Jaro-Winkler distance](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance) might be interesting and useful ([I recently used both in a completely different project](https://github.com/otacke/h5p-text-utilities)).
+Merging several datasets will require to cleanse them. Also, some fuzzy string comparison might be beneficial in order to identify matching entries across the datasets. As a side project, using machine learning for tuning string distance metrics such as [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau–Levenshtein_distance) or [Jaro-Winkler distance](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance) might be interesting and useful ([I recently used both in a completely different project](https://h5p.org/node/40692)).
 
 ### Solution Statement
 _(approx. 1 paragraph)_

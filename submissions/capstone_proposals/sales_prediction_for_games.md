@@ -17,6 +17,8 @@ _(approx. 1-2 paragraphs)_
 
 _In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required._
 
+TODO: Check for literature
+
 One of the first video games that I have ever played was [Munchkin](https://en.wikipedia.org/wiki/Munchkin_(video_game)). It was released in 1981 when the video game industry was still in its infancy. Today, it is a multi-billion dollar business. In 2014 in the U.S. alone, 155 million people played video games. In total, they spent 15.4 billion US dollars (cmp. http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf).
 
 In an industry, success is not only measured in good critics, but the amount of money earned. In order to make decisions about future productions, publishers may want to predict the sales figures which they can expect after a new game has been released. Those decisions could possibly be based on historical data and a suitable regression model.

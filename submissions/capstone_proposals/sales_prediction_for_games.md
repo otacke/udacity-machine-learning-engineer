@@ -17,11 +17,11 @@ _(approx. 1-2 paragraphs)_
 
 _In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required._
 
-TODO: Check for literature
+One of the first video games that I have ever played was [Munchkin](https://en.wikipedia.org/wiki/Munchkin_(video_game)). It was released in 1981 when the video game industry was still in its infancy. Today, it is a multi-billion dollar business. In 2014 in the U.S. alone, 155 million people played video games (cmp. [Entertainment Software Association, 2015](http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf), p. 2). In total, they spent 15.4 billion US dollars (cmp. [Entertainment Software Association, 2015](http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf), p. 12).
 
-One of the first video games that I have ever played was [Munchkin](https://en.wikipedia.org/wiki/Munchkin_(video_game)). It was released in 1981 when the video game industry was still in its infancy. Today, it is a multi-billion dollar business. In 2014 in the U.S. alone, 155 million people played video games. In total, they spent 15.4 billion US dollars (cmp. http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf).
+In an industry, success is not only measured in good critics, but the amount of money earned. In order to make decisions about future productions, publishers may want to predict the sales figures which they can expect after a new game has been released. Those decisions could possibly be based on historical data and a suitable regression model. For instance, we could hypothesize that good scores in reviews correlate positively with high sales figures. Also we could assume, that those reviews can help us to project future sales. In fact, the plausibility of this approach has been investigated and proven for the movie picture industry a decade ago: "Online movie reviews are available in large numbers within hours of a new movie’s theatrical release. Their use, thus, allows the generation of reliable forecasts much sooner than before." ([Dellarocas, Zhang & Awad, 2007](http://onlinelibrary.wiley.com/doi/10.1002/dir.20087/abstract), p. 39). Today, using suitable machine learning algorithms, we could try to do the same for video games.
 
-In an industry, success is not only measured in good critics, but the amount of money earned. In order to make decisions about future productions, publishers may want to predict the sales figures which they can expect after a new game has been released. Those decisions could possibly be based on historical data and a suitable regression model.
+A suitable machine learning algorithm could not only check whether this assumption holds true, but also project the sales of a new game after critics have found their verdict.
 
 ### Problem Statement
 _(approx. 1 paragraph)_
@@ -40,7 +40,7 @@ _In this section, the dataset(s) and/or input(s) being considered for the projec
 There are at least two relevant datasets that I'd like to use for creating a regression model for predicting the sales figures of a video game.
 
 - [Video Game Sales with Ratings](https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings):
-There's a dataset about video game sales based of data scraped from VGChartz. It contains information about games, including name, platform, year of release, genre, and sales figures for several regions. This dataset has been extended with several features from Metacritic, adding e.g. quality ratings from metacritic's staff and from users, and also adding age/content ratings from the entertainment software rating board. In total, there are more that 5.500 complete cases.
+There's a dataset about video game sales based of data scraped from VGChartz. It contains information about games, including name, platform, year of release, genre, and sales figures for several regions. This dataset has been extended with several features from Metacritic, adding e.g. quality ratings from metacritic's staff and from users, the amount of reviews, and also adding age/content ratings from the entertainment software rating board. In total, there are more that 5.500 complete cases.
 
 - [IGN scores](https://www.kaggle.com/egrinstein/20-years-of-games/discussion):
 There's also a dataset that contains ratings from Imagine Games Network (IGN).
@@ -68,3 +68,8 @@ _In this section, propose at least one evaluation metric that can be used to qua
 _(approx. 1 page)_
 
 _In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project._
+
+### Literature
+* Dellarocas, Chrysanthos, Zhang, Xiaoquan (Michael) & Awad, Neveen F. (2007). [Exploring the value of online product reviews in forecasting sales: The case of motion pictures.](http://onlinelibrary.wiley.com/doi/10.1002/dir.20087/abstract) _Journal of Interactive Marketing, 21(4)_, 23-45.
+
+* Entertainment Software Association (2015). _Essential Facts About The Computer And Video Game Industry. 2015 Sales, Demographic And Usage Data._ Retrieved from http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf (January 12, 2016).

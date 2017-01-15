@@ -28,7 +28,7 @@ _In this section, clearly describe the problem that is to be solved. The problem
 
 The earlier a video game company knows how many copies it can expect to sell of a game, the earlier it can estimate the revenue and the earlier it knows whether the game will be a financial success or not. For example, a decision about starting the production of a sequel or the production of a port to a different platform might depend on this information. In consequence, early knowledge about the sales figures can speed up the decision process.
 
-The problem can clearly be measured, because the success of a video game can be expressed in sales volume or revenue if the retail price is known. Also, it should be possible to create a regression model that takes input data and transforms those to a prediction of revenue. Since there are no random parameters involved, the results will also be reproducible given the same model and the same input parameters.
+The problem can clearly be "measured", because the success of a video game can be expressed in sales volume or revenue if the retail price is known. Also, it should be possible to create a regression model that takes input data and transforms those to a prediction of revenue. Since there are no random parameters involved, the results will also be reproducible given the same model and the same input parameters.
 
 ### Datasets and Inputs
 _(approx. 2-3 paragraphs)_
@@ -52,15 +52,25 @@ _(approx. 1 paragraph)_
 
 _In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once)._
 
+The solution to the problem will be a regression model that will output a prediction of sales figures for a given video game. As input it will use those variables that have turned out to have significant influence on the outcome. There are several possible algorithms that we might use such as support vector machines or even neural network models. However, for this proposal, there has not yet been an investigation about what approach might be most beneficial.
+
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
 
 _In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail._
 
+Our data set seems to be quite large compared to the number of features that we intend to use, so we should not have trouble splitting it into a training set and a test set. This way, we can train our model and check its performance on the test set. Of course, we can also use k-fold cross validation in order to check for overfitting.
+
+We can also use new data from our data sources (VGChartz, Metacritics, IGN) that are not available yet. This would basically be a real world test.
+
+Finally, some people at Kaggle seem to be experimenting with prediction models, too. We could compare the performance of our model with theirs. Also, we could check how our model compares to [SimExchange](http://www.simexchange.com/). This platform tries to predict video game sales based on the concept of ["wisdom of crowds"](https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds).
+
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_
 
 _In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms)._
+
+Our goal is to predict the sales volume of video games, which simply is an integer. We can apply common statistic approaches to compare and visualize the deviation of our predictions from the correct results. The explained variance score or the R² score could be used to quantify the performance of our model.
 
 ### Project Design
 _(approx. 1 page)_

@@ -1,7 +1,7 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Proposal
 Oliver Tacke  
-_December 31st, 2050_
+_January 15, 2017_
 
 ## Proposal
 It was more difficult than I thought to come up with a proposal for a capstone project. There are tons of interesting data sets out there and dozens of questions that you could possibly ask, but I'd love to create something that someone actually needed.
@@ -13,28 +13,16 @@ I chose to have a closer look at the field of education where I know a thing or 
 Well, I browsed the web for some more data sets and found something that would be interesting for me, that might have an appropriate level of difficulty, and that doesn't require too much domain knowledge.
 
 ### Domain Background
-_(approx. 1-2 paragraphs)_
-
-_In this section, provide brief details on the background information of the domain from which the project is proposed. Historical information relevant to the project should be included. It should be clear how or why a problem in the domain can or should be solved. Related academic research should be appropriately cited in this section, including why that research is relevant. Additionally, a discussion of your personal motivation for investigating a particular problem in the domain is encouraged but not required._
-
 One of the first video games that I have ever played was [Munchkin](https://en.wikipedia.org/wiki/Munchkin_(video_game)). It was released in 1981 when the video game industry was still in its infancy. Today, it is a multi-billion dollar business. In 2014 in the U.S. alone, 155 million people played video games (cmp. [Entertainment Software Association, 2015](http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf), p. 2). In total, they spent 15.4 billion US dollars (cmp. [Entertainment Software Association, 2015](http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf), p. 12).
 
 In an industry, success is not only measured in good critics, but the amount of money earned. In order to make decisions about future productions, publishers may want to predict the sales figures which they can expect after a new game has been released. Those decisions could possibly be based on historical data and a suitable regression model. For instance, we could hypothesize that good scores in reviews correlate positively with high sales figures. Also we could assume, that those reviews can help us to project future sales. In fact, the general plausibility of this approach has been investigated and proven for the movie picture industry a decade ago: "Online movie reviews are available in large numbers within hours of a new movie’s theatrical release. Their use, thus, allows the generation of reliable forecasts much sooner than before." ([Dellarocas, Zhang & Awad, 2007](http://onlinelibrary.wiley.com/doi/10.1002/dir.20087/abstract), p. 39). For the video game industry, [Beaujon (2012)](https://www.few.vu.nl/nl/Images/werkstuk-beaujon_tcm243-264134.pdf) developed a third-degree polynomial formula for predicting sales from historical data - basically manually using a spreadsheet. I would like to search for a better solution using a suitable machine learning algorithm, more features and more data.
 
 ### Problem Statement
-_(approx. 1 paragraph)_
-
-_In this section, clearly describe the problem that is to be solved. The problem described should be well defined and should have at least one relevant potential solution. Additionally, describe the problem thoroughly such that it is clear that the problem is quantifiable (the problem can be expressed in mathematical or logical terms) , measurable (the problem can be measured by some metric and clearly observed), and replicable (the problem can be reproduced and occurs more than once)._
-
 The earlier a video game company knows how many copies it can expect to sell of a game, the earlier it can estimate the revenue and the earlier it knows whether the game will be a financial success or not. For example, a decision about starting the production of a sequel or the production of a port to a different platform might depend on this information. In consequence, early knowledge about the sales figures can speed up the decision process.
 
 The problem can clearly be "measured", because the success of a video game can be expressed in sales volume or revenue if the retail price is known. Also, it should be possible to create a regression model that takes input data and transforms those to a prediction of revenue. Since there are no random parameters involved, the results will also be reproducible given the same model and the same input parameters.
 
 ### Datasets and Inputs
-_(approx. 2-3 paragraphs)_
-
-_In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem._
-
 There are at least two relevant datasets that I'd like to use for creating a regression model for predicting the sales figures of a video game.
 
 - [Video Game Sales with Ratings](https://www.kaggle.com/rush4ratio/video-game-sales-with-ratings):
@@ -48,17 +36,9 @@ Both data sets might be merged, and there may be similar sets that could be obta
 Merging several datasets will require to cleanse them. Also, some fuzzy string comparison might be beneficial in order to identify matching entries across the datasets. As a side project, using machine learning for tuning string distance metrics such as [Damerau-Levenshtein distance](https://en.wikipedia.org/wiki/Damerau–Levenshtein_distance) or [Jaro-Winkler distance](https://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance) might be interesting and useful ([I recently used both in a completely different project](https://h5p.org/node/40692)).
 
 ### Solution Statement
-_(approx. 1 paragraph)_
-
-_In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once)._
-
 The solution to the problem will be a regression model that will output a prediction of sales figures for a given video game. As input it will use those variables that have turned out to have significant influence on the outcome. There are several possible algorithms that we might use such as support vector machines or even neural network models. However, for this proposal, there has not yet been an investigation about what approach might be most beneficial.
 
 ### Benchmark Model
-_(approximately 1-2 paragraphs)_
-
-_In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail._
-
 Our data set seems to be quite large compared to the number of features that we intend to use, so we should not have trouble splitting it into a training set and a test set. This way, we can train our model and check its performance on the test set. Of course, we can also use k-fold cross validation in order to check for overfitting.
 
 We can also use new data from our data sources (VGChartz, Metacritics, IGN) that are not available yet. This would basically be a real world test.
@@ -66,16 +46,20 @@ We can also use new data from our data sources (VGChartz, Metacritics, IGN) that
 Finally, some people at Kaggle seem to be experimenting with prediction models, too. We could compare the performance of our model with theirs. Also, we could check how our model compares to [SimExchange](http://www.simexchange.com/). This platform tries to predict video game sales based on the concept of ["wisdom of crowds"](https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds).
 
 ### Evaluation Metrics
-_(approx. 1-2 paragraphs)_
-
-_In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms)._
-
 Our goal is to predict the sales volume of video games, which simply is an integer. We can apply common statistic approaches to compare and visualize the deviation of our predictions from the correct results. The explained variance score or the R² score could be used to quantify the performance of our model.
 
 ### Project Design
-_(approx. 1 page)_
+The first step of every machine learning project should be to **define the problem**. This proposal reflects the first part of this task, but there's more to be done. If this proposal is accepted, I am going to investigate the video game business some more in order to find out if there are some more data that might help me on my way.
 
-_In this final section, summarize a theoretical workflow for approaching a solution given the problem. Provide thorough discussion for what strategies you may consider employing, what analysis of the data might be required before being used, or which algorithms will be considered for your implementation. The workflow and discussion that you provide should align with the qualities of the previous sections. Additionally, you are encouraged to include small visualizations, pseudocode, or diagrams to aid in describing the project design, but it is not required. The discussion should clearly outline your intended workflow of the capstone project._
+Step two will be to **analyze and prepare the data**. First, I will have to check the data quality on a syntactical level. For example, columns that are expected to contain numbers such as the predicted sales volume should not contains strings. Secondly, I will have to merge my two data sets which will definitely require some adjustments. In order to connect data from one set to the other correctly, there must be some features that can be used to clearly identify a game, so at least name and platform should match in both sets. After that, it is crucial to understand the data before experimenting with algorithms. I will have to check the data for plausibility, because some feature values might be off the chart for whatever reason, etc. Also, by visualizing the data in different ways, I hope to get some more insight into the problem. This will probably also involve a principal component analysis to filter for features that might not be relevant and thus speed down our algorithms.
+
+Step three is to **select algorithms**. I will consider different methods and approaches that might be appropriate for building a regression model. Althought quite a lot algorithms might suit the problem, the right choice will depend on different criteria, such as efficiency and scalability. Since we are dealing with more than 50 but less than 100.000 samples for predicting a quantity, the [scikit-learn cheat-sheet](http://scikit-learn.org/stable/tutorial/machine_learning_map/) suggest to consider Lasso, ElasticNet, Ridge Regression, Support Vector machines or even Ensemble Regressors. Out of curiosity, I might also tinker with Neural Networks.
+
+Step four will be to **run and evaluate the algorithms** that I have chosen in step three. By comparing each algorithm's performance using e.g. k-fold cross validation, I want to identify the algorithms that are best at "understanding" the data and at attacking the prediction of video game sales.
+
+As step five I am going to **improve and finalize the results with focused experiments and fine tuning**. Each algorithm has certain parameters that can be tweaked in order to get better results. Approaches such as a grid search can be helpful to support this task systematically. Possibly, even ensemble methods could be tried out for fine tuning the results.
+
+I intend to use a Jupyter Notebook to document all these steps including meanders and dead ends.
 
 ### Literature
 * Beaujon, Walter S. (2012). _Predicting Video Game Sales in the European Market._ Retrieved from https://www.few.vu.nl/nl/Images/werkstuk-beaujon_tcm243-264134.pdf (January 12, 2016).

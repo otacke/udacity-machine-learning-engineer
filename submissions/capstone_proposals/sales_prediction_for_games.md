@@ -45,6 +45,8 @@ I can also use new data from the data sources (VGChartz, Metacritics, IGN) that 
 
 Finally, some people at Kaggle seem to be experimenting with prediction models, too. I could compare the performance of my model with theirs. Also, I could check how the model compares to [SimExchange](http://www.simexchange.com/). This platform tries to predict video game sales based on the concept of ["wisdom of crowds"](https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds).
 
+**TODO: Find a different model as benchmark.**
+
 ### Evaluation Metrics
 My goal is to predict the sales volume of video games, which simply is an integer. I can apply common statistic approaches to compare and visualize the deviation of the predictions from the correct results. The explained variance score or the R² score could be used to quantify the performance of my model.
 

@@ -37,6 +37,9 @@ _(approx. 2-3 paragraphs)_
 
 _In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem._
 
+- data collection (own little website, maybe gamified), because there's no labeled data that tells me if two different string could still be considered equal - and different people might decide different about wrong or correct answers; might also judge about the complexity of a word
+- feature generation, e.g. length of strings (some metrics may be better suited for certain word lenghts) or language (some metrics may work better for certain languages) or complexity (number of syllables)/commonness (frequency in wikipedia articles) (errors for complex or uncommon words might not be as severe as for simple words)
+
 ### Solution Statement
 _(approx. 1 paragraph)_
 

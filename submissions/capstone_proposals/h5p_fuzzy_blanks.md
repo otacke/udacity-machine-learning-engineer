@@ -4,6 +4,8 @@ Oliver Tacke
 
 December 31st, 2050
 
+**TODO: proof-reading, literature, beautification**
+
 ## Proposal
 _(approx. 2-3 pages)_
 

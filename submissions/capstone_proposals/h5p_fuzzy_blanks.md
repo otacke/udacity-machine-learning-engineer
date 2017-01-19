@@ -40,16 +40,26 @@ _In this section, the dataset(s) and/or input(s) being considered for the projec
 The biggest challenge for this proposal is the availability of a suitable data set. I don't think there is one yet. I'll have to create one on my own. Possible columns could be:
 
   * **master word:** The correct solution to compare with (string)
-  * **variation 1:** match rating for master word with one character insertion, deletion, substitution or swapping (boolean)
-  * **variation 2:** match rating for master word with one character insertion, deletion, substitution or swapping (boolean)
-  * **variation 3:** match rating for master word with one character insertion, deletion, substitution or swapping (boolean)
-  * **variation 4:** match rating for master word with two character insertions, deletions, substitutions or swappings (boolean)
-  * **variation 5:** match rating for master word with two character insertions, deletions, substitutions or swappings (boolean)
-  * **variation 6:** match rating for master word with two character insertions, deletions, substitutions or swappings (boolean)
-  * **variation 7:** match rating for master word with three character insertions, deletions, substitutions or swappings (boolean)
-  * **variation 8:** match rating for master word with three character insertions, deletions, substitutions or swappings (boolean)
-  * **variation 9:** match rating for master word with four character insertions, deletions, substitutions or swappings (boolean)
-  * **variation 10:** match rating for master word with five character insertions, deletions, substitutions or swappings (boolean)
+  * **variation 1:** master word with one character insertion, deletion, substitution or swapping (string)
+  * **rating 1:** rating for variation 1 (boolean)
+  * **variation 2:** master word with one character insertion, deletion, substitution or swapping (string)
+  * **rating 2:** rating for variation 2 (boolean)
+  * **variation 3:** master word with one character insertion, deletion, substitution or swapping (boolean)
+  * **rating 3:** rating for variation 3 (boolean)
+  * **variation 4:** master word with two character insertions, deletions, substitutions or swappings (boolean)
+  * **rating 4:** rating for variation 4 (boolean)
+  * **variation 5:** master word with two character insertions, deletions, substitutions or swappings (boolean)
+  * **rating 5:** rating for variation 5 (boolean)
+  * **variation 6:** master word with two character insertions, deletions, substitutions or swappings (boolean)
+  * **rating 6:** rating for variation 6 (boolean)
+  * **variation 7:** master word with three character insertions, deletions, substitutions or swappings (boolean)
+  * **rating 7:** rating for variation 7 (boolean)
+  * **variation 8:** master word with three character insertions, deletions, substitutions or swappings (boolean)
+  * **rating 8:** rating for variation 8 (boolean)
+  * **variation 9:** master word with four character insertions, deletions, substitutions or swappings (boolean)
+  * **rating 9:** rating for variation 9 (boolean)
+  * **variation 10:** master word with five character insertions, deletions, substitutions or swappings (boolean)
+  * **rating 10:** rating for variation 10 (boolean)
   * **complexity/commonness:** rating (integer [1..3])
   * **length:** number of characters of the master word (integer)
   * **language:** language code (string)
@@ -67,8 +77,7 @@ _(approx. 1 paragraph)_
 
 _In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once)._
 
-- parameters tuned for best classification
-- combination of classifiers
+The solution will be a classifier. It will take two strings as input and either classify them as similar enough to be a match or not. There are several options. The simplest one would be to optimize the separation threshold for each algorithm individually based on just the two strings as input and the match ratings as labels. A more sophisticated approach would be to take all the algorithms, combine their results and to also take into account the additional features such as word length or complexity/commonness. Possibly, it could be enough to just use the algorithms that's best for a given word length. However, since the algorithms' results and the additional features are numerical values, I could e.g. test the performance of a support vector classifier, or I could try how competitive a neural network approach might be.
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_

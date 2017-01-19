@@ -37,9 +37,17 @@ _(approx. 2-3 paragraphs)_
 
 _In this section, the dataset(s) and/or input(s) being considered for the project should be thoroughly described, such as how they relate to the problem and why they should be used. Information such as how the dataset or input is (was) obtained, and the characteristics of the dataset or input, should be included with relevant references and citations as necessary It should be clear how the dataset(s) or input(s) will be used in the project and whether their use is appropriate given the context of the problem._
 
-- data collection (own little website, maybe gamified), because there's no labeled data that tells me if two different string could still be considered equal - and different people might decide different about wrong or correct answers; might also judge about the complexity of a word
-- feature generation, e.g. length of strings (some metrics may be better suited for certain word lenghts) or language (some metrics may work better for certain languages) or complexity (number of syllables)/commonness (frequency in wikipedia articles) (errors for complex or uncommon words might not be as severe as for simple words)
-- possibly: Does Google offer an API for it's search engine? Could be possible to present Google with a misspelled word and to compare it with the proposed word - if that's the correct solution, we could rate this as a match. (THX to Anja Lorenz for this idea).
+The biggest challenge for this proposal is the availability of a suitable data set. I don't think there is one yet. I'll have to create one on my own.
+
+**TODO: row titles**
+
+My ideal set would consist of rows that contain a (master) word with different similar strings of varying similarity - and an indicator if those similar strings can count as a match. Those are my labels. Since different people can have different judgements about similarity, I also want to have several entries for the same master word with labels for the similar words given by different people. My ideal data set would also contain an indicator if complexity or commonness, because errors for complex or uncommon words might not be as severe as for simple or frequently used words. Those features should also be added by different people. Furthermore, some additional features might be generated or obtained automatically, e.g. string length (some metrics may be better suited for certain word lenghts) or language (some metrics may work better for certain languages).
+
+Data might be collected using a crowd sourcing approach. A website could show people a word and ask for an estimate of complexity or commonness. Afterwards, the website could present 10 variations of different similarity and ask whether the person would rate them as a fair match. This is rather boring, but maybe Gamification or other form of motivation might help.
+
+For me, it's hard to anticipate in advance how many rows of data would be necessary. Using a rule of thumb approach to generate an artificial dataset and plotting the learning curves (training error and the cross validation error in relation to the training set size) might give me a hint. I guess, my minimum goal would be to collect data for 1,000 words with 10 variations and ratings from  at least 5 different persons. Consequently, 5,000 people would have to rate 10 word pairs.
+
+Also, I might hava a look at the APIs that Google is offering for their search engine. I could present a misspelled word to the search engine and compare word that Google suggests to the correctly spelled word. If both are identical, then we have a match (thanks to Anja Lorenz for this idea).
 
 ### Solution Statement
 _(approx. 1 paragraph)_

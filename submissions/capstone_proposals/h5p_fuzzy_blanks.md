@@ -39,6 +39,7 @@ _In this section, the dataset(s) and/or input(s) being considered for the projec
 
 - data collection (own little website, maybe gamified), because there's no labeled data that tells me if two different string could still be considered equal - and different people might decide different about wrong or correct answers; might also judge about the complexity of a word
 - feature generation, e.g. length of strings (some metrics may be better suited for certain word lenghts) or language (some metrics may work better for certain languages) or complexity (number of syllables)/commonness (frequency in wikipedia articles) (errors for complex or uncommon words might not be as severe as for simple words)
+- possibly: Does Google offer an API for it's search engine? Could be possible to present Google with a misspelled word and to compare it with the proposed word - if that's the correct solution, we could rate this as a match. (THX to Anja Lorenz for this idea).
 
 ### Solution Statement
 _(approx. 1 paragraph)_

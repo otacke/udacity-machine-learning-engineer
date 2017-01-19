@@ -53,7 +53,9 @@ _(approximately 1-2 paragraphs)_
 
 _In this section, provide the details for a benchmark model or result that relates to the domain, problem statement, and intended solution. Ideally, the benchmark model or result contextualizes existing methods or known information in the domain and problem given, which could then be objectively compared to the solution. Describe how the benchmark model or result is measurable (can be measured by some metric and clearly observed) with thorough detail._
 
-- fuzzy options of Vips in Stud.IP
+The performance of my solution could be compared to the results of other plain string distance algorithms (with fixed thresholds), simply by comparing the classification results. In particular, a comparison to similar solutions might be interesting. I have already been looking for "fuzzy" solution comparison within different Learning Management Systems (LMSs), but so far I have only found one: [Vips](http://develop.studip.de/studip/plugins.php/pluginmarket/presenting/details/81097da5ef66a002998b75d5eeece1f0) for [Stud.IP](http://www.studip.de/).
+
+Vips offers to use one of two algorithms without further options for identifying close answers to a correct solution. They both rely on the implementation found in [PHP](http://php.net/). Number one is based on the [Levenshtein distance](https://en.wikipedia.org/wiki/Levenshtein_distance) that I also implemented. Number two uses the [Soundex algorithm](https://en.wikipedia.org/wiki/Soundex) that's based on English phoenetics. The latter seems rather surprising, because Stud.IP is only used in Germany (cmp. [MindWires LLC](http://mfeldstein.wpengine.netdna-cdn.com/wp-content/uploads/2016/11/e-Literate-European-LMS-Market-Dynamics-Fall-2016.pdf), 2016, p. 7 for an overview of LMS usage in Europe).
 
 ### Evaluation Metrics
 _(approx. 1-2 paragraphs)_

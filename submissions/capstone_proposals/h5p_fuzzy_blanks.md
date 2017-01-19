@@ -44,21 +44,21 @@ The biggest challenge for this proposal is the availability of a suitable data s
   * **rating 1:** rating for variation 1 (boolean)
   * **variation 2:** master word with one character insertion, deletion, substitution or swapping (string)
   * **rating 2:** rating for variation 2 (boolean)
-  * **variation 3:** master word with one character insertion, deletion, substitution or swapping (boolean)
+  * **variation 3:** master word with one character insertion, deletion, substitution or swapping (string)
   * **rating 3:** rating for variation 3 (boolean)
-  * **variation 4:** master word with two character insertions, deletions, substitutions or swappings (boolean)
+  * **variation 4:** master word with two character insertions, deletions, substitutions or swappings (string)
   * **rating 4:** rating for variation 4 (boolean)
-  * **variation 5:** master word with two character insertions, deletions, substitutions or swappings (boolean)
+  * **variation 5:** master word with two character insertions, deletions, substitutions or swappings (string)
   * **rating 5:** rating for variation 5 (boolean)
-  * **variation 6:** master word with two character insertions, deletions, substitutions or swappings (boolean)
+  * **variation 6:** master word with two character insertions, deletions, substitutions or swappings (string)
   * **rating 6:** rating for variation 6 (boolean)
-  * **variation 7:** master word with three character insertions, deletions, substitutions or swappings (boolean)
+  * **variation 7:** master word with three character insertions, deletions, substitutions or swappings (string)
   * **rating 7:** rating for variation 7 (boolean)
-  * **variation 8:** master word with three character insertions, deletions, substitutions or swappings (boolean)
+  * **variation 8:** master word with three character insertions, deletions, substitutions or swappings (string)
   * **rating 8:** rating for variation 8 (boolean)
-  * **variation 9:** master word with four character insertions, deletions, substitutions or swappings (boolean)
+  * **variation 9:** master word with four character insertions, deletions, substitutions or swappings (string)
   * **rating 9:** rating for variation 9 (boolean)
-  * **variation 10:** master word with five character insertions, deletions, substitutions or swappings (boolean)
+  * **variation 10:** master word with five character insertions, deletions, substitutions or swappings (string)
   * **rating 10:** rating for variation 10 (boolean)
   * **complexity/commonness:** rating (integer [1..3])
   * **length:** number of characters of the master word (integer)
@@ -77,7 +77,7 @@ _(approx. 1 paragraph)_
 
 _In this section, clearly describe a solution to the problem. The solution should be applicable to the project domain and appropriate for the dataset(s) or input(s) given. Additionally, describe the solution thoroughly such that it is clear that the solution is quantifiable (the solution can be expressed in mathematical or logical terms) , measurable (the solution can be measured by some metric and clearly observed), and replicable (the solution can be reproduced and occurs more than once)._
 
-The solution will be a classifier. It will take two strings as input and either classify them as similar enough to be a match or not. There are several options. The simplest one would be to optimize the separation threshold for each algorithm individually based on just the two strings as input and the match ratings as labels. A more sophisticated approach would be to take all the algorithms, combine their results and to also take into account the additional features such as word length or complexity/commonness. Possibly, it could be enough to just use the algorithms that's best for a given word length. However, since the algorithms' results and the additional features are numerical values, I could e.g. test the performance of a support vector classifier, or I could try how competitive a neural network approach might be.
+The solution will be a classifier. It will take two strings as input and either classify them as similar enough to be a match or not. There are several options. The simplest one would be to optimize the separation threshold for each algorithm individually based on just the two strings as input and the match ratings as labels. A more sophisticated approach would be to take all the algorithms, combine their results and to also take into account the additional features such as word length or complexity/commonness. Possibly, it could be enough to just use the algorithms that's best for a given word length. However, since the algorithms' results and the additional features (and even the boolean labels as 0 and 1) are numerical values, I could e.g. test the performance of a support vector classifier, or I could try how competitive a neural network approach might be.
 
 ### Benchmark Model
 _(approximately 1-2 paragraphs)_
@@ -93,7 +93,7 @@ _(approx. 1-2 paragraphs)_
 
 _In this section, propose at least one evaluation metric that can be used to quantify the performance of both the benchmark model and the solution model. The evaluation metric(s) you propose should be appropriate given the context of the data, the problem statement, and the intended solution. Describe how the evaluation metric(s) are derived and provide an example of their mathematical representations (if applicable). Complex evaluation metrics should be clearly defined and quantifiable (can be expressed in mathematical or logical terms)._
 
-- F1 score
+I am facing a classifier, so I can quantify the performance using several metrics. The _accuracy_ would tell me the fraction of correct predictions - and it is quite easy to interpret. On the other hand, there's the [accuracy paradox](https://en.wikipedia.org/wiki/Accuracy_paradox) which can be misleading, so the F1 score would be my metric of choice.
 
 ### Project Design
 _(approx. 1 page)_

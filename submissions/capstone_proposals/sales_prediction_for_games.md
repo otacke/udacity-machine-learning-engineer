@@ -1,7 +1,7 @@
 # Machine Learning Engineer Nanodegree
 ## Capstone Proposal
 Oliver Tacke  
-_January 15, 2017_
+_January 20, 2017_
 
 ## Proposal
 It was more difficult than I thought to come up with a proposal for a capstone project. There are tons of interesting datasets out there and dozens of questions that you could possibly ask, but I'd love to create something that someone actually needed.
@@ -43,9 +43,9 @@ The dataset seems to be quite large compared to the number of features that I in
 
 I can also use new data from the data sources (VGChartz, Metacritics, IGN) that are not available yet. This would basically be a real world test.
 
-Finally, some people at Kaggle seem to be experimenting with prediction models, too. I could compare the performance of my model with theirs. Also, I could check how the model compares to [SimExchange](http://www.simexchange.com/). This platform tries to predict video game sales based on the concept of ["wisdom of crowds"](https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds).
+Finally, I can compare my results with those of others. Some people at Kaggle seem to be experimenting with prediction models, too. For example, [Jonathan Bouchet built a polynomial regression model in R and reports an R² score of 0.098404](https://www.kaggle.com/jonathanbouchet/d/rush4ratio/video-game-sales-with-ratings/vg-sales-score-prediction/notebook). Since the best possible score is 1.0, there might still be some room for improvement.
 
-**TODO: Find a different model as benchmark.**
+Also, I could check how the model compares to [SimExchange](http://www.simexchange.com/). This platform tries to predict video game sales based on the concept of ["wisdom of crowds"](https://en.wikipedia.org/wiki/The_Wisdom_of_Crowds).
 
 ### Evaluation Metrics
 My goal is to predict the sales volume of video games, which simply is an integer. I can apply common statistic approaches to compare and visualize the deviation of the predictions from the correct results. The explained variance score or the R² score could be used to quantify the performance of my model.

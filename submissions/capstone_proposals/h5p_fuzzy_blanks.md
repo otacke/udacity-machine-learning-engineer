@@ -1,9 +1,8 @@
-# Fuzzy string comparison for interactive learning resources with H5P (I need a better title ;-))
+# It's a match! Fuzzy string comparison for interactive learning resources
+
 ## Capstone Proposal
 Oliver Tacke  
 _January 20, 2017_
-
-**TODO: literature, beautification**
 
 ## Proposal
 It was more difficult than I thought to come up with a proposal for a capstone project. There are tons of interesting datasets out there and dozens of questions that you could possibly ask, but I'd love to create something that someone actually needed.
@@ -11,7 +10,7 @@ I contacted a friend of mine who co-created [OpenSNP](https://opensnp.org/), a p
 
 I chose to have a closer look at the field of education where I know a thing or two. I found a paper that dealt with undergraduate student generic problem-solving skills. It was based on an empirical study that had produced some data. It could have been used for creating a predictive model for problem solving skills performance, for detecting/classifying sub-groups of students, etc. Unfortunately, the data was not freely available. We need more Open Science! I contacted the author, but I guess he was more afraid of "losing" his data than excited about getting new tools he could use. He wanted to have my resume - that he received - but I never heard of him again.
 
-Eventually, I stumbled upon two nice datasets that might allow to predict the sales figures of video games based on scores from critics. I [completed a proposal for a capstone project](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_proposals/sales_prediction_for_games.md), but then I decided to at least pursue an idea that I had mentioned briefly. However, it might be out of scale for this capstone project and I should probably go for it later on ...
+Eventually, I stumbled upon two nice data sets that might allow to predict the sales figures of video games based on scores from critics. I [completed a proposal for a capstone project](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_proposals/sales_prediction_for_games.md), but then I decided to at least pursue an idea that I had mentioned briefly. However, it might be out of scale for this capstone project and I should probably go for it later on ...
 
 ### Domain Background
 In recent years, there have been many initiatives to develop and publish Open Educational Resources (OERs). Those "are any type of educational materials that are in the public domain or introduced with an open license. The nature of these open materials means that anyone can legally and freely copy, use, adapt and re-share them. OERs range from textbooks to curricula, syllabi, lecture notes, assignments, tests, projects, audio, video and animation." ([United Nations, 2016](http://www.unesco.org/new/en/communication-and-information/access-to-knowledge/open-educational-resources/what-are-open-educational-resources-oers/)) Living up to this attitude, in 2012 the Norwegian organization _National Digital Learning Arena_ funded the initial development of H5P. H5P is an open-source framework that allows to create, share and reuse interactive content, e.g. interactive videos or presentations with different kinds of quizzes.

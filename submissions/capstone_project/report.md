@@ -1,5 +1,5 @@
 # Predicting Video Game Sales
-## Capstone Project
+## Capstone Project "Machine Learning Engineer"
 Oliver Tacke  
 _December 31st, 2050_
 

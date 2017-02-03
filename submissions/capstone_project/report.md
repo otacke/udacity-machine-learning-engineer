@@ -77,6 +77,7 @@ In this section, you will need to provide a clearly defined benchmark result or 
 - _Has some result or value been provided that acts as a benchmark for measuring performance?_
 - _Is it clear how this result or value was obtained (whether by data or by hypothesis)?_
 
+*TODO: Check whether to duplicate or move the benchmark info from above.*
 
 ## III. Methodology
 _(approx. 3-5 pages)_

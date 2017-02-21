@@ -1,0 +1,1081 @@
+,Id,Regressor,R2_Train,R2_Test,R2_Gap,Calc_Time,Standardized,Scaled_0_1,Boxcoxed,Outlier_Threshold,Outlier_Multiety,Test_Size,N_Splits,RND
+0,1.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.277705240266,0.50538018015,0.227674939884,9.06100010872,False,False,False,1.5,1.0,0.2,15.0,31415.0
+0,2.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.75109250452,0.342424453504,0.408668051016,187.059999943,False,False,False,1.5,1.0,0.2,15.0,31415.0
+0,3.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.279956046334,0.660321709274,0.38036566294,4.37199997902,False,False,False,1.5,1.0,0.2,15.0,31415.0
+0,4.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.135572234662,0.481281305826,0.345709071164,33.4769999981,False,False,False,1.5,1.0,0.2,15.0,31415.0
+0,5.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.26470953861,0.558141420159,0.293431881549,125.273000002,False,False,False,1.5,1.0,0.2,15.0,31415.0
+0,6.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.277705240266,0.50538018015,0.227674939884,8.08100008965,False,False,False,1.5,1.0,0.25,15.0,31415.0
+0,7.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.75109250452,0.342424453504,0.408668051016,168.822000027,False,False,False,1.5,1.0,0.25,15.0,31415.0
+0,8.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.279956046334,0.660321709274,0.38036566294,3.95799994469,False,False,False,1.5,1.0,0.25,15.0,31415.0
+0,9.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.135572234662,0.481281305826,0.345709071164,30.5860002041,False,False,False,1.5,1.0,0.25,15.0,31415.0
+0,10.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.26470953861,0.558141420159,0.293431881549,129.715999842,False,False,False,1.5,1.0,0.25,15.0,31415.0
+0,11.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.183123464683,0.564781209199,0.381657744516,9.02600002289,False,False,False,1.5,2.0,0.2,15.0,31415.0
+0,12.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.540650519541,0.320255251811,0.220395267729,410.01699996,False,False,False,1.5,2.0,0.2,15.0,31415.0
+0,13.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.164823928093,0.375691311368,0.210867383275,4.97500014305,False,False,False,1.5,2.0,0.2,15.0,31415.0
+0,14.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=False, fit_path=True, max_iter=1200, normalize=True,
+     positive=False, precompute='auto', verbose=False)",0.108073166902,0.417103356361,0.309030189459,35.6470000744,False,False,False,1.5,2.0,0.2,15.0,31415.0
+0,15.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.176214137225,0.583945269204,0.407731131979,133.155999899,False,False,False,1.5,2.0,0.2,15.0,31415.0
+0,16.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.183123464683,0.564781209199,0.381657744516,8.35899996758,False,False,False,1.5,2.0,0.25,15.0,31415.0
+0,17.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.540650519541,0.320255251811,0.220395267729,368.95600009,False,False,False,1.5,2.0,0.25,15.0,31415.0
+0,18.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.164823928093,0.375691311368,0.210867383275,4.72099995613,False,False,False,1.5,2.0,0.25,15.0,31415.0
+0,19.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=False, fit_path=True, max_iter=1200, normalize=True,
+     positive=False, precompute='auto', verbose=False)",0.108073166902,0.417103356361,0.309030189459,36.4470000267,False,False,False,1.5,2.0,0.25,15.0,31415.0
+0,20.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.176214137225,0.583945269204,0.407731131979,127.874000072,False,False,False,1.5,2.0,0.25,15.0,31415.0
+0,21.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.235062788645,0.336876355272,0.101813566628,9.40299987793,False,False,False,1.5,3.0,0.2,15.0,31415.0
+0,22.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.460178127497,0.100140581519,0.360037545978,504.361000061,False,False,False,1.5,3.0,0.2,15.0,31415.0
+0,23.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.335732016937,0.477428181314,0.141696164377,5.53299999237,False,False,False,1.5,3.0,0.2,15.0,31415.0
+0,24.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.193505371422,0.199651278916,0.00614590749414,40.3110001087,False,False,False,1.5,3.0,0.2,15.0,31415.0
+0,25.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.230750740507,0.308838950728,0.0780882102214,163.02699995,False,False,False,1.5,3.0,0.2,15.0,31415.0
+0,26.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.235062788645,0.336876355272,0.101813566628,12.6530001163,False,False,False,1.5,3.0,0.25,15.0,31415.0
+0,27.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.460178127497,0.100140581519,0.360037545978,459.905999899,False,False,False,1.5,3.0,0.25,15.0,31415.0
+0,28.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.335732016937,0.477428181314,0.141696164377,4.992000103,False,False,False,1.5,3.0,0.25,15.0,31415.0
+0,29.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.193505371422,0.199651278916,0.00614590749414,35.0169999599,False,False,False,1.5,3.0,0.25,15.0,31415.0
+0,30.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.230750740507,0.308838950728,0.0780882102214,133.7900002,False,False,False,1.5,3.0,0.25,15.0,31415.0
+0,31.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=False, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.278614959966,0.375776592864,0.0971616328985,7.18099999428,False,False,False,1.7,1.0,0.2,15.0,31415.0
+0,32.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.750770862873,0.446572383164,0.304198479709,201.409999847,False,False,False,1.7,1.0,0.2,15.0,31415.0
+0,33.0,"DecisionTreeRegressor(criterion='mse', max_depth=6, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.331925138624,0.245100255253,0.0868248833705,4.16499996185,False,False,False,1.7,1.0,0.2,15.0,31415.0
+0,34.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.141854463114,0.208887341776,0.0670328786624,29.3339998722,False,False,False,1.7,1.0,0.2,15.0,31415.0
+0,35.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.266221792123,0.385207868709,0.118986076586,119.460999966,False,False,False,1.7,1.0,0.2,15.0,31415.0
+0,36.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.278986674808,0.39061063148,0.111623956672,7.19000005722,False,False,False,1.7,1.0,0.25,15.0,31415.0
+0,37.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.750770862873,0.446572383164,0.304198479709,180.159999847,False,False,False,1.7,1.0,0.25,15.0,31415.0
+0,38.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.283834912631,0.400971588538,0.117136675907,4.09699988365,False,False,False,1.7,1.0,0.25,15.0,31415.0
+0,39.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.141854463114,0.208887341776,0.0670328786624,28.7479999065,False,False,False,1.7,1.0,0.25,15.0,31415.0
+0,40.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.266221792123,0.385207868709,0.118986076586,112.782999992,False,False,False,1.7,1.0,0.25,15.0,31415.0
+0,41.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.188566190669,0.206406469036,0.0178402783674,8.67899990082,False,False,False,1.7,2.0,0.2,15.0,31415.0
+0,42.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.544614474719,-0.0554290760491,0.600043550768,420.541999817,False,False,False,1.7,2.0,0.2,15.0,31415.0
+0,43.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.226730897134,-0.521617940942,0.748348838076,5.00999999046,False,False,False,1.7,2.0,0.2,15.0,31415.0
+0,44.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.116260096573,0.314867605026,0.198607508454,36.2869999409,False,False,False,1.7,2.0,0.2,15.0,31415.0
+0,45.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.18214120647,0.226188797712,0.0440475912421,133.281000137,False,False,False,1.7,2.0,0.2,15.0,31415.0
+0,46.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.188566190669,0.206406469036,0.0178402783674,8.21000003815,False,False,False,1.7,2.0,0.25,15.0,31415.0
+0,47.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.544614474719,-0.0554290760491,0.600043550768,380.780999899,False,False,False,1.7,2.0,0.25,15.0,31415.0
+0,48.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.226730897134,-0.521617940942,0.748348838076,4.80900001526,False,False,False,1.7,2.0,0.25,15.0,31415.0
+0,49.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.116260096573,0.314867605026,0.198607508454,33.7030000687,False,False,False,1.7,2.0,0.25,15.0,31415.0
+0,50.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.18214120647,0.226188797712,0.0440475912421,124.480000019,False,False,False,1.7,2.0,0.25,15.0,31415.0
+0,51.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.247330821256,0.256497220312,0.00916639905677,8.84700012207,False,False,False,1.7,3.0,0.2,15.0,31415.0
+0,52.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.450371252312,-0.0417777824287,0.49214903474,523.701999903,False,False,False,1.7,3.0,0.2,15.0,31415.0
+0,53.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.364611135888,0.351067651746,0.0135434841426,5.7009999752,False,False,False,1.7,3.0,0.2,15.0,31415.0
+0,54.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=False, fit_path=True, max_iter=1200, normalize=True,
+     positive=False, precompute='auto', verbose=False)",0.207805744956,0.203987764904,0.00381798005223,41.2019999027,False,False,False,1.7,3.0,0.2,15.0,31415.0
+0,55.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.242280076261,0.252831954581,0.0105518783206,154.23300004,False,False,False,1.7,3.0,0.2,15.0,31415.0
+0,56.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.247625293865,0.266096943021,0.0184716491563,9.13499999046,False,False,False,1.7,3.0,0.25,15.0,31415.0
+0,57.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.450371252312,-0.0417777824287,0.49214903474,473.036000013,False,False,False,1.7,3.0,0.25,15.0,31415.0
+0,58.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.364611135888,0.351067651746,0.0135434841426,5.28999996185,False,False,False,1.7,3.0,0.25,15.0,31415.0
+0,59.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=False, fit_path=True, max_iter=1200, normalize=True,
+     positive=False, precompute='auto', verbose=False)",0.207805744956,0.203987764904,0.00381798005223,37.4000000954,False,False,False,1.7,3.0,0.25,15.0,31415.0
+0,60.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.242280076261,0.252831954581,0.0105518783206,141.44900012,False,False,False,1.7,3.0,0.25,15.0,31415.0
+0,61.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.286507191061,-0.0270820002212,0.313589191282,8.47399997711,False,False,False,2.0,1.0,0.2,15.0,31415.0
+0,62.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.745029901829,0.246238860923,0.498791040905,235.146999836,False,False,False,2.0,1.0,0.2,15.0,31415.0
+0,63.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.291995900917,-0.216303676522,0.50829957744,4.70700001717,False,False,False,2.0,1.0,0.2,15.0,31415.0
+0,64.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.151284246431,0.113375798639,0.0379084477919,32.9889998436,False,False,False,2.0,1.0,0.2,15.0,31415.0
+0,65.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.272446181867,0.00343784526242,0.269008336605,132.587999821,False,False,False,2.0,1.0,0.2,15.0,31415.0
+0,66.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.286181612581,-0.0251543948324,0.311336007413,9.50600004196,False,False,False,2.0,1.0,0.25,15.0,31415.0
+0,67.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.745029901829,0.246238860923,0.498791040905,213.032999992,False,False,False,2.0,1.0,0.25,15.0,31415.0
+0,68.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.291995900917,-0.216303676522,0.50829957744,4.30799984932,False,False,False,2.0,1.0,0.25,15.0,31415.0
+0,69.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.151284246431,0.113375798639,0.0379084477919,30.2320001125,False,False,False,2.0,1.0,0.25,15.0,31415.0
+0,70.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.272446181867,0.00343784526242,0.269008336605,123.363000154,False,False,False,2.0,1.0,0.25,15.0,31415.0
+0,71.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=False, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.193384735622,0.00812818197783,0.185256553644,9.77699995041,False,False,False,2.0,2.0,0.2,15.0,31415.0
+0,72.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.552357070721,0.00218994963209,0.550167121089,448.531000137,False,False,False,2.0,2.0,0.2,15.0,31415.0
+0,73.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.170448418431,0.28974005114,0.119291632709,5.22099995613,False,False,False,2.0,2.0,0.2,15.0,31415.0
+0,74.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=False, fit_path=True, max_iter=1200, normalize=True,
+     positive=False, precompute='auto', verbose=False)",0.122018636969,-0.145753495994,0.267772132963,42.9489998817,False,False,False,2.0,2.0,0.2,15.0,31415.0
+0,75.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.186530544984,0.0627927031334,0.123737841851,145.541000128,False,False,False,2.0,2.0,0.2,15.0,31415.0
+0,76.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=False, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.193384735622,0.00812818197783,0.185256553644,10.3910000324,False,False,False,2.0,2.0,0.25,15.0,31415.0
+0,77.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.552357070721,0.00218994963209,0.550167121089,408.996999979,False,False,False,2.0,2.0,0.25,15.0,31415.0
+0,78.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.170448418431,0.28974005114,0.119291632709,5.08999991417,False,False,False,2.0,2.0,0.25,15.0,31415.0
+0,79.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=False, fit_path=True, max_iter=1200, normalize=True,
+     positive=False, precompute='auto', verbose=False)",0.122018636969,-0.145753495994,0.267772132963,40.2829999924,False,False,False,2.0,2.0,0.25,15.0,31415.0
+0,80.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.186530544984,0.0627927031334,0.123737841851,145.207999945,False,False,False,2.0,2.0,0.25,15.0,31415.0
+0,81.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.292209556094,0.08939782252,0.202811733574,10.6549999714,False,False,False,2.0,3.0,0.2,15.0,31415.0
+0,82.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.439478556745,0.089440035416,0.350038521329,543.585000038,False,False,False,2.0,3.0,0.2,15.0,31415.0
+0,83.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.4827196358,0.234065105968,0.248654529832,5.56299996376,False,False,False,2.0,3.0,0.2,15.0,31415.0
+0,84.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.258125523159,0.0104254995373,0.247700023622,41.1480000019,False,False,False,2.0,3.0,0.2,15.0,31415.0
+0,85.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.28873034412,0.060583623077,0.228146721043,151.361999989,False,False,False,2.0,3.0,0.2,15.0,31415.0
+0,86.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.292209556094,0.08939782252,0.202811733574,9.47699999809,False,False,False,2.0,3.0,0.25,15.0,31415.0
+0,87.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.439478556745,0.089440035416,0.350038521329,491.278000116,False,False,False,2.0,3.0,0.25,15.0,31415.0
+0,88.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.407950199701,0.0769266288133,0.331023570887,5.11800003052,False,False,False,2.0,3.0,0.25,15.0,31415.0
+0,89.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.258125523159,0.0104254995373,0.247700023622,35.621999979,False,False,False,2.0,3.0,0.25,15.0,31415.0
+0,90.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.28873034412,0.060583623077,0.228146721043,139.325999975,False,False,False,2.0,3.0,0.25,15.0,31415.0
+0,91.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.277705240266,0.50538018015,0.227674939884,3.21399998665,False,True,False,1.5,1.0,0.2,15.0,31415.0
+0,92.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.63637410222,-1.49376347183,0.142610630388,1.87199997902,False,True,False,1.5,1.0,0.2,15.0,31415.0
+0,93.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.279956046334,0.660321709274,0.38036566294,2.3140001297,False,True,False,1.5,1.0,0.2,15.0,31415.0
+0,94.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.000178592340774,0.000178592340774,12.1410000324,False,True,False,1.5,1.0,0.2,15.0,31415.0
+0,95.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.17822516224,0.300769263269,0.12254410103,84.1419999599,False,True,False,1.5,1.0,0.2,15.0,31415.0
+0,96.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.277705240266,0.50538018015,0.227674939884,2.98399996758,False,True,False,1.5,1.0,0.25,15.0,31415.0
+0,97.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.63637410222,-1.49376347183,0.142610630388,1.78199982643,False,True,False,1.5,1.0,0.25,15.0,31415.0
+0,98.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.279956046334,0.660321709274,0.38036566294,2.19199991226,False,True,False,1.5,1.0,0.25,15.0,31415.0
+0,99.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.000178592340774,0.000178592340774,11.7490000725,False,True,False,1.5,1.0,0.25,15.0,31415.0
+0,100.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.17822516224,0.300769263269,0.12254410103,80.3340001106,False,True,False,1.5,1.0,0.25,15.0,31415.0
+0,101.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.183123464683,0.564781209199,0.381657744516,3.48399996758,False,True,False,1.5,2.0,0.2,15.0,31415.0
+0,102.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-3.11201090019,-7.71017294586,4.59816204567,6.87599992752,False,True,False,1.5,2.0,0.2,15.0,31415.0
+0,103.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.164823928093,0.375691311368,0.210867383275,2.71500015259,False,True,False,1.5,2.0,0.2,15.0,31415.0
+0,104.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.00691706540544,0.00691706540544,16.6670000553,False,True,False,1.5,2.0,0.2,15.0,31415.0
+0,105.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.146347318189,0.455701973021,0.309354654833,99.2860000134,False,True,False,1.5,2.0,0.2,15.0,31415.0
+0,106.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.183123464683,0.564781209199,0.381657744516,3.8789999485,False,True,False,1.5,2.0,0.25,15.0,31415.0
+0,107.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-3.11201090019,-7.71017294586,4.59816204567,6.53699994087,False,True,False,1.5,2.0,0.25,15.0,31415.0
+0,108.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.164823928093,0.375691311368,0.210867383275,2.76799988747,False,True,False,1.5,2.0,0.25,15.0,31415.0
+0,109.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.00691706540544,0.00691706540544,14.4389998913,False,True,False,1.5,2.0,0.25,15.0,31415.0
+0,110.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.146347318189,0.455701973021,0.309354654833,88.760999918,False,True,False,1.5,2.0,0.25,15.0,31415.0
+0,111.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.235062788645,0.336876355272,0.101813566628,3.87599992752,False,True,False,1.5,3.0,0.2,15.0,31415.0
+0,112.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.64735643994,-0.204521776017,0.442834663923,12.6970000267,False,True,False,1.5,3.0,0.2,15.0,31415.0
+0,113.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.335732016937,0.477428181314,0.141696164377,2.78200006485,False,True,False,1.5,3.0,0.2,15.0,31415.0
+0,114.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0503796982844,0.0503796982844,13.993999958,False,True,False,1.5,3.0,0.2,15.0,31415.0
+0,115.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.165207992,0.205980656232,0.0407726642326,97.1809999943,False,True,False,1.5,3.0,0.2,15.0,31415.0
+0,116.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.235062788645,0.336876355272,0.101813566628,3.69900012016,False,True,False,1.5,3.0,0.25,15.0,31415.0
+0,117.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.64735643994,-0.204521776017,0.442834663923,11.9069998264,False,True,False,1.5,3.0,0.25,15.0,31415.0
+0,118.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.335732016937,0.477428181314,0.141696164377,2.76899981499,False,True,False,1.5,3.0,0.25,15.0,31415.0
+0,119.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0503796982844,0.0503796982844,14.5329999924,False,True,False,1.5,3.0,0.25,15.0,31415.0
+0,120.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.165207992,0.205980656232,0.0407726642326,94.8650000095,False,True,False,1.5,3.0,0.25,15.0,31415.0
+0,121.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.278986674808,0.39061063148,0.111623956672,3.02300000191,False,True,False,1.7,1.0,0.2,15.0,31415.0
+0,122.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.84001555757,-1.85468977763,0.0146742200653,1.90300011635,False,True,False,1.7,1.0,0.2,15.0,31415.0
+0,123.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.283834912631,0.400971588538,0.117136675907,2.33599996567,False,True,False,1.7,1.0,0.2,15.0,31415.0
+0,124.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0117851014793,0.0117851014793,14.1150000095,False,True,False,1.7,1.0,0.2,15.0,31415.0
+0,125.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.177842548862,0.323013296229,0.145170747367,88.7929999828,False,True,False,1.7,1.0,0.2,15.0,31415.0
+0,126.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.278986674808,0.39061063148,0.111623956672,3.34400010109,False,True,False,1.7,1.0,0.25,15.0,31415.0
+0,127.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.84001555757,-1.85468977763,0.0146742200653,1.81599998474,False,True,False,1.7,1.0,0.25,15.0,31415.0
+0,128.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.283834912631,0.400971588538,0.117136675907,2.35100007057,False,True,False,1.7,1.0,0.25,15.0,31415.0
+0,129.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0117851014793,0.0117851014793,12.1129999161,False,True,False,1.7,1.0,0.25,15.0,31415.0
+0,130.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.177842548862,0.323013296229,0.145170747367,83.1369998455,False,True,False,1.7,1.0,0.25,15.0,31415.0
+0,131.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.188566190669,0.206406469036,0.0178402783674,3.52899980545,False,True,False,1.7,2.0,0.2,15.0,31415.0
+0,132.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.9250796105,-18.7011928994,15.7761132889,6.89999985695,False,True,False,1.7,2.0,0.2,15.0,31415.0
+0,133.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.226730897134,-0.521617940942,0.748348838076,2.74499988556,False,True,False,1.7,2.0,0.2,15.0,31415.0
+0,134.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0126257592335,0.0126257592335,13.8630001545,False,True,False,1.7,2.0,0.2,15.0,31415.0
+0,135.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.150592160741,0.166784522524,0.0161923617825,91.8090000153,False,True,False,1.7,2.0,0.2,15.0,31415.0
+0,136.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.188566190669,0.206406469036,0.0178402783674,3.31900000572,False,True,False,1.7,2.0,0.25,15.0,31415.0
+0,137.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.9250796105,-18.7011928994,15.7761132889,6.56699991226,False,True,False,1.7,2.0,0.25,15.0,31415.0
+0,138.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.226730897134,-0.521617940942,0.748348838076,2.63900017738,False,True,False,1.7,2.0,0.25,15.0,31415.0
+0,139.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0126257592335,0.0126257592335,17.6159999371,False,True,False,1.7,2.0,0.25,15.0,31415.0
+0,140.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.150592160741,0.166784522524,0.0161923617825,94.760999918,False,True,False,1.7,2.0,0.25,15.0,31415.0
+0,141.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.24761668329,0.264692886749,0.0170762034593,3.6210000515,False,True,False,1.7,3.0,0.2,15.0,31415.0
+0,142.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.429214088173,0.293695595622,0.722909683794,13.3170001507,False,True,False,1.7,3.0,0.2,15.0,31415.0
+0,143.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.364611135888,0.351067651746,0.0135434841426,3.04099988937,False,True,False,1.7,3.0,0.2,15.0,31415.0
+0,144.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.12947508068,0.12947508068,14.6260001659,False,True,False,1.7,3.0,0.2,15.0,31415.0
+0,145.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.17505307894,0.0576344779848,0.117418600955,95.7999999523,False,True,False,1.7,3.0,0.2,15.0,31415.0
+0,146.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.24761668329,0.264692886749,0.0170762034593,3.72399997711,False,True,False,1.7,3.0,0.25,15.0,31415.0
+0,147.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.429214088173,0.293695595622,0.722909683794,12.3299999237,False,True,False,1.7,3.0,0.25,15.0,31415.0
+0,148.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.364611135888,0.351067651746,0.0135434841426,2.99399995804,False,True,False,1.7,3.0,0.25,15.0,31415.0
+0,149.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.12947508068,0.12947508068,14.7749998569,False,True,False,1.7,3.0,0.25,15.0,31415.0
+0,150.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.17505307894,0.0576344779848,0.117418600955,98.1640000343,False,True,False,1.7,3.0,0.25,15.0,31415.0
+0,151.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.286181612581,-0.0251543948324,0.311336007413,3.28200006485,False,True,False,2.0,1.0,0.2,15.0,31415.0
+0,152.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.7, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.16419140489,-1.88010094581,0.284090459077,1.91499996185,False,True,False,2.0,1.0,0.2,15.0,31415.0
+0,153.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.291995900917,-0.216303676522,0.50829957744,2.45300006866,False,True,False,2.0,1.0,0.2,15.0,31415.0
+0,154.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.00184048321829,0.00184048321829,12.621999979,False,True,False,2.0,1.0,0.2,15.0,31415.0
+0,155.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.183558902336,-0.0887316028093,0.272290505145,88.0450000763,False,True,False,2.0,1.0,0.2,15.0,31415.0
+0,156.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.286181612581,-0.0251543948324,0.311336007413,3.02399992943,False,True,False,2.0,1.0,0.25,15.0,31415.0
+0,157.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.7, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.16419140489,-1.88010094581,0.284090459077,1.93099999428,False,True,False,2.0,1.0,0.25,15.0,31415.0
+0,158.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.291995900917,-0.216303676522,0.50829957744,2.3900001049,False,True,False,2.0,1.0,0.25,15.0,31415.0
+0,159.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.00184048321829,0.00184048321829,12.231000185,False,True,False,2.0,1.0,0.25,15.0,31415.0
+0,160.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.183558902336,-0.0887316028093,0.272290505145,87.9419999123,False,True,False,2.0,1.0,0.25,15.0,31415.0
+0,161.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.19370267722,-0.0147862759743,0.208488953194,3.56399989128,False,True,False,2.0,2.0,0.2,15.0,31415.0
+0,162.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.83347423246,-20.6133218113,17.7798475788,7.57300019264,False,True,False,2.0,2.0,0.2,15.0,31415.0
+0,163.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.170448418431,0.28974005114,0.119291632709,2.82800006866,False,True,False,2.0,2.0,0.2,15.0,31415.0
+0,164.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.194906771082,0.194906771082,14.4839999676,False,True,False,2.0,2.0,0.2,15.0,31415.0
+0,165.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.155159911607,-0.162696906303,0.31785681791,94.6770000458,False,True,False,2.0,2.0,0.2,15.0,31415.0
+0,166.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.19370267722,-0.0147862759743,0.208488953194,3.51999998093,False,True,False,2.0,2.0,0.25,15.0,31415.0
+0,167.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.83347423246,-20.6133218113,17.7798475788,7.14199995995,False,True,False,2.0,2.0,0.25,15.0,31415.0
+0,168.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.170448418431,0.28974005114,0.119291632709,2.75999999046,False,True,False,2.0,2.0,0.25,15.0,31415.0
+0,169.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.194906771082,0.194906771082,14.5719997883,False,True,False,2.0,2.0,0.25,15.0,31415.0
+0,170.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.155159911607,-0.162696906303,0.31785681791,94.7839999199,False,True,False,2.0,2.0,0.25,15.0,31415.0
+0,171.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.292209556094,0.08939782252,0.202811733574,3.59799981117,False,True,False,2.0,3.0,0.2,15.0,31415.0
+0,172.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.170239876506,-0.550790621955,0.38055074545,14.4469997883,False,True,False,2.0,3.0,0.2,15.0,31415.0
+0,173.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.4827196358,0.234065105968,0.248654529832,2.9279999733,False,True,False,2.0,3.0,0.2,15.0,31415.0
+0,174.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.026974136301,0.026974136301,14.4040000439,False,True,False,2.0,3.0,0.2,15.0,31415.0
+0,175.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.196844575647,0.132175425585,0.0646691500615,96.8410000801,False,True,False,2.0,3.0,0.2,15.0,31415.0
+0,176.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.292209556094,0.08939782252,0.202811733574,3.57699990273,False,True,False,2.0,3.0,0.25,15.0,31415.0
+0,177.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.170239876506,-0.550790621955,0.38055074545,13.1779999733,False,True,False,2.0,3.0,0.25,15.0,31415.0
+0,178.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.407950199701,0.0769266288133,0.331023570887,2.84299993515,False,True,False,2.0,3.0,0.25,15.0,31415.0
+0,179.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.026974136301,0.026974136301,14.2829999924,False,True,False,2.0,3.0,0.25,15.0,31415.0
+0,180.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.196844575647,0.132175425585,0.0646691500615,96.6400001049,False,True,False,2.0,3.0,0.25,15.0,31415.0
+0,181.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.278038602713,0.500793856951,0.222755254238,3.31999993324,True,False,False,1.5,1.0,0.2,15.0,31415.0
+0,182.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.406372628365,0.524807021693,0.118434393328,94.746999979,True,False,False,1.5,1.0,0.2,15.0,31415.0
+0,183.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.279956046334,0.660321709274,0.38036566294,2.39699983597,True,False,False,1.5,1.0,0.2,15.0,31415.0
+0,184.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.101923237847,0.270683421136,0.168760183289,17.2379999161,True,False,False,1.5,1.0,0.2,15.0,31415.0
+0,185.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.230272279797,0.46186219392,0.231589914123,90.0599999428,True,False,False,1.5,1.0,0.2,15.0,31415.0
+0,186.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.278038602713,0.500793856951,0.222755254238,2.96600008011,True,False,False,1.5,1.0,0.25,15.0,31415.0
+0,187.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.406372628365,0.524807021693,0.118434393328,84.5220000744,True,False,False,1.5,1.0,0.25,15.0,31415.0
+0,188.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.279956046334,0.660321709274,0.38036566294,2.29600000381,True,False,False,1.5,1.0,0.25,15.0,31415.0
+0,189.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.101923237847,0.270683421136,0.168760183289,17.1840000153,True,False,False,1.5,1.0,0.25,15.0,31415.0
+0,190.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.230272279797,0.46186219392,0.231589914123,88.6019999981,True,False,False,1.5,1.0,0.25,15.0,31415.0
+0,191.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.18398240681,0.563633700938,0.379651294128,3.63100004196,True,False,False,1.5,2.0,0.2,15.0,31415.0
+0,192.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.271231275839,0.559586339415,0.288355063576,182.592000008,True,False,False,1.5,2.0,0.2,15.0,31415.0
+0,193.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.164823928093,0.375691311368,0.210867383275,2.98399996758,True,False,False,1.5,2.0,0.2,15.0,31415.0
+0,194.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.141286189675,0.481831893411,0.340545703736,17.5889999866,True,False,False,1.5,2.0,0.2,15.0,31415.0
+0,195.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0.1,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.182068021934,0.581418647465,0.399350625532,104.778000116,True,False,False,1.5,2.0,0.2,15.0,31415.0
+0,196.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.183123464683,0.564781209199,0.381657744516,3.47600007057,True,False,False,1.5,2.0,0.25,15.0,31415.0
+0,197.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.271231275839,0.559586339415,0.288355063576,165.565000057,True,False,False,1.5,2.0,0.25,15.0,31415.0
+0,198.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.164823928093,0.375691311368,0.210867383275,2.63599991798,True,False,False,1.5,2.0,0.25,15.0,31415.0
+0,199.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.141286189675,0.481831893411,0.340545703736,15.7219998837,True,False,False,1.5,2.0,0.25,15.0,31415.0
+0,200.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.183744136922,0.564431153381,0.380687016458,92.6490001678,True,False,False,1.5,2.0,0.25,15.0,31415.0
+0,201.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.236488424913,0.348920588658,0.112432163746,3.48599982262,True,False,False,1.5,3.0,0.2,15.0,31415.0
+0,202.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.398296154017,0.315629783949,0.0826663700688,215.370999813,True,False,False,1.5,3.0,0.2,15.0,31415.0
+0,203.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.335732016937,0.477428181314,0.141696164377,2.77099990845,True,False,False,1.5,3.0,0.2,15.0,31415.0
+0,204.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.205862037217,0.238730824127,0.0328687869097,14.4930000305,True,False,False,1.5,3.0,0.2,15.0,31415.0
+0,205.0,"ElasticNet(alpha=0.07, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.234686961649,0.33577858791,0.101091626261,94.2660000324,True,False,False,1.5,3.0,0.2,15.0,31415.0
+0,206.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.235062788645,0.336876355272,0.101813566628,3.48699998856,True,False,False,1.5,3.0,0.25,15.0,31415.0
+0,207.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.398296154017,0.315629783949,0.0826663700688,195.782000065,True,False,False,1.5,3.0,0.25,15.0,31415.0
+0,208.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.335732016937,0.477428181314,0.141696164377,2.6859998703,True,False,False,1.5,3.0,0.25,15.0,31415.0
+0,209.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.205862037217,0.238730824127,0.0328687869097,14.8269999027,True,False,False,1.5,3.0,0.25,15.0,31415.0
+0,210.0,"ElasticNet(alpha=0.07, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.234686961649,0.33577858791,0.101091626261,90.256000042,True,False,False,1.5,3.0,0.25,15.0,31415.0
+0,211.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.279315322163,0.383390544542,0.104075222379,3.25400018692,True,False,False,1.7,1.0,0.2,15.0,31415.0
+0,212.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.404573499725,0.527797436947,0.123223937221,96.8680000305,True,False,False,1.7,1.0,0.2,15.0,31415.0
+0,213.0,"DecisionTreeRegressor(criterion='mse', max_depth=6, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.331925138624,0.245100255253,0.0868248833705,2.28499984741,True,False,False,1.7,1.0,0.2,15.0,31415.0
+0,214.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.111122360553,0.13780181854,0.0266794579879,12.2279999256,True,False,False,1.7,1.0,0.2,15.0,31415.0
+0,215.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.231258581155,0.412292284227,0.181033703072,87.5559999943,True,False,False,1.7,1.0,0.2,15.0,31415.0
+0,216.0,"Ridge(alpha=0.1, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.279321229167,0.382301447631,0.102980218464,2.96599984169,True,False,False,1.7,1.0,0.25,15.0,31415.0
+0,217.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.404573499725,0.527797436947,0.123223937221,87.8580000401,True,False,False,1.7,1.0,0.25,15.0,31415.0
+0,218.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.283834912631,0.400971588538,0.117136675907,2.20899987221,True,False,False,1.7,1.0,0.25,15.0,31415.0
+0,219.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.111122360553,0.13780181854,0.0266794579879,13.2899999619,True,False,False,1.7,1.0,0.25,15.0,31415.0
+0,220.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.231258581155,0.412292284227,0.181033703072,82.993999958,True,False,False,1.7,1.0,0.25,15.0,31415.0
+0,221.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.188566190669,0.206406469036,0.0178402783674,3.39700007439,True,False,False,1.7,2.0,0.2,15.0,31415.0
+0,222.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.279073411563,0.241578481048,0.0374949305157,183.709000111,True,False,False,1.7,2.0,0.2,15.0,31415.0
+0,223.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.226730897134,-0.521617940942,0.748348838076,2.68000006676,True,False,False,1.7,2.0,0.2,15.0,31415.0
+0,224.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.1473602946,0.260816087745,0.113455793145,13.9500000477,True,False,False,1.7,2.0,0.2,15.0,31415.0
+0,225.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.188514691752,0.20815658712,0.019641895368,92.263999939,True,False,False,1.7,2.0,0.2,15.0,31415.0
+0,226.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.188566190669,0.206406469036,0.0178402783674,3.39200019836,True,False,False,1.7,2.0,0.25,15.0,31415.0
+0,227.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.279073411563,0.241578481048,0.0374949305157,167.38499999,True,False,False,1.7,2.0,0.25,15.0,31415.0
+0,228.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.226730897134,-0.521617940942,0.748348838076,2.58899998665,True,False,False,1.7,2.0,0.25,15.0,31415.0
+0,229.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.1473602946,0.260816087745,0.113455793145,14.1460001469,True,False,False,1.7,2.0,0.25,15.0,31415.0
+0,230.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.188514691752,0.20815658712,0.019641895368,91.5910000801,True,False,False,1.7,2.0,0.25,15.0,31415.0
+0,231.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.247626656765,0.266104518752,0.0184778619868,3.67499995232,True,False,False,1.7,3.0,0.2,15.0,31415.0
+0,232.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.414515139407,0.308292575732,0.106222563675,223.67200017,True,False,False,1.7,3.0,0.2,15.0,31415.0
+0,233.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.458457764105,0.30082170483,0.157636059275,2.9960000515,True,False,False,1.7,3.0,0.2,15.0,31415.0
+0,234.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.220361449954,0.196165457871,0.0241959920832,17.0799999237,True,False,False,1.7,3.0,0.2,15.0,31415.0
+0,235.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.247290043624,0.255077812912,0.0077877692883,108.078999996,True,False,False,1.7,3.0,0.2,15.0,31415.0
+0,236.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.247626656765,0.266104518752,0.0184778619868,3.95700001717,True,False,False,1.7,3.0,0.25,15.0,31415.0
+0,237.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.414515139407,0.308292575732,0.106222563675,212.253000021,True,False,False,1.7,3.0,0.25,15.0,31415.0
+0,238.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.364611135888,0.351067651746,0.0135434841426,2.93699979782,True,False,False,1.7,3.0,0.25,15.0,31415.0
+0,239.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=False, fit_path=True, max_iter=1200, normalize=True,
+     positive=False, precompute='auto', verbose=False)",0.219848174183,0.202444301287,0.0174038728967,15.8029999733,True,False,False,1.7,3.0,0.25,15.0,31415.0
+0,240.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.247290043624,0.255077812912,0.0077877692883,111.559000015,True,False,False,1.7,3.0,0.25,15.0,31415.0
+0,241.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.286526015507,-0.0270118945561,0.313537910063,3.71800017357,True,False,False,2.0,1.0,0.2,15.0,31415.0
+0,242.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.405941977995,0.0520597463842,0.353882231611,117.124000072,True,False,False,2.0,1.0,0.2,15.0,31415.0
+0,243.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.291995900917,-0.216303676522,0.50829957744,2.64300012589,True,False,False,2.0,1.0,0.2,15.0,31415.0
+0,244.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.124351689268,-0.015984792536,0.140336481804,16.629999876,True,False,False,2.0,1.0,0.2,15.0,31415.0
+0,245.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.240657349788,-0.022217031768,0.262874381556,102.565000057,True,False,False,2.0,1.0,0.2,15.0,31415.0
+0,246.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.286525186713,-0.0269293302458,0.313454516958,3.10800004005,True,False,False,2.0,1.0,0.25,15.0,31415.0
+0,247.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.405941977995,0.0520597463842,0.353882231611,99.0519998074,True,False,False,2.0,1.0,0.25,15.0,31415.0
+0,248.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.291995900917,-0.216303676522,0.50829957744,2.28499984741,True,False,False,2.0,1.0,0.25,15.0,31415.0
+0,249.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.124351689268,-0.015984792536,0.140336481804,12.9659998417,True,False,False,2.0,1.0,0.25,15.0,31415.0
+0,250.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.240657349788,-0.022217031768,0.262874381556,98.8919999599,True,False,False,2.0,1.0,0.25,15.0,31415.0
+0,251.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.19370267722,-0.0147862759743,0.208488953194,3.46000003815,True,False,False,2.0,2.0,0.2,15.0,31415.0
+0,252.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.284771482109,0.402913226877,0.118141744768,191.30099988,True,False,False,2.0,2.0,0.2,15.0,31415.0
+0,253.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.170448418431,0.28974005114,0.119291632709,2.6779999733,True,False,False,2.0,2.0,0.2,15.0,31415.0
+0,254.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.152933641107,-0.0332069871717,0.186140628278,14.1040000916,True,False,False,2.0,2.0,0.2,15.0,31415.0
+0,255.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.19366124615,-0.0142337581118,0.207895004261,103.916000128,True,False,False,2.0,2.0,0.2,15.0,31415.0
+0,256.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.193898288068,-0.0167762586039,0.210674546672,3.66199994087,True,False,False,2.0,2.0,0.25,15.0,31415.0
+0,257.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.284771482109,0.402913226877,0.118141744768,180.562000036,True,False,False,2.0,2.0,0.25,15.0,31415.0
+0,258.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.170448418431,0.28974005114,0.119291632709,2.83900022507,True,False,False,2.0,2.0,0.25,15.0,31415.0
+0,259.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=False,
+     positive=False, precompute='auto', verbose=False)",0.152933641107,-0.0332069871717,0.186140628278,15.2880001068,True,False,False,2.0,2.0,0.25,15.0,31415.0
+0,260.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.19366124615,-0.0142337581118,0.207895004261,97.6570000648,True,False,False,2.0,2.0,0.25,15.0,31415.0
+0,261.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.292209556094,0.08939782252,0.202811733574,3.88199996948,True,False,False,2.0,3.0,0.2,15.0,31415.0
+0,262.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.459921144541,0.2224504127,0.237470731842,232.888000011,True,False,False,2.0,3.0,0.2,15.0,31415.0
+0,263.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.4827196358,0.234065105968,0.248654529832,2.90400004387,True,False,False,2.0,3.0,0.2,15.0,31415.0
+0,264.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=False, fit_path=True, max_iter=1200, normalize=True,
+     positive=False, precompute='auto', verbose=False)",0.2702114198,0.0881050333041,0.182106386496,18.4729998112,True,False,False,2.0,3.0,0.2,15.0,31415.0
+0,265.0,"ElasticNet(alpha=0.07, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.292078862323,0.0920186206772,0.200060241645,108.980999947,True,False,False,2.0,3.0,0.2,15.0,31415.0
+0,266.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.293726641196,0.0580321832961,0.2356944579,4.34500002861,True,False,False,2.0,3.0,0.25,15.0,31415.0
+0,267.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.459921144541,0.2224504127,0.237470731842,211.102999926,True,False,False,2.0,3.0,0.25,15.0,31415.0
+0,268.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.407950199701,0.0769266288133,0.331023570887,2.7610001564,True,False,False,2.0,3.0,0.25,15.0,31415.0
+0,269.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=False, fit_path=True, max_iter=1200, normalize=True,
+     positive=False, precompute='auto', verbose=False)",0.2702114198,0.0881050333041,0.182106386496,16.6010000706,True,False,False,2.0,3.0,0.25,15.0,31415.0
+0,270.0,"ElasticNet(alpha=0.07, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.292078862323,0.0920186206772,0.200060241645,103.430999994,True,False,False,2.0,3.0,0.25,15.0,31415.0
+0,271.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.277705240266,0.50538018015,0.227674939884,3.89100003242,True,True,False,1.5,1.0,0.2,15.0,31415.0
+0,272.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.63637410222,-1.49376347183,0.142610630388,1.82399988174,True,True,False,1.5,1.0,0.2,15.0,31415.0
+0,273.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.279956046334,0.660321709274,0.38036566294,2.44999980927,True,True,False,1.5,1.0,0.2,15.0,31415.0
+0,274.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.000178592340774,0.000178592340774,14.9319999218,True,True,False,1.5,1.0,0.2,15.0,31415.0
+0,275.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.17822516224,0.300769263269,0.12254410103,90.8790001869,True,True,False,1.5,1.0,0.2,15.0,31415.0
+0,276.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.277705240266,0.50538018015,0.227674939884,4.77699995041,True,True,False,1.5,1.0,0.25,15.0,31415.0
+0,277.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.63637410222,-1.49376347183,0.142610630388,1.79000020027,True,True,False,1.5,1.0,0.25,15.0,31415.0
+0,278.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.279956046334,0.660321709274,0.38036566294,2.31399989128,True,True,False,1.5,1.0,0.25,15.0,31415.0
+0,279.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.000178592340774,0.000178592340774,13.4529998302,True,True,False,1.5,1.0,0.25,15.0,31415.0
+0,280.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.17822516224,0.300769263269,0.12254410103,84.7539999485,True,True,False,1.5,1.0,0.25,15.0,31415.0
+0,281.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.183123464683,0.564781209199,0.381657744516,3.91799998283,True,True,False,1.5,2.0,0.2,15.0,31415.0
+0,282.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-3.11736788113,-7.71536845017,4.59800056904,7.08400011063,True,True,False,1.5,2.0,0.2,15.0,31415.0
+0,283.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.164823928093,0.375691311368,0.210867383275,2.74399995804,True,True,False,1.5,2.0,0.2,15.0,31415.0
+0,284.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.00691706540544,0.00691706540544,13.9609999657,True,True,False,1.5,2.0,0.2,15.0,31415.0
+0,285.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.146347318189,0.455701973021,0.309354654833,97.7569999695,True,True,False,1.5,2.0,0.2,15.0,31415.0
+0,286.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.183123464683,0.564781209199,0.381657744516,3.68700003624,True,True,False,1.5,2.0,0.25,15.0,31415.0
+0,287.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-3.11736788113,-7.71536845017,4.59800056904,6.49699997902,True,True,False,1.5,2.0,0.25,15.0,31415.0
+0,288.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.164823928093,0.375691311368,0.210867383275,2.882999897,True,True,False,1.5,2.0,0.25,15.0,31415.0
+0,289.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.00691706540544,0.00691706540544,17.2039999962,True,True,False,1.5,2.0,0.25,15.0,31415.0
+0,290.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.146347318189,0.455701973021,0.309354654833,98.638999939,True,True,False,1.5,2.0,0.25,15.0,31415.0
+0,291.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.235062788645,0.336876355272,0.101813566628,4.23399996758,True,True,False,1.5,3.0,0.2,15.0,31415.0
+0,292.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.64735643994,-0.204521776017,0.442834663923,13.5859999657,True,True,False,1.5,3.0,0.2,15.0,31415.0
+0,293.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.335732016937,0.477428181314,0.141696164377,3.14199995995,True,True,False,1.5,3.0,0.2,15.0,31415.0
+0,294.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0503796982844,0.0503796982844,19.4019999504,True,True,False,1.5,3.0,0.2,15.0,31415.0
+0,295.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.165207992,0.205980656232,0.0407726642326,114.911000013,True,True,False,1.5,3.0,0.2,15.0,31415.0
+0,296.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.235062788645,0.336876355272,0.101813566628,3.9960000515,True,True,False,1.5,3.0,0.25,15.0,31415.0
+0,297.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.64735643994,-0.204521776017,0.442834663923,12.3710000515,True,True,False,1.5,3.0,0.25,15.0,31415.0
+0,298.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.335732016937,0.477428181314,0.141696164377,2.90300011635,True,True,False,1.5,3.0,0.25,15.0,31415.0
+0,299.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0503796982844,0.0503796982844,16.620000124,True,True,False,1.5,3.0,0.25,15.0,31415.0
+0,300.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.165207992,0.205980656232,0.0407726642326,104.40899992,True,True,False,1.5,3.0,0.25,15.0,31415.0
+0,301.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.278986674808,0.39061063148,0.111623956672,3.54500007629,True,True,False,1.7,1.0,0.2,15.0,31415.0
+0,302.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.84001555757,-1.85468977763,0.0146742200653,1.88400006294,True,True,False,1.7,1.0,0.2,15.0,31415.0
+0,303.0,"DecisionTreeRegressor(criterion='mse', max_depth=6, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.331925138624,0.245100255253,0.0868248833705,2.375,True,True,False,1.7,1.0,0.2,15.0,31415.0
+0,304.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0117851014793,0.0117851014793,15.7539999485,True,True,False,1.7,1.0,0.2,15.0,31415.0
+0,305.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.177842548862,0.323013296229,0.145170747367,93.4530000687,True,True,False,1.7,1.0,0.2,15.0,31415.0
+0,306.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.278986674808,0.39061063148,0.111623956672,3.13900017738,True,True,False,1.7,1.0,0.25,15.0,31415.0
+0,307.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.84001555757,-1.85468977763,0.0146742200653,1.96499991417,True,True,False,1.7,1.0,0.25,15.0,31415.0
+0,308.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.283834912631,0.400971588538,0.117136675907,2.46300005913,True,True,False,1.7,1.0,0.25,15.0,31415.0
+0,309.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0117851014793,0.0117851014793,12.5549998283,True,True,False,1.7,1.0,0.25,15.0,31415.0
+0,310.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.177842548862,0.323013296229,0.145170747367,84.9290001392,True,True,False,1.7,1.0,0.25,15.0,31415.0
+0,311.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.188566190669,0.206406469036,0.0178402783674,3.56900000572,True,True,False,1.7,2.0,0.2,15.0,31415.0
+0,312.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.94200777842,-18.8136098311,15.8716020527,6.93600010872,True,True,False,1.7,2.0,0.2,15.0,31415.0
+0,313.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.226730897134,-0.521617940942,0.748348838076,2.75200009346,True,True,False,1.7,2.0,0.2,15.0,31415.0
+0,314.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0126257592335,0.0126257592335,13.7860000134,True,True,False,1.7,2.0,0.2,15.0,31415.0
+0,315.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.150592160741,0.166784522524,0.0161923617825,98.6970000267,True,True,False,1.7,2.0,0.2,15.0,31415.0
+0,316.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.188566190669,0.206406469036,0.0178402783674,3.74399995804,True,True,False,1.7,2.0,0.25,15.0,31415.0
+0,317.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.94200777842,-18.8136098311,15.8716020527,6.60000014305,True,True,False,1.7,2.0,0.25,15.0,31415.0
+0,318.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.226730897134,-0.521617940942,0.748348838076,2.76300001144,True,True,False,1.7,2.0,0.25,15.0,31415.0
+0,319.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.0126257592335,0.0126257592335,17.7260000706,True,True,False,1.7,2.0,0.25,15.0,31415.0
+0,320.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.150592160741,0.166784522524,0.0161923617825,95.3370001316,True,True,False,1.7,2.0,0.25,15.0,31415.0
+0,321.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.24761668329,0.264692886749,0.0170762034593,3.64900016785,True,True,False,1.7,3.0,0.2,15.0,31415.0
+0,322.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.429214088173,0.293695595622,0.722909683794,13.4760000706,True,True,False,1.7,3.0,0.2,15.0,31415.0
+0,323.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.364611135888,0.351067651746,0.0135434841426,3.08100008965,True,True,False,1.7,3.0,0.2,15.0,31415.0
+0,324.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.12947508068,0.12947508068,19.2799999714,True,True,False,1.7,3.0,0.2,15.0,31415.0
+0,325.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.17505307894,0.0576344779848,0.117418600955,113.296999931,True,True,False,1.7,3.0,0.2,15.0,31415.0
+0,326.0,"Ridge(alpha=0.17, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.24761668329,0.264692886749,0.0170762034593,4.14300012589,True,True,False,1.7,3.0,0.25,15.0,31415.0
+0,327.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.429214088173,0.293695595622,0.722909683794,12.5520000458,True,True,False,1.7,3.0,0.25,15.0,31415.0
+0,328.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.364611135888,0.351067651746,0.0135434841426,2.90100002289,True,True,False,1.7,3.0,0.25,15.0,31415.0
+0,329.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.12947508068,0.12947508068,15.6879999638,True,True,False,1.7,3.0,0.25,15.0,31415.0
+0,330.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.17505307894,0.0576344779848,0.117418600955,107.508000135,True,True,False,1.7,3.0,0.25,15.0,31415.0
+0,331.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.286181612581,-0.0251543948324,0.311336007413,3.45900011063,True,True,False,2.0,1.0,0.2,15.0,31415.0
+0,332.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.7, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.16419140489,-1.88010094581,0.284090459077,2.007999897,True,True,False,2.0,1.0,0.2,15.0,31415.0
+0,333.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.291995900917,-0.216303676522,0.50829957744,2.53699994087,True,True,False,2.0,1.0,0.2,15.0,31415.0
+0,334.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.00184048321829,0.00184048321829,13.5970001221,True,True,False,2.0,1.0,0.2,15.0,31415.0
+0,335.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.183558902336,-0.0887316028093,0.272290505145,94.3740000725,True,True,False,2.0,1.0,0.2,15.0,31415.0
+0,336.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.286181612581,-0.0251543948324,0.311336007413,3.15899991989,True,True,False,2.0,1.0,0.25,15.0,31415.0
+0,337.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.7, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.16419140489,-1.88010094581,0.284090459077,2.15999984741,True,True,False,2.0,1.0,0.25,15.0,31415.0
+0,338.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.291995900917,-0.216303676522,0.50829957744,2.48900008202,True,True,False,2.0,1.0,0.25,15.0,31415.0
+0,339.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.00184048321829,0.00184048321829,16.3210000992,True,True,False,2.0,1.0,0.25,15.0,31415.0
+0,340.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1200, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.183558902336,-0.0887316028093,0.272290505145,93.0420000553,True,True,False,2.0,1.0,0.25,15.0,31415.0
+0,341.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.19370267722,-0.0147862759743,0.208488953194,3.58500003815,True,True,False,2.0,2.0,0.2,15.0,31415.0
+0,342.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.84616881539,-20.7028469771,17.8566781617,7.86500000954,True,True,False,2.0,2.0,0.2,15.0,31415.0
+0,343.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.170448418431,0.28974005114,0.119291632709,2.89999985695,True,True,False,2.0,2.0,0.2,15.0,31415.0
+0,344.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.194906771082,0.194906771082,16.4100000858,True,True,False,2.0,2.0,0.2,15.0,31415.0
+0,345.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.155159911607,-0.162696906303,0.31785681791,100.460999966,True,True,False,2.0,2.0,0.2,15.0,31415.0
+0,346.0,"Ridge(alpha=0.03, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.19370267722,-0.0147862759743,0.208488953194,3.89100003242,True,True,False,2.0,2.0,0.25,15.0,31415.0
+0,347.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-2.84616881539,-20.7028469771,17.8566781617,7.20000004768,True,True,False,2.0,2.0,0.25,15.0,31415.0
+0,348.0,"DecisionTreeRegressor(criterion='mse', max_depth=3, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.170448418431,0.28974005114,0.119291632709,2.64199995995,True,True,False,2.0,2.0,0.25,15.0,31415.0
+0,349.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.194906771082,0.194906771082,13.9189999104,True,True,False,2.0,2.0,0.25,15.0,31415.0
+0,350.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.155159911607,-0.162696906303,0.31785681791,97.7070000172,True,True,False,2.0,2.0,0.25,15.0,31415.0
+0,351.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.292209556094,0.08939782252,0.202811733574,3.76900005341,True,True,False,2.0,3.0,0.2,15.0,31415.0
+0,352.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.168812729464,-0.549463440363,0.380650710899,14.1300001144,True,True,False,2.0,3.0,0.2,15.0,31415.0
+0,353.0,"DecisionTreeRegressor(criterion='mse', max_depth=5, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.4827196358,0.234065105968,0.248654529832,2.82800006866,True,True,False,2.0,3.0,0.2,15.0,31415.0
+0,354.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.026974136301,0.026974136301,15.8569998741,True,True,False,2.0,3.0,0.2,15.0,31415.0
+0,355.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.196844575647,0.132175425585,0.0646691500615,97.5499999523,True,True,False,2.0,3.0,0.2,15.0,31415.0
+0,356.0,"Ridge(alpha=0.07, copy_X=True, fit_intercept=True, max_iter=1200,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.292209556094,0.08939782252,0.202811733574,3.53399991989,True,True,False,2.0,3.0,0.25,15.0,31415.0
+0,357.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-0.168812729464,-0.549463440363,0.380650710899,12.8999998569,True,True,False,2.0,3.0,0.25,15.0,31415.0
+0,358.0,"DecisionTreeRegressor(criterion='mse', max_depth=4, max_features=None,
+           max_leaf_nodes=None, min_impurity_split=1e-07,
+           min_samples_leaf=1, min_samples_split=2,
+           min_weight_fraction_leaf=0.0, presort=False, random_state=31415,
+           splitter='best')",0.407950199701,0.0769266288133,0.331023570887,2.76300001144,True,True,False,2.0,3.0,0.25,15.0,31415.0
+0,359.0,"LassoLars(alpha=0.03, copy_X=True, eps=2.2204460492503131e-16,
+     fit_intercept=True, fit_path=True, max_iter=1200, normalize=True,
+     positive=True, precompute='auto', verbose=False)",0.0,-0.026974136301,0.026974136301,13.8869998455,True,True,False,2.0,3.0,0.25,15.0,31415.0
+0,360.0,"ElasticNet(alpha=0.03, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1200, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.196844575647,0.132175425585,0.0646691500615,90.7720000744,True,True,False,2.0,3.0,0.25,15.0,31415.0

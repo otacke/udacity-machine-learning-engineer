@@ -40,7 +40,7 @@ In this section, you will need to clearly define the metrics or calculations you
 - _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_
 - _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_
 
-The goal if this project is to predict the sales volume of video games, which simply is an integer. We can apply common statistic approaches to compare and visualize the deviation of the predictions from the correct results. The explained variance score or the R² score could be used to quantify the performance of my model. It indicates how much of the variance within a dataset can be explained by a regression model.
+The goal of this project is to predict the sales volume of video games, which simply is an integer. We can apply common statistic approaches to compare and visualize the deviation of the predictions from the correct results. The explained variance score or the R² score could be used to quantify the performance of my model. It indicates how much of the variance within a dataset can be explained by a regression model.
 
 Using this score, we can check our model to be prone to high bias or high variance. One method is to split our data into a training set that's used for training the model and a test set for testing its performance, e.g. using k-fold cross validation. This way we can identify and reduce underfitting or overfitting. Also, plotting the learning curves (training error and the cross validation error in relation to the training set size) can offer insight related to high bias and high variance and appropriate options for improvement such as collecting more samples or more features.
 
@@ -57,6 +57,12 @@ In this section, you will be expected to analyze the data you are using for the 
 - _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_
 - _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_
 - _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_
+
+Discuss stats, provide head/tail
+Skewness
+Outliers
+Unnecessary rows
+Empty values
 
 ### Exploratory Visualization
 In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:

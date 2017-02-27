@@ -46,8 +46,6 @@ Using this score, we can check our model to be prone to high bias or high varian
 
 Instead of splitting the dataset, we can also use new data from the data sources (VGChartz, Metacritics) that are not available yet. This would basically be a real world test.
 
-Finally, we can compare our results with those of others. Some people at Kaggle seem to be experimenting with the dataset, too. For example, [Jonathan Bouchet built a polynomial regression model in R and reports an R² score of 0.098404](https://www.kaggle.com/jonathanbouchet/d/rush4ratio/video-game-sales-with-ratings/vg-sales-score-prediction/notebook). Our goal is to be better, of course. Since the reported R² is very close to 0 and thus the model seems to hardly predict anything, I am quite optimistic.
-
 ## II. Analysis
 _(approx. 2-4 pages)_
 
@@ -58,11 +56,16 @@ In this section, you will be expected to analyze the data you are using for the 
 - _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_
 - _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_
 
-Discuss stats, provide head/tail
-Skewness
-Outliers
-Unnecessary rows
-Empty values
+- Describe dataset
+- provide head/tail
+- provide stats
+
+- Unnecessary rows
+- Empty values
+- Outliers
+  - Bundled Games
+  - outliers with information
+- Skewness
 
 ### Exploratory Visualization
 In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
@@ -76,12 +79,18 @@ In this section, you will need to discuss the algorithms and techniques you inte
 - _Are the techniques to be used thoroughly discussed and justified?_
 - _Is it made clear how the input data or datasets will be handled by the algorithms and techniques chosen?_
 
+- optional: statistical outlier removal
+- optional: feature scaling
+- optional: feature standardization
+- optional: feature transforming
+
 ### Benchmark
 In this section, you will need to provide a clearly defined benchmark result or threshold for comparing across performances obtained by your solution. The reasoning behind the benchmark (in the case where it is not an established result) should be discussed. Questions to ask yourself when writing this section:
 - _Has some result or value been provided that acts as a benchmark for measuring performance?_
 - _Is it clear how this result or value was obtained (whether by data or by hypothesis)?_
 
-*TODO: Check whether to duplicate or move the benchmark info from above.*
+There are some people at Kaggle who seem to be experimenting with the dataset, too. For example, [Jonathan Bouchet built a polynomial regression model in R and reports an R² score of 0.098404](https://www.kaggle.com/jonathanbouchet/d/rush4ratio/video-game-sales-with-ratings/vg-sales-score-prediction/notebook). Our goal is to be better, of course. Since the reported R² is very close to 0 and thus the model seems to hardly predict anything, I am quite optimistic.
+
 
 ## III. Methodology
 _(approx. 3-5 pages)_

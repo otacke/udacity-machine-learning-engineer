@@ -43,12 +43,37 @@ In this section, you will be expected to analyze the data you are using for the 
 - _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_
 - _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_
 
-- Describe dataset
-- provide head/tail
-- provide stats
+The raw dataset (Video_Games_Sales_as_at_22_Dec_2016.csv) offers 16 features and 16579 data points:
 
-- Unnecessary rows
-- Empty values
+| title           | description                                                   | data type |
+|-----------------|---------------------------------------------------------------|-----------|
+| Name            | Name of the game                                              | String    |
+| Platform        | Hardware Platform                                             | String    |
+| Year_of_Release | Year of release                                               | Numeric   |
+| Genre           | Game genre                                                    | String    |
+| Publisher       | Publisher                                                     | String    |
+| NA_Sales        | Game sales in North America (in millions of units)            | Numeric   |
+| EU_Sales        | Game sales in the European Union (in millions of units)       | Numeric   |
+| JP_Sales        | Game sales in Japan (in millions of units)                    | Numeric   |
+| Other_Sales     | Game sales in the rest of the world (in millions of units)    | Numeric   |
+| Global_Sales    | Total sales in the world (in millions of units)               | Numeric   |
+| Critic_Score    | Aggregate score compiled by Metacritic staff                  | Numeric   |
+| Critic_Count    | The number of critics who generated the Critic_Score          | Numeric   |
+| User_Score      | Score by Metacritic's subscribers                             | Numeric   |
+| User_Count      | Number of subscribers who gave the User_Score                 | Numeric   |
+| Developer       | Party responsible for creating the game                       | String    |
+| Rating          | The [ESRB](https://www.esrb.org/) ratings                     | String    |
+
+#### Formal abnormalities
+There are some obvious formal abnormalities. For instance, the years of release range from 1977 to 2020, so there must be at least one invalid entry. We can also clearly see that Metacritics doesn't provide scores for all the games that have been listed at VGChartz. There are 8466 rows without a Critic Score and even 9013 rows without a User Score. In addition, not all games contain information about their publisher, developer or their rating.
+
+Having a closer look at the data reveals that there are 269 games without a year of release, mostly for Japanese releases or for old Atari 2600 games. We can also note that there are quite some games seem to have been releases in Japan only, and some that have an extra row for Japan sales instead of using just one.
+
+Furthermore, we can come across a fun fact: In Germany, until 2002 it was forbidden to sell the game "River Raid" from 1982 with its clunky graphics and sound. [It was said to resemble a paramilitary training and could cause muscle cramps, anger, aggressiveness, absent-mindedness, and headaches.](http://www.simulationsraum.de/blog/2011/03/31/river-raid-rage/) The game sold more than 1.6 million copies which is quite a lot even for modern games.
+
+Finally, there are some cells containing the string 'tbd' instead of a proper NaN/None, some cells contain double spaces within strings, and the Critic Score and User Score are scaled differently. While the former ranges from 0 to 100, the latter ranges from 0 to 10.
+
+#### Statistical abnormalities
 - Outliers
   - Bundled Games
   - outliers with information
@@ -83,6 +108,9 @@ In this section, all of your preprocessing steps will need to be clearly documen
 - _If the algorithms chosen require preprocessing steps like feature selection or feature transformations, have they been properly documented?_
 - _Based on the **Data Exploration** section, if there were abnormalities or characteristics that needed to be addressed, have they been properly corrected?_
 - _If no preprocessing is needed, has it been made clear why?_
+
+- Remove unnecessary columns
+- ...
 
 ### Implementation
 In this section, the process for which metrics, algorithms, and techniques that you implemented for the given data will need to be clearly documented. It should be abundantly clear how the implementation was carried out, and discussion should be made regarding any complications that occurred during this process. Questions to ask yourself when writing this section:

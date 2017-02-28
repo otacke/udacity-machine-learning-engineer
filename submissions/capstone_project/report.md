@@ -4,7 +4,6 @@ Oliver Tacke
 _December 31st, 2050_
 
 ## I. Definition
-_(approx. 1-2 pages)_
 
 ### Project Overview
 One of the first video games that I have ever played was [Munchkin](https://en.wikipedia.org/wiki/Munchkin_(video_game)). It was released in 1981 when the video game industry was still in its infancy. Today, it is a multi-billion dollar business. In 2014 in the U.S. alone, 155 million people played video games (cmp. [Entertainment Software Association, 2015](http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf), p. 2). In total, they spent 15.4 billion US dollars (cmp. [Entertainment Software Association, 2015](http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf), p. 12).
@@ -37,15 +36,9 @@ Instead of splitting the dataset, we can also use new data from the data sources
 _(approx. 2-4 pages)_
 
 ### Data Exploration
-In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
-- _If a dataset is present for this problem, have you thoroughly discussed certain features about the dataset? Has a data sample been provided to the reader?_
-- _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_
-- _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_
-- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_
-
 The raw dataset (Video_Games_Sales_as_at_22_Dec_2016.csv) offers 16 features and 16579 data points:
 
-| title           | description                                                   | data type |
+| TITLE           | DESCRIPTION                                                   | DATA TYPE |
 |-----------------|---------------------------------------------------------------|-----------|
 | Name            | Name of the game                                              | String    |
 | Platform        | Hardware Platform                                             | String    |
@@ -63,6 +56,9 @@ The raw dataset (Video_Games_Sales_as_at_22_Dec_2016.csv) offers 16 features and
 | User_Count      | Number of subscribers who gave the User_Score                 | Numeric   |
 | Developer       | Party responsible for creating the game                       | String    |
 | Rating          | The [ESRB](https://www.esrb.org/) ratings                     | String    |
+_Table: Dataset Features_
+
+Looking for high correlations within the dataset hardly reveals anything surprising. There are very high correlations between the global sales volume and the sales volume of North America (0.94) and Europe (0.90) respectively, because those two are the biggest markets contributing the most to the total sum. Also, there's a fairly high correlation between Europe and North America (0.77) and other countries excluding Japan (0.72), suggesting that Europe could be a linking pin between the tastes of the other regions. That's it. The Japanese market seems to work differently.
 
 #### Formal abnormalities
 There are some obvious formal abnormalities. For instance, the years of release range from 1977 to 2020, so there must be at least one invalid entry. We can also clearly see that Metacritics doesn't provide scores for all the games that have been listed at VGChartz. There are 8466 rows without a Critic Score and even 9013 rows without a User Score. In addition, not all games contain information about their publisher, developer or their rating.
@@ -74,10 +70,34 @@ Furthermore, we can come across a fun fact: In Germany, until 2002 it was forbid
 Finally, there are some cells containing the string 'tbd' instead of a proper NaN/None, some cells contain double spaces within strings, and the Critic Score and User Score are scaled differently. While the former ranges from 0 to 100, the latter ranges from 0 to 10.
 
 #### Statistical abnormalities
-- Outliers
-  - Bundled Games
-  - outliers with information
-- Skewness
+One of the aspects of statistical abnormalities is the subject of outlier identification. 
+"Sample outliers can be identified asof two basic types. Here we are concerned with the firstype, which may conveniently betermed representative outliers. These are sample elements with values that have been correctly recorded and that cannot be assumed to be unique. That is, there is no good reason to assume there are no more similar outliers in the nonsampled part of the target population. The remaining sample outliers, which by default are termed nonrepresentative, are sample elements whose data values are incorrect or unique in some sense." (Chambers, 1986, p. 1063). Some of those nonrepresentative elements have already been mentioned above.
+
+When we investigate the feature of global sales, we can easily note some games with very high sales volumes. For example, the top selling game is said to have been sold more than 82 million times and tenth highest selling game still more than 28 million times -- whereas the mean value of global sales is at merely 0.54 million copies and the median at 0.17. Fortunately, there's an explanation. The "seemingly" top selling game is "Wii Sports", which in fact has changed owners that often, but probably only because it came as a bundle with the Wii console in 2006. People bought it whether they wanted or not and without paying respect to critics. The same is true for a lot of the top ranking titles.
+
+| RANK | TITLE                    | GLOBAL SALES |
+|------|--------------------------|--------------|
+|    1 | Wii Sports               |        82.53 |
+|    2 | Super Mario Bros. NES    |        40.24 |
+|    3 | Mario Kart Wii           |        35.52 |
+|    4 | Wii Sports Resort        |        32.77 |
+|    5 | Pokemon Red/Pokemon Blue |        31.37 |
+_Table: Top 5 selling games in raw dataset_
+
+Those and other titles have probably been recorded correctly. Yet they could be considered outliers or suggest to add a feature that indicates that the game had been bundled with hardware and might account for the tremendous sales volume.
+
+We can also detect large very values for the number of votes that come from customers. For example, the game "The Witcher 3" for the PC received over 10,000 votes while the mean value is at roughly 162 votes and the median at 24. It is eye-catching that the games with the highest user count also have a very high user score -- at least most of the time. There are some exceptions, e.g. Diablo III for the PC. It received a critic score of 88 and was praises, yet the user score is at only average. It seems that many people gave a very bad score, presumably because the game forced users to be online in order to be able to even play the game in single-player mode. The high count seems to either confirm love or hate for a game.
+
+| RANK | TITLE                            | CRITIC SCORE | CRITIC COUNT | USER SCORE | USER COUNT |
+|------|----------------------------------|--------------|--------------|------------|------------|
+|    1 | The Witcher 3: Wild Hunt	(PC)    |           93 |           32 |        9.3 |      10665 |
+|    2 | The Witcher 3: Wild Hunt (PS4)   |           92 |           79 |        9.2 |      10179 |
+|    3 | Counter-Strike: Source (PC)      |           88 |            9 |        8.9 |       9851 |
+|    4 | Diablo III	(PC)                  |           88 |           86 |        4.0 |       9629 |
+|    5 | The Elder Scrolls V: Skyrim (PC) |           94 |           32 |        8.1 |       9073 |
+_Table: Top 5 games concerning user count_
+
+Given some of the statistical information above we can already assume that some of the features are skewed, e.g. sales volume or user count. The visualizations in the next chapter will show this fact more clearly, but just looking at the median, mean and standard deviation of the numerical values suggests that merely critic score, critic count and user score could be fairly normally distributed.
 
 ### Exploratory Visualization
 In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
@@ -166,6 +186,8 @@ In this section, you will need to provide discussion as to how one aspect of the
 
 ## VI. Sources
 * Beaujon, Walter S. (2012). _Predicting Video Game Sales in the European Market._ Retrieved from https://www.few.vu.nl/nl/Images/werkstuk-beaujon_tcm243-264134.pdf (January 12, 2016).
+
+* Chambers, Raymond L. (1986). Outlier Robust Finite Population Estimation. _Journal of the American Statistical Association_, 81(396), 1063-1069.
 
 * Dellarocas, Chrysanthos, Zhang, Xiaoquan (Michael) & Awad, Neveen F. (2007). [Exploring the value of online product reviews in forecasting sales: The case of motion pictures.](http://onlinelibrary.wiley.com/doi/10.1002/dir.20087/abstract) _Journal of Interactive Marketing, 21(4)_, 23-45.
 

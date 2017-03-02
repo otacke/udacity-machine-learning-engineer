@@ -33,7 +33,6 @@ Using this score, we can check our model to be prone to high bias or high varian
 Instead of splitting the dataset, we can also use new data from the data sources (VGChartz, Metacritics) that are not available yet. This would basically be a real world test.
 
 ## II. Analysis
-_(approx. 2-4 pages)_
 
 ### Data Exploration
 The raw dataset (Video_Games_Sales_as_at_22_Dec_2016.csv) offers 16 features and 16579 data points:

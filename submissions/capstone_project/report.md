@@ -57,7 +57,7 @@ The raw dataset (Video_Games_Sales_as_at_22_Dec_2016.csv) offers 16 features and
 | Rating          | The [ESRB](https://www.esrb.org/) ratings                     | String    |
 _Table: Dataset Features_
 
-Looking for high correlations within the dataset hardly reveals anything surprising. There are very high correlations between the global sales volume and the sales volume of North America (0.94) and Europe (0.90) respectively, because those two are the biggest markets contributing the most to the total sum. Also, there's a fairly high correlation between Europe and North America (0.77) and other countries excluding Japan (0.72), suggesting that Europe could be a linking pin between the tastes of the other regions. That's it. The Japanese market seems to work differently.
+Looking for high correlations within the dataset hardly reveals anything surprising. There are very high correlations between the global sales volume and the sales volume of North America (0.94) and Europe (0.90) respectively, because those two are the biggest markets contributing the most to the total sum. Still, there's a fairly high correlation between the other countries excluding Japan and the global sales volume (0.75). Also, there's a fairly high correlation between Europe and North America (0.77) and between Europe and other countries excluding Japan (0.72), suggesting that Europe could be a linking pin between the tastes of the other regions. That's it. The Japanese market seems to work differently.
 
 #### Formal abnormalities
 There are some obvious formal abnormalities. For instance, the years of release range from 1977 to 2020, so there must be at least one invalid entry. We can also clearly see that Metacritics doesn't provide scores for all the games that have been listed at VGChartz. There are 8466 rows without a Critic Score and even 9013 rows without a User Score. In addition, not all games contain information about their publisher, developer or their rating.
@@ -109,6 +109,8 @@ In this section, you will need to provide some form of visualization that summar
 ![sales_by_group](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/sales_by_groups.png "Sales By Group")
 
 ![distributions](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/distributions.png "Distributions")
+
+![correlations](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/correlations.png "Correlations")
 
 ### Algorithms and Techniques
 In this section, you will need to discuss the algorithms and techniques you intend to use for solving the problem. You should justify the use of each one based on the characteristics of the problem and the problem domain. Questions to ask yourself when writing this section:

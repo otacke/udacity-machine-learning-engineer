@@ -104,13 +104,25 @@ In this section, you will need to provide some form of visualization that summar
 - _Is the visualization thoroughly analyzed and discussed?_
 - _If a plot is provided, are the axes, title, and datum clearly defined?_
 
+We start by looking at some of the aspects that have already been discussed above. For instance, we talked about the correlations between local sales and global sales. We can detect the very high positive correlations between North American sales and global sales and between EU sales and global sales easily. In the corresponding subplots, we see a straight line from the lower left corner to the upper right corner. It could be seen even better if we had got rid of the extreme sales numbers for games that have been sold with a console.
+![correlations](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/correlations.png "Correlations")
+
+If we have a closer look at the relationship between the score that critics awarded and the score that users awarded, we in fact notice that they are kind of correlated, but there's a lot of variation and the plot forms a longish cloud in the upper right corner. Obviously, critics and users alike tend to award scores above average more often then scores below average. This allows us to "see" that both features are skewed and don't portray a normal distribution. Unfortunately, we do not find any peculiarities by grouping the plot by the platform manufacturer (or platform or mobility, both not shown here).
+
 ![score_comparison](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/score_comparison.png "Score Comparison")
 
-![sales_by_group](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/sales_by_groups.png "Sales By Group")
+Of course, we can also have a look at the distributions directly by using a scatter matrix. It shows the numeric features that we could possibly transform - wouldn't make sense for the year of release, and the sales numbers are skewed to such a large degree that assuming a normal distribution might be a wrong premise. We can see that both, the distribution for the critic score and for the user score are skewed negatively, the latter a little more than the former. On the other hand both counts are skewed positively considerably, the user count to such a large degree that transforming it to resemble a normal distribution might not be wise.
 
 ![distributions](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/distributions.png "Distributions")
 
-![correlations](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/correlations.png "Correlations")
+We could try to create regressors for each region, but since the sales volumes are highly correlated with the global sales (except for Japan), we just try to predict the latter. It might be helpful to visualize some of the other features in connection with the global sales volume. For example, we can see that action games and sports games are the top sellers. We can also see that most of the games that were sold are rated E (everyone). Interestingly, the fraction of games that are rated M (mature aucience) is very large. The rating doesn't lead to a decline in sales compared to games with less strict ratings. The pie chart grouped by platform reveals that most games have been sold for the PlayStation 2, the XBox 360 and the Wii, but that's not really surprising since those have been around for 10-15 years now. We can aggregate the platform information to get some more insight. Clearly, most games have been sold for a console that was created by Sony, but Nintendo is close. We can also see in the final pie chart, that games for stationary consoles have been selling much more than for portable devices.
+
+![sales_by_group](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/sales_by_groups.png "Sales By Group")
+
+TODO: critic score VS sales
+TODO: user score VS sales
+
+Summing up the sales visualizations, we could suppose that especialy the platform manufacturer and the mobility of the console might already hint to larger or smaller sales numbers, because of their large fractions in the pie charts. Unfortunately, at this stage we have not yet cleaned the data as this is supposed to happen later in this template. We'll have to recreate the visualizations later.
 
 ### Algorithms and Techniques
 In this section, you will need to discuss the algorithms and techniques you intend to use for solving the problem. You should justify the use of each one based on the characteristics of the problem and the problem domain. Questions to ask yourself when writing this section:
@@ -118,10 +130,7 @@ In this section, you will need to discuss the algorithms and techniques you inte
 - _Are the techniques to be used thoroughly discussed and justified?_
 - _Is it made clear how the input data or datasets will be handled by the algorithms and techniques chosen?_
 
-- optional: statistical outlier removal
-- optional: feature scaling
-- optional: feature standardization
-- optional: feature transforming
+Hmmm... Isn't that redundant to Data Preprocessing/Implementation in the next chapter?
 
 ### Benchmark
 There are some people at Kaggle who seem to be experimenting with the dataset, too. For example, [Jonathan Bouchet built a polynomial regression model in R and reports an R² score of 0.098404](https://www.kaggle.com/jonathanbouchet/d/rush4ratio/video-game-sales-with-ratings/vg-sales-score-prediction/notebook). Since Bouchet barely preprocessed the data and did not try other algorithms, I am quite optimistic that I can come up with a better result.

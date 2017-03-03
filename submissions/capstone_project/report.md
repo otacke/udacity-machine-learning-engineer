@@ -104,7 +104,12 @@ In this section, you will need to provide some form of visualization that summar
 - _Is the visualization thoroughly analyzed and discussed?_
 - _If a plot is provided, are the axes, title, and datum clearly defined?_
 
-TODO: What is useful? What neglectable? 
+![score_comparison](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/score_comparison.png "Score Comparison")
+
+![sales_by_group](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/sales_by_groups.png "Sales By Group")
+
+![distributions](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/distributions.png "Distributions")
+
 ### Algorithms and Techniques
 In this section, you will need to discuss the algorithms and techniques you intend to use for solving the problem. You should justify the use of each one based on the characteristics of the problem and the problem domain. Questions to ask yourself when writing this section:
 - _Are the algorithms you will use, including any default variables/parameters in the project clearly defined?_

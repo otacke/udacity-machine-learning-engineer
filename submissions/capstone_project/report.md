@@ -99,15 +99,10 @@ _Table: Top 5 games concerning user count_
 Given some of the statistical information above we can already assume that some of the features are skewed, e.g. sales volume or user count. The visualizations in the next chapter will show this fact more clearly, but just looking at the median, mean and standard deviation of the numerical values suggests that merely critic score, critic count and user score could be fairly normally distributed.
 
 ### Exploratory Visualization
-In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
-- _Have you visualized a relevant characteristic or feature about the dataset or input data?_
-- _Is the visualization thoroughly analyzed and discussed?_
-- _If a plot is provided, are the axes, title, and datum clearly defined?_
-
 We start by looking at some of the aspects that have already been discussed above. For instance, we talked about the correlations between local sales and global sales. We can detect the very high positive correlations between North American sales and global sales and between EU sales and global sales easily. In the corresponding subplots, we see a straight line from the lower left corner to the upper right corner. It could be seen even better if we had got rid of the extreme sales numbers for games that have been sold with a console.
 ![correlations](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/correlations.png "Correlations")
 
-If we have a closer look at the relationship between the score that critics awarded and the score that users awarded, we in fact notice that they are kind of correlated, but there's a lot of variation and the plot forms a longish cloud in the upper right corner. Obviously, critics and users alike tend to award scores above average more often then scores below average. This allows us to "see" that both features are skewed and don't portray a normal distribution. Unfortunately, we do not find any peculiarities by grouping the plot by the platform manufacturer (or platform or mobility, both not shown here).
+If we have a closer look at the relationship between the score that critics awarded and the score that users awarded, we in fact notice that they are kind of correlated, but there's a lot of variation and the plot forms a longish cloud in the upper right corner (Please note that we already scaled the user score by a factor of 10 in order to get nice square plots). Obviously, critics and users alike tend to award scores above average more often then scores below average. This allows us to "see" that both features are skewed and don't portray a normal distribution. Unfortunately, we do not find any peculiarities by grouping the plot by the platform manufacturer (or platform or mobility, both not shown here).
 
 ![score_comparison](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/score_comparison.png "Score Comparison")
 

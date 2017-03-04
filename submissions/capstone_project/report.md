@@ -120,12 +120,13 @@ Of course, we can also have a look at the distributions directly by using a scat
 Summing up the sales visualizations, we could suppose that especialy the platform manufacturer and the mobility of the console might already hint to larger or smaller sales numbers, because of their large fractions in the pie charts. Unfortunately, at this stage we have not yet cleaned the data as this is supposed to happen later in this template. We'll have to recreate the visualizations later.
 
 ### Algorithms and Techniques
-In this section, you will need to discuss the algorithms and techniques you intend to use for solving the problem. You should justify the use of each one based on the characteristics of the problem and the problem domain. Questions to ask yourself when writing this section:
-- _Are the algorithms you will use, including any default variables/parameters in the project clearly defined?_
-- _Are the techniques to be used thoroughly discussed and justified?_
-- _Is it made clear how the input data or datasets will be handled by the algorithms and techniques chosen?_
+As we detected above, may not be ready for use and data cleansing is in place. There are lots of incomplete samples. Some information can be gathered or corrected manually. For example, I am going to add missing years of release. Some rows with missing scores will be removed. In the data preprocessing stage, we are also going to deal with outliers. Finally, before building a model we should consider to scaling the data and possible also to transform some features in order to get more normal distributions.
 
-Hmmm... Isn't that redundant to Data Preprocessing/Implementation in the next chapter?
+After these steps, we can decide which algorithm we should use. According to the (http://scikit-learn.org/stable/tutorial/machine_learning_map)[Scikit-Learn Algorithm Cheat-Sheet], for regressors with less than 100.000 samples we could e.g. use Lasso and Elastic Net, but we cannot be sure that only few features should be important. Alternatively, we should use Ridge Regression and Support Vector Machines with different kernels or even ensemble methods. Although they are not listed in the cheat-sheet, we could also try a Decision Tree Regressor or Neural Networks. Of course, before deciding for an algorithm, we could do some quick tests.
+
+In order to get a more robust result, we are going to apply k-fold cross-validation: We are going to randomly split our dataset into a training set and a test set several times and compare the performance on both sets. This way we will be able to detect overfitting and underfitting and decide what we can do to improve the results.
+
+TODO: discuss and justify each method
 
 ### Benchmark
 There are some people at Kaggle who seem to be experimenting with the dataset, too. For example, [Jonathan Bouchet built a polynomial regression model in R and reports an R² score of 0.098404](https://www.kaggle.com/jonathanbouchet/d/rush4ratio/video-game-sales-with-ratings/vg-sales-score-prediction/notebook). Since Bouchet barely preprocessed the data and did not try other algorithms, I am quite optimistic that I can come up with a better result.

@@ -141,6 +141,13 @@ In this section, all of your preprocessing steps will need to be clearly documen
 - _Based on the **Data Exploration** section, if there were abnormalities or characteristics that needed to be addressed, have they been properly corrected?_
 - _If no preprocessing is needed, has it been made clear why?_
 
+- 269 dates missing, often for Japanese Releases or Atari 2600 games
+- 245 dates added, some games seem to have been cancelled for a platform although there are numbers for sales volume, so it's best to sort them out (by Year_Of_Release == None)
+- Many games seem to have been released in Japan only => Should be ignored (JP_Sales == Global_Sales otherwise)
+- Some games explicitly stated (jp sales/japan sales/etc.) => merged logically with global title, sometimes strong effect; influence of Japan Sales would be missing for some rows otherwise
+- Slightly contradictory information for a few rows merged anyway using max(entry1, entry2)
+- "tbd" => None
+
 - Remove unnecessary columns
 - ...
 

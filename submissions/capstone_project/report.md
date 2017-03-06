@@ -141,15 +141,25 @@ In this section, all of your preprocessing steps will need to be clearly documen
 - _Based on the **Data Exploration** section, if there were abnormalities or characteristics that needed to be addressed, have they been properly corrected?_
 - _If no preprocessing is needed, has it been made clear why?_
 
-- 269 dates missing, often for Japanese Releases or Atari 2600 games
-- 245 dates added, some games seem to have been cancelled for a platform although there are numbers for sales volume, so it's best to sort them out (by Year_Of_Release == None)
-- Many games seem to have been released in Japan only => Should be ignored (JP_Sales == Global_Sales otherwise)
-- Some games explicitly stated (jp sales/japan sales/etc.) => merged logically with global title, sometimes strong effect; influence of Japan Sales would be missing for some rows otherwise
-- Slightly contradictory information for a few rows merged anyway using max(entry1, entry2)
-- "tbd" => None
+The first phase of our data preprocessing was general cleaning that was performed manually on the dataset itself, because those steps can be useful for anyone.
 
+We had to correct some entries of the feature "user score" that contained the string "tbd" instead of a numeric value. Those were replaced by "NaN", because without these changes the data type of the feature would not be detected correctly by Pandas. Afterwards, we deleted some double spaces and leading and trailing spaces in strings.
+
+The next manual correction concerned the feature "year of release". There were 269 dates missing, mostly for games that had only been released in Japan or for the Atari 2600 console. We were able to find relevant information for 245 entries. Some dates have not been added because the corresponding games seem to have been canceled and never been released - despite there are numbers given for sales volume. This raises some doubts about the quality of the dataset.
+
+Another quality problem arises from uneccessary rows. For some games, there were separate entries for the Japanese market only. Those were merged with the sample that contained the numbers for sales in other regions. In some cases, those sample also contained the sales volume for the Japanese market. In this case, we chose the higher value respectively.
+
+The results of this cleaning process have been saved as "Video_Games_Sales_as_at_22_Dec_2016_cleaned.csv". Afterwards, the feature "user score" was scaled by factor 10 in order to match the range of 0 to 100 of the feature "critic score". Further preprocessing involved removing samples that are not considered fit for analysis.
+
+First of all, all rows that did contain some NaN values have been removed. We want full information about our game titles.
+
+Afterwards, we had to look at the feature "year of release". There are only few rows before 2000 (even after adding some dates before), because MetaCritic as supplier of scores was founded in July 16, 1999. Also, looking at the sum of global sales grouped by year seamingly reveals a large gap from 2000 to 2001 -- there probably wasn't such a boost in video game sales, but MetaCritit had to get going. We also have a gap from 2015 to 2016 in the other direction. This might be a result of declining video sales numbers that can be observed, but it might also reflect the Christmas business that was still not complete. That's why we considered rows before 2001 to be outliers to be removed, also those after 2015.
+
+There were some more rows that were removed because they might not be good samples. There were still several games that had only be released in Japan, so the Japanese sales volume would be the global sales volume. Taking into account the particularity of the Japanese market that has been detected above, we would distort our results obtained using global sales as target variable.
+
+- Outlier Removal (bundles)
+- Feature Generation
 - Remove unnecessary columns
-- ...
 
 ### Implementation
 In this section, the process for which metrics, algorithms, and techniques that you implemented for the given data will need to be clearly documented. It should be abundantly clear how the implementation was carried out, and discussion should be made regarding any complications that occurred during this process. Questions to ask yourself when writing this section:

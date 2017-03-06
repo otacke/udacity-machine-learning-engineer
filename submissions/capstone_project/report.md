@@ -21,14 +21,14 @@ Based on the problem definition above, the dataset will be analyzed and prepared
 
 Subsequently, suitable algorithms will be selected. There are different methods and approaches that might be appropriate for building a regression model and should be considered. Although quite a lot algorithms might suit the problem, the right choice depends on different criteria, such as efficiency and scalability. Since we are dealing with more than 50 but less than 100.000 samples for predicting a quantity, the [scikit-learn cheat-sheet](http://scikit-learn.org/stable/tutorial/machine_learning_map/) suggests to consider Lasso, ElasticNet, Ridge Regression, Support Vector machines or even Ensemble Regressors. Out of curiosity, we might also tinker with Neural Networks.
 
-The next step will be to run and evaluate the algorithms that we have chosen in the previous step. By comparing each algorithm's performance using e.g. k-fold cross validation, we can identify the algorithms that are best at "understanding" the data and at attacking the prediction of video game sales.
+The next step will be to run and evaluate the algorithms that we have chosen in the previous step. By comparing each algorithm's performance using cross validation, we can identify the algorithms that are best at "understanding" the data and at attacking the prediction of video game sales.
 
 As a final step we are going to improve and finalize the results with focused experiments and fine tuning. Each algorithm has certain parameters that can be tweaked in order to get better results. Approaches such as a grid search will be helpful to support this task systematically. Possibly, even ensemble methods will be tried out for fine tuning the results.
 
 ### Metrics
 The goal of this project is to predict the sales volume of video games, which simply is an integer. We can apply common statistic approaches to compare and visualize the deviation of the predictions from the correct results. The explained variance score or the R² score could be used to quantify the performance of my model. It indicates how much of the variance within a dataset can be explained by a regression model.
 
-Using this score, we can check our model to be prone to high bias or high variance. One method is to split our data into a training set that's used for training the model and a test set for testing its performance, e.g. using k-fold cross validation. This way we can identify and reduce underfitting or overfitting. Also, plotting the learning curves (training error and the cross validation error in relation to the training set size) can offer insight related to high bias and high variance and appropriate options for improvement such as collecting more samples or more features.
+Using this score, we can check our model to be prone to high bias or high variance. One method is to split our data into a training set that's used for training the model and a test set for testing its performance. This way we can identify and reduce underfitting or overfitting. Also, plotting the learning curves (training error and the cross validation error in relation to the training set size) can offer insight related to high bias and high variance and appropriate options for improvement such as collecting more samples or more features.
 
 Instead of splitting the dataset, we can also use new data from the data sources (VGChartz, Metacritics) that are not available yet. This would basically be a real world test.
 
@@ -126,8 +126,7 @@ After these steps, we can decide which algorithm we should use. According to the
 
 TODO: discuss and justify each method
 
-TODO: precise!!!
-In order to get a more robust result, we are going to apply k-fold cross validation: We are going to randomly split our dataset into a training set and a test set several times and compare the performance on both sets. This way we will be able to detect overfitting and underfitting and decide what we can do to improve the results.
+In order to get a more robust result, we are going to apply cross validation (ShuffleSplit): We are going to randomly split our dataset into a training set and a test set several times and compare the performance on both sets. This way we will be able to detect overfitting and underfitting and decide what we can do to improve the results.
 
 ### Benchmark
 There are some people at Kaggle who seem to be experimenting with the dataset, too. For example, [Jonathan Bouchet built a polynomial regression model in R and reports an R² score of 0.098404](https://www.kaggle.com/jonathanbouchet/d/rush4ratio/video-game-sales-with-ratings/vg-sales-score-prediction/notebook). Since Bouchet barely preprocessed the data and did not try other algorithms, I am quite optimistic that I can come up with a better result.

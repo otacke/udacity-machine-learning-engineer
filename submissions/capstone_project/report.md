@@ -158,6 +158,7 @@ Afterwards, we had to look at the feature "year of release". There are only few 
 There were some more rows that were removed because they might not be good samples. There were still several games that had only be released in Japan, so the Japanese sales volume would be the global sales volume. Taking into account the particularity of the Japanese market that has been detected above, we would distort our results obtained using global sales as target variable.
 
 - Outlier Removal (bundles)
+  TODO: Check at least the optical outliers, better down to the last known bundle
 - Feature Generation
 - Remove unnecessary columns
 

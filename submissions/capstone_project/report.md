@@ -155,12 +155,15 @@ First of all, all rows that did contain some NaN values have been removed. We wa
 
 Afterwards, we had to look at the feature "year of release". There are only few rows before 2000 (even after adding some dates before), because MetaCritic as supplier of scores was founded in July 16, 1999. Also, looking at the sum of global sales grouped by year seamingly reveals a large gap from 2000 to 2001 -- there probably wasn't such a boost in video game sales, but MetaCritit had to get going. We also have a gap from 2015 to 2016 in the other direction. This might be a result of declining video sales numbers that can be observed, but it might also reflect the Christmas business that was still not complete. That's why we considered rows before 2001 to be outliers to be removed, also those after 2015.
 
-There were some more rows that were removed because they might not be good samples. There were still several games that had only be released in Japan, so the Japanese sales volume would be the global sales volume. Taking into account the particularity of the Japanese market that has been detected above, we would distort our results obtained using global sales as target variable.
+There were some more rows that were removed because they might not be good samples. There were still several games that had only be released in Japan, so the Japanese sales volume would be the global sales volume. Taking into account the particularity of the Japanese market that has been detected above, we would distort our results obtained using global sales as target variable. After this step, we have 6474 samples left.
 
-- Outlier Removal (bundles)
-  TODO: Check at least the optical outliers, better down to the last known bundle
-- Feature Generation
-- Remove unnecessary columns
+If we take a step back and look at our plots showing score and sales, we can clearly see some but very few games that seem to be top sellers. Investigating some more, we can reveal that 75 of those 129 games that sold more than 5,000,000 copies had been sold as bundles together with a console. This is an important information for interpreting the sales numbers, because those games might not have been purchased based on opinions about the quality, but because someone wanted to buy a console anyway. It's not clear whether those games should be treated as outliers and be removed, or whether they should be flagged with a new feature. The latter seems to be more appropriate, but a quick test with default parameters revealed that ridge regression gets better results, while a support vector regression returns worse results. Later on, we are going to check both options.
+
+There are two more features we could generate from the existing data and that might be useful. On the one hand, we can group the platforms by their manufacturers, e.g. all the different types of Play Stations were built by Sony. If there's fandom for a company, this fact might influence sales. On the other hand, we can differentiate stationary platforms from mobile devices. This might be an indicator for high or low sales numbers.
+
+Furthermore, there are some features that we cannot make use of. Obviously, the name of a game hardly gives us any information. The publisher and the developer might be useful in general, because some of them might have a reputation for high or low quality games. Unfortunately, there are more than 200 different publishers and more than 1,000 different developers which is very high given the size of our dataset. We removed those features.
+
+- Transformation?
 
 ### Implementation
 In this section, the process for which metrics, algorithms, and techniques that you implemented for the given data will need to be clearly documented. It should be abundantly clear how the implementation was carried out, and discussion should be made regarding any complications that occurred during this process. Questions to ask yourself when writing this section:

@@ -70,7 +70,7 @@ Finally, there are some cells containing the string 'tbd' instead of a proper Na
 
 #### Statistical abnormalities
 One of the aspects of statistical abnormalities is the subject of outlier identification. 
-"Sample outliers can be identified asof two basic types. Here we are concerned with the firstype, which may conveniently betermed representative outliers. These are sample elements with values that have been correctly recorded and that cannot be assumed to be unique. That is, there is no good reason to assume there are no more similar outliers in the nonsampled part of the target population. The remaining sample outliers, which by default are termed nonrepresentative, are sample elements whose data values are incorrect or unique in some sense." (Chambers, 1986, p. 1063). Some of those nonrepresentative elements have already been mentioned above.
+"Sample outliers can be identified asof two basic types. Here we are concerned with the first type, which may conveniently be termed representative outliers. These are sample elements with values that have been correctly recorded and that cannot be assumed to be unique. That is, there is no good reason to assume there are no more similar outliers in the nonsampled part of the target population. The remaining sample outliers, which by default are termed nonrepresentative, are sample elements whose data values are incorrect or unique in some sense." (Chambers, 1986, p. 1063). Some of those nonrepresentative elements have already been mentioned above.
 
 When we investigate the feature of global sales, we can easily note some games with very high sales volumes. For example, the top selling game is said to have been sold more than 82 million times and tenth highest selling game still more than 28 million times -- whereas the mean value of global sales is at merely 0.54 million copies and the median at 0.17. Fortunately, there's an explanation. The "seemingly" top selling game is "Wii Sports", which in fact has changed owners that often, but probably only because it came as a bundle with the Wii console in 2006. People bought it whether they wanted or not and without paying respect to critics. The same is true for a lot of the top ranking titles.
 
@@ -122,9 +122,27 @@ Summing up the sales visualizations, we could suppose that especialy the platfor
 ### Algorithms and Techniques
 As we detected above, may not be ready for use and data cleansing is in place. There are lots of incomplete samples. Some information can be gathered or corrected manually. For example, I am going to add missing years of release. Some rows with missing scores will be removed. In the data preprocessing stage, we are also going to deal with outliers. Finally, before building a model we should consider to scaling the data and possible also to transform some features in order to get more normal distributions.
 
-After these steps, we can decide which algorithm we should use. According to the (http://scikit-learn.org/stable/tutorial/machine_learning_map)[Scikit-Learn Algorithm Cheat-Sheet], for regressors with less than 100.000 samples we could e.g. use Lasso and Elastic Net, but we cannot be sure that only few features should be important. Alternatively, we should use Ridge Regression and Support Vector Machines with different kernels or even ensemble methods.
+After these steps, we can decide which algorithm we should use. According to the [Scikit-Learn Algorithm Cheat-Sheet](http://scikit-learn.org/stable/tutorial/machine_learning_map), for regressors with less than 100.000 samples we could e.g. use Lasso and Elastic Net, but we cannot be sure that only few features should be important. Alternatively, we should use Ridge Regression and Support Vector Machines with different kernels or even ensemble methods.
 
-TODO: discuss and justify each method
+Lasso, Elastic Net and Ridge Regression are linear regression algorithms that use regularization to prevent overfitting. They all offer the following parameters that we might tune:
+- _alpha_ is a positive float that indicates the strength of the regularization. The larger the values are, the stronger the effect. Of course, very large values will lead to too simple models that cannot predict anything.
+- _fit_intercept_ is set to True by default and setting it to False assumes the data is centered. Since we have very skewed data, using False should produce worse results.
+- _normalize_ is set to False by default and can be used to, well, normalize the dataset before regression.
+- _max_iter_ is the number of iterations. Larger values may produce better results.
+
+Elastic Net Regression also gives us the parameter l1_ratio that we might tweak:
+- _l1_ratio_ is a float between 0 and 1 that determines the type of regularization. If close to 1, the penalty will be of type L2, and if close to 0, it will rather be like type L1.
+
+Ridge Regression also gives us the the parameter solver to set:
+- _solver_ allows us to choose from different computational routines, but can also be set to 'auto' in order to choose the solver automatically based on the type of data.
+
+Furthermore, we can use a Support Vector Regressor which can be very effective in in high dimensional spaces, and we can also use the kernel trick to create non-linear decision boundaries in order to capture very complex patterns in the data that the linear models fail to grasp. Support Vector Machines don't perform well on large training data sets, but ours is still fine.
+
+The following parameters might be worth tuning:
+- _C_
+- _epsilon_
+- _kernel_
+- _gamma_
 
 In order to get a more robust result, we are going to apply cross validation (ShuffleSplit): We are going to randomly split our dataset into a training set and a test set several times and compare the performance on both sets. This way we will be able to detect overfitting and underfitting and decide what we can do to improve the results.
 
@@ -157,13 +175,13 @@ Afterwards, we had to look at the feature "year of release". There are only few 
 
 There were some more rows that were removed because they might not be good samples. There were still several games that had only be released in Japan, so the Japanese sales volume would be the global sales volume. Taking into account the particularity of the Japanese market that has been detected above, we would distort our results obtained using global sales as target variable. After this step, we have 6474 samples left.
 
-If we take a step back and look at our plots showing score and sales, we can clearly see some but very few games that seem to be top sellers. Investigating some more, we can reveal that 75 of those 129 games that sold more than 5,000,000 copies had been sold as bundles together with a console. This is an important information for interpreting the sales numbers, because those games might not have been purchased based on opinions about the quality, but because someone wanted to buy a console anyway. It's not clear whether those games should be treated as outliers and be removed, or whether they should be flagged with a new feature. The latter seems to be more appropriate, but a quick test with default parameters revealed that ridge regression gets better results, while a support vector regression returns worse results. Later on, we are going to check both options.
+If we take a step back and look at our plots showing score and sales, we can clearly see some but very few games that seem to be top sellers. Investigating some more, we can reveal that 75 of those 129 games that sold more than 5,000,000 copies had been sold as bundles together with a console. This is an important information for interpreting the sales numbers, because those games might not have been purchased based on opinions about the quality, but because someone wanted to buy a console anyway. It's not clear whether those games should be treated as outliers and be removed, or whether they should be flagged with a new feature. The latter seems to be more appropriate, but a quick test with default parameters revealed that ridge regression gets better results, while a support vector regression returns worse results. Later on, we are going to check both options. Also, there may be some titles among those above that slipped through our fingers and have been sold in bundles, and we have not yet checked those that sold less that 5 million copies. Since this manual cleaning and documentation process is very tedious, we hope that we found enough.
 
 There are two more features we could generate from the existing data and that might be useful. On the one hand, we can group the platforms by their manufacturers, e.g. all the different types of Play Stations were built by Sony. If there's fandom for a company, this fact might influence sales. On the other hand, we can differentiate stationary platforms from mobile devices. This might be an indicator for high or low sales numbers.
 
 Furthermore, there are some features that we cannot make use of. Obviously, the name of a game hardly gives us any information. The publisher and the developer might be useful in general, because some of them might have a reputation for high or low quality games. Unfortunately, there are more than 200 different publishers and more than 1,000 different developers which is very high given the size of our dataset. We removed those features.
 
-- Transformation?
+As mentioned above, we could now remove some statistical outliers based on their distance to the features' mean, but we might as well decide against because we could lose representative outliers (cmp. Chambers, 1986). Basically the same is true for scaling or transforming the data. In some quick tests with default parameters, some algorithms yielded better results while some got worse. We are going to deal with this aspect in the next section. We're done with data preprocessing.
 
 ### Implementation
 In this section, the process for which metrics, algorithms, and techniques that you implemented for the given data will need to be clearly documented. It should be abundantly clear how the implementation was carried out, and discussion should be made regarding any complications that occurred during this process. Questions to ask yourself when writing this section:

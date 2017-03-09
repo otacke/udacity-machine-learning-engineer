@@ -122,9 +122,27 @@ Summing up the sales visualizations, we could suppose that especialy the platfor
 ### Algorithms and Techniques
 As we detected above, may not be ready for use and data cleansing is in place. There are lots of incomplete samples. Some information can be gathered or corrected manually. For example, I am going to add missing years of release. Some rows with missing scores will be removed. In the data preprocessing stage, we are also going to deal with outliers. Finally, before building a model we should consider to scaling the data and possible also to transform some features in order to get more normal distributions.
 
-After these steps, we can decide which algorithm we should use. According to the (http://scikit-learn.org/stable/tutorial/machine_learning_map)[Scikit-Learn Algorithm Cheat-Sheet], for regressors with less than 100.000 samples we could e.g. use Lasso and Elastic Net, but we cannot be sure that only few features should be important. Alternatively, we should use Ridge Regression and Support Vector Machines with different kernels or even ensemble methods.
+After these steps, we can decide which algorithm we should use. According to the [Scikit-Learn Algorithm Cheat-Sheet](http://scikit-learn.org/stable/tutorial/machine_learning_map), for regressors with less than 100.000 samples we could e.g. use Lasso and Elastic Net, but we cannot be sure that only few features should be important. Alternatively, we should use Ridge Regression and Support Vector Machines with different kernels or even ensemble methods.
 
-TODO: discuss and justify each method
+Lasso, Elastic Net and Ridge Regression are linear regression algorithms that use regularization to prevent overfitting. They all offer the following parameters that we might tune:
+- _alpha_ is a positive float that indicates the strength of the regularization. The larger the values are, the stronger the effect. Of course, very large values will lead to too simple models that cannot predict anything.
+- _fit_intercept_ is set to True by default and setting it to False assumes the data is centered. Since we have very skewed data, using False should produce worse results.
+- _normalize_ is set to False by default and can be used to, well, normalize the dataset before regression.
+- _max_iter_ is the number of iterations. Larger values may produce better results.
+
+Elastic Net Regression also gives us the parameter l1_ratio that we might tweak:
+- _l1_ratio_ is a float between 0 and 1 that determines the type of regularization. If close to 1, the penalty will be of type L2, and if close to 0, it will rather be like type L1.
+
+Ridge Regression also gives us the the parameter solver to set:
+- _solver_ allows us to choose from different computational routines, but can also be set to 'auto' in order to choose the solver automatically based on the type of data.
+
+Furthermore, we can use a Support Vector Regressor which can be very effective in in high dimensional spaces, and we can also use the kernel trick to create non-linear decision boundaries in order to capture very complex patterns in the data that the linear models fail to grasp. Support Vector Machines don't perform well on large training data sets, but ours is still fine.
+
+The following parameters might be worth tuning:
+- _C_
+- _epsilon_
+- _kernel_
+- _gamma_
 
 In order to get a more robust result, we are going to apply cross validation (ShuffleSplit): We are going to randomly split our dataset into a training set and a test set several times and compare the performance on both sets. This way we will be able to detect overfitting and underfitting and decide what we can do to improve the results.
 

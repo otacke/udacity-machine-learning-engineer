@@ -125,24 +125,24 @@ As we detected above, may not be ready for use and data cleansing is in place. T
 After these steps, we can decide which algorithm we should use. According to the [Scikit-Learn Algorithm Cheat-Sheet](http://scikit-learn.org/stable/tutorial/machine_learning_map), for regressors with less than 100.000 samples we could e.g. use Lasso and Elastic Net, but we cannot be sure that only few features should be important. Alternatively, we should use Ridge Regression and Support Vector Machines with different kernels or even ensemble methods.
 
 Lasso, Elastic Net and Ridge Regression are linear regression algorithms that use regularization to prevent overfitting. They all offer the following parameters that we might tune:
-- _alpha_ is a positive float that indicates the strength of the regularization. The larger the values are, the stronger the effect. Of course, very large values will lead to too simple models that cannot predict anything.
-- _fit_intercept_ is set to True by default and setting it to False assumes the data is centered. Since we have very skewed data, using False should produce worse results.
-- _normalize_ is set to False by default and can be used to, well, normalize the dataset before regression.
-- _max_iter_ is the number of iterations. Larger values may produce better results.
+- `alpha` is a positive float that indicates the strength of the regularization. The larger the values are, the stronger the effect. Of course, very large values will lead to too simple models that cannot predict anything.
+- `fit_intercept` is set to True by default and setting it to False assumes the data is centered. Since we have very skewed data, using False should produce worse results.
+- `normalize` is set to False by default and can be used to, well, normalize the dataset before regression.
+- `max_iter` is the number of iterations. Larger values may produce better results.
 
 Elastic Net Regression also gives us the parameter l1_ratio that we might tweak:
-- _l1_ratio_ is a float between 0 and 1 that determines the type of regularization. If close to 1, the penalty will be of type L2, and if close to 0, it will rather be like type L1.
+- `l1_ratio` is a float between 0 and 1 that determines the type of regularization. If close to 1, the penalty will be of type L2, and if close to 0, it will rather be like type L1.
 
 Ridge Regression also gives us the the parameter solver to set:
-- _solver_ allows us to choose from different computational routines, but can also be set to 'auto' in order to choose the solver automatically based on the type of data.
+- `solver` allows us to choose from different computational routines, but can also be set to 'auto' in order to choose the solver automatically based on the type of data.
 
-Furthermore, we can use a Support Vector Regressor which can be very effective in in high dimensional spaces, and we can also use the kernel trick to create non-linear decision boundaries in order to capture very complex patterns in the data that the linear models fail to grasp. Support Vector Machines don't perform well on large training data sets, but ours is still fine.
+Furthermore, we can use a Support Vector Regressor which can be very effective in in high dimensional spaces, and we can also use the kernel trick to create non-linear decision boundaries in order to capture very complex patterns in the data that the linear models fail to grasp. Support vector machines don't perform well on large training data sets, but ours is still fine.
 
 The following parameters might be worth tuning:
-- _C_
-- _epsilon_
-- _kernel_
-- _gamma_
+- `C` is the regularization parameter of support vector machines. The higher the value of C, the less the model tolerates errors (hard margin) and the more prone to overfitting it becomes.
+- `epsilon` determines the number of support vectors that will be used to define the margin. Increasing epsilon will decrease the number of support vectors and reduce the danger of overfitting, but contrarywise the solution may be less accurate.
+- `kernel` defines the way how the computation is virtually transferred to a higher dimensional space. An appropriate kernel can help us to deal with non-linear problems, and 'rbf' seems to be the right choice.
+- `gamma` defines the sphere of influence a single training example has. If it is low, then the sphere of influence is large and more samples affect the definition of the margin. Vice versa, high values reduce the number of samples defining the margin, but may cause overfitting.
 
 In order to get a more robust result, we are going to apply cross validation (ShuffleSplit): We are going to randomly split our dataset into a training set and a test set several times and compare the performance on both sets. This way we will be able to detect overfitting and underfitting and decide what we can do to improve the results.
 

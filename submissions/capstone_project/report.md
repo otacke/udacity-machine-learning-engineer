@@ -222,6 +222,8 @@ In this section, you will need to provide some form of visualization that emphas
 - _Is the visualization thoroughly analyzed and discussed?_
 - _If a plot is provided, are the axes, title, and datum clearly defined?_
 
+learning curve of final model
+
 ### Reflection
 In this section, you will summarize the entire end-to-end problem solution and discuss one or two particular aspects of the project you found interesting or difficult. You are expected to reflect on the project as a whole to show that you have a firm understanding of the entire process employed in your work. Questions to ask yourself when writing this section:
 - _Have you thoroughly summarized the entire process you used for this project?_
@@ -229,11 +231,30 @@ In this section, you will summarize the entire end-to-end problem solution and d
 - _Were there any difficult aspects of the project?_
 - _Does the final model and solution fit your expectations for the problem, and should it be used in a general setting to solve these types of problems?_
 
+- manual data cleansing tedious, but I was pretty thorough
+- difficult: math behind algorithms not fully understood, hard to determine whether useful or not
+- beautification of code necessary
+
 ### Improvement
 In this section, you will need to provide discussion as to how one aspect of the implementation you designed could be improved. As an example, consider ways your implementation can be made more general, and what would need to be modified. You do not need to make this improvement, but the potential solutions resulting from these changes are considered and compared/contrasted to your current solution. Questions to ask yourself when writing this section:
 - _Are there further improvements that could be made on the algorithms or techniques you used in this project?_
 - _Were there algorithms or techniques you researched that you did not know how to implement, but would consider using if you knew how?_
 - _If you used your final solution as the new benchmark, do you think an even better solution exists?_
+
+There are several ways how our solution could be improved.
+
+- Learning curves of linear models: More samples won't help (already converging closely). More features would be better
+- Learning curves of SVM: might get slightly better results with more data, but more features seem to be advisable
+- Features
+  - Check all samples for being part of a bundle
+  - franchise
+  - spendings on advertising
+  - scores from other platforms
+  - price of the game (but that's not stable)
+- Try other algorithms such as neural networks or other regressors
+- Look for differences when using k-fold cross validation
+- Possibly: Principal Component Analysis to make dataset smaller for analysis
+- There's always a better solution.
 
 ## VI. Sources
 * Beaujon, Walter S. (2012). _Predicting Video Game Sales in the European Market._ Retrieved from https://www.few.vu.nl/nl/Images/werkstuk-beaujon_tcm243-264134.pdf (January 12, 2016).

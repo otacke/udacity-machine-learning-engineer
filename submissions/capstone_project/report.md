@@ -231,6 +231,7 @@ In this section, you will summarize the entire end-to-end problem solution and d
 - _Were there any difficult aspects of the project?_
 - _Does the final model and solution fit your expectations for the problem, and should it be used in a general setting to solve these types of problems?_
 
+- You could also ... finding the balance ...
 - manual data cleansing tedious, but I was pretty thorough
 - difficult: math behind algorithms not fully understood, hard to determine whether useful or not
 - beautification of code necessary

@@ -1,0 +1,481 @@
+,Id,Regressor,R2_Train,R2_Test,R2_Gap,Calc_Time,Standardized,Scaled_0_1,Boxcoxed,Remove_Bundles,Outlier_Threshold,Outlier_Multiety,Test_Size,N_Splits,RND
+0,1.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,23.1516339779,False,False,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,2.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.221763871307,0.0602413148255,0.161522556481,708.747153044,False,False,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,3.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.189432196303,0.306143665383,0.11671146908,363.597354889,False,False,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,4.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.112889224182,0.218767859771,0.105878635589,23.3813920021,False,False,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,5.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,22.6439390182,False,False,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,6.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.221763871307,0.0602413148255,0.161522556481,703.229630947,False,False,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,7.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.189432196303,0.306143665383,0.11671146908,362.358428955,False,False,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,8.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.112889224182,0.218767859771,0.105878635589,23.2121219635,False,False,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,9.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,22.3508241177,False,False,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,10.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.221763871307,0.0602413148255,0.161522556481,699.985399008,False,False,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,11.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.189432196303,0.306143665383,0.11671146908,361.421595097,False,False,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,12.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.112889224182,0.218767859771,0.105878635589,22.8548698425,False,False,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,13.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.284366701618,0.261714723998,0.0226519776194,20.6916668415,False,False,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,14.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.558768872868,0.122023443496,0.436745429371,647.902892113,False,False,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,15.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.248792681026,0.230790311576,0.0180023694502,340.134566069,False,False,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,16.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.190571785765,0.176074694135,0.0144970916305,23.7924768925,False,False,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,17.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.284366701618,0.261714723998,0.0226519776194,20.9538011551,False,False,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,18.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.558768872868,0.122023443496,0.436745429371,646.458832026,False,False,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,19.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.248792681026,0.230790311576,0.0180023694502,338.345243216,False,False,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,20.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.190571785765,0.176074694135,0.0144970916305,23.7999579906,False,False,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,21.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.284366701618,0.261714723998,0.0226519776194,21.0141570568,False,False,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,22.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.558768872868,0.122023443496,0.436745429371,647.913424015,False,False,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,23.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.248792681026,0.230790311576,0.0180023694502,338.541126013,False,False,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,24.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.190571785765,0.176074694135,0.0144970916305,23.8872189522,False,False,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,25.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454179724674,0.510810453908,0.0566307292343,22.3337440491,False,False,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,26.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.212586184185,-6.44145144988e-05,0.2126505987,614.740663052,False,False,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,27.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.192379844619,0.314013278005,0.121633433385,355.893510103,False,False,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,28.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.11701628903,0.22901816027,0.11200187124,19.3487701416,False,False,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,29.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454179724674,0.510810453908,0.0566307292343,22.3046560287,False,False,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,30.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.212586184185,-6.44145144988e-05,0.2126505987,623.742027044,False,False,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,31.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.192379844619,0.314013278005,0.121633433385,356.155761003,False,False,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,32.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.11701628903,0.22901816027,0.11200187124,19.378002882,False,False,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,33.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454179724674,0.510810453908,0.0566307292343,22.0715410709,False,False,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,34.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.212586184185,-6.44145144988e-05,0.2126505987,615.14268589,False,False,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,35.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.192379844619,0.314013278005,0.121633433385,355.478584051,False,False,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,36.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.11701628903,0.22901816027,0.11200187124,19.3780300617,False,False,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,37.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.295130319467,0.271602832279,0.0235274871873,20.8347878456,False,False,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,38.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.389081107319,0.00328263112596,0.385798476193,557.023356199,False,False,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,39.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.258953295889,0.24080512112,0.0181481747695,328.703620911,False,False,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,40.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.201259575654,0.187213738114,0.01404583754,18.1086249352,False,False,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,41.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.295130319467,0.271602832279,0.0235274871873,20.7094299793,False,False,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,42.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.389081107319,0.00328263112596,0.385798476193,554.439723969,False,False,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,43.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.258953295889,0.24080512112,0.0181481747695,329.867278099,False,False,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,44.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.201259575654,0.187213738114,0.01404583754,18.3087627888,False,False,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,45.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.295130319467,0.271602832279,0.0235274871873,21.237334013,False,False,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,46.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.389081107319,0.00328263112596,0.385798476193,555.141479969,False,False,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,47.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.258953295889,0.24080512112,0.0181481747695,330.738255024,False,False,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,48.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.201259575654,0.187213738114,0.01404583754,18.4119198322,False,False,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,49.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,9.30303096771,False,True,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,50.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-3.18213810754,-4.93078574866,1.74864764112,5.09841704369,False,True,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,51.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0933854256904,0.134358477036,0.0409730513458,305.249191999,False,True,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,52.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.54090189934,False,True,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,53.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,9.30708503723,False,True,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,54.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-3.18213810754,-4.93078574866,1.74864764112,5.1212348938,False,True,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,55.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0933854256904,0.134358477036,0.0409730513458,304.618208885,False,True,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,56.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.59668183327,False,True,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,57.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,9.61074399948,False,True,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,58.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-3.18213810754,-4.93078574866,1.74864764112,5.11719202995,False,True,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,59.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0933854256904,0.134358477036,0.0409730513458,305.650699854,False,True,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,60.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.66162800789,False,True,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,61.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.283964124268,0.264158454761,0.0198056695068,8.89584517479,False,True,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,62.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.37454480591,-1.63311396979,0.258569163876,14.3075318336,False,True,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,63.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0866162908586,0.0924410061303,0.00582471527172,283.525336027,False,True,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,64.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.6095430851,False,True,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,65.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.283964124268,0.264158454761,0.0198056695068,8.97934889793,False,True,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,66.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.37454480591,-1.63311396979,0.258569163876,14.3122429848,False,True,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,67.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0866162908586,0.0924410061303,0.00582471527172,283.885453939,False,True,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,68.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.58853387833,False,True,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,69.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.283964124268,0.264158454761,0.0198056695068,9.24364900589,False,True,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,70.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.37454480591,-1.63311396979,0.258569163876,14.2978088856,False,True,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,71.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0866162908586,0.0924410061303,0.00582471527172,283.250222921,False,True,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,72.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.51843118668,False,True,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,73.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454339106365,0.51122997398,0.0568908676152,9.41583490372,False,True,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,74.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.83023069434,-3.00297947972,1.17274878538,5.71897602081,False,True,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,75.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.126152720285,0.194894912279,0.0687421919942,304.909562111,False,True,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,76.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.6763920784,False,True,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,77.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454339106365,0.51122997398,0.0568908676152,9.31880402565,False,True,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,78.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.83023069434,-3.00297947972,1.17274878538,5.71878504753,False,True,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,79.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.126152720285,0.194894912279,0.0687421919942,305.179381847,False,True,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,80.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.58311104774,False,True,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,81.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454339106365,0.51122997398,0.0568908676152,9.39108586311,False,True,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,82.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.83023069434,-3.00297947972,1.17274878538,5.71351408958,False,True,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,83.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.126152720285,0.194894912279,0.0687421919942,306.041681051,False,True,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,84.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.69814801216,False,True,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,85.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.295855633655,0.274625020133,0.0212306135227,8.84314107895,False,True,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,86.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.0862934383,-1.2516049809,0.165311542603,17.1468238831,False,True,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,87.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.15124650216,0.157313511774,0.00606700961463,283.245420933,False,True,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,88.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.49020004272,False,True,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,89.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.295855633655,0.274625020133,0.0212306135227,8.81566596031,False,True,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,90.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.0862934383,-1.2516049809,0.165311542603,17.2398049831,False,True,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,91.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.15124650216,0.157313511774,0.00606700961463,282.981661081,False,True,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,92.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.49954009056,False,True,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,93.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.295855633655,0.274625020133,0.0212306135227,8.85253095627,False,True,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,94.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.0862934383,-1.2516049809,0.165311542603,17.2429640293,False,True,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,95.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.15124650216,0.157313511774,0.00606700961463,283.544789076,False,True,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,96.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.54878401756,False,True,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,97.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,9.33113694191,True,False,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,98.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.553025191106,0.574881826474,0.0218566353682,269.617612123,True,False,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,99.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.451932833756,0.507704994531,0.055772160775,308.308156013,True,False,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,100.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.302906804719,0.382446188858,0.0795393841391,4.62819290161,True,False,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,101.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,9.35994911194,True,False,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,102.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.553025191106,0.574881826474,0.0218566353682,269.767107964,True,False,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,103.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.451932833756,0.507704994531,0.055772160775,308.834287882,True,False,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,104.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.302906804719,0.382446188858,0.0795393841391,4.60148096085,True,False,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,105.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,9.64339709282,True,False,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,106.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.553025191106,0.574881826474,0.0218566353682,269.300359964,True,False,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,107.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.451932833756,0.507704994531,0.055772160775,308.164550066,True,False,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,108.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.302906804719,0.382446188858,0.0795393841391,4.60190987587,True,False,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,109.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.284407717959,0.261663900527,0.0227438174313,8.84436893463,True,False,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,110.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.441800452025,0.395703738127,0.046096713898,366.225794077,True,False,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,111.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.27044274958,0.25970811108,0.0107346384999,290.042196989,True,False,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,112.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0529837184939,0.0558550555551,0.00287133706119,4.60571789742,True,False,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,113.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.284407717959,0.261663900527,0.0227438174313,8.85143899918,True,False,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,114.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.441800452025,0.395703738127,0.046096713898,366.674923897,True,False,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,115.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.27044274958,0.25970811108,0.0107346384999,288.846374989,True,False,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,116.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0529837184939,0.0558550555551,0.00287133706119,4.53343820572,True,False,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,117.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.284407717959,0.261663900527,0.0227438174313,8.88207101822,True,False,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,118.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.441800452025,0.395703738127,0.046096713898,366.681223869,True,False,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,119.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.27044274958,0.25970811108,0.0107346384999,289.204112053,True,False,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,120.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0529837184939,0.0558550555551,0.00287133706119,4.62558293343,True,False,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,121.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454179724674,0.510810453908,0.0566307292343,22.2190649509,False,False,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,122.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.212586184185,-6.44145144988e-05,0.2126505987,614.122581959,False,False,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,123.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.192379844619,0.314013278005,0.121633433385,356.826086998,False,False,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,124.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.11701628903,0.22901816027,0.11200187124,19.6745381355,False,False,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,125.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454179724674,0.510810453908,0.0566307292343,23.0432891846,False,False,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,126.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.212586184185,-6.44145144988e-05,0.2126505987,614.628170967,False,False,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,127.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.192379844619,0.314013278005,0.121633433385,356.035516977,False,False,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,128.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.11701628903,0.22901816027,0.11200187124,19.5627470016,False,False,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,129.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454179724674,0.510810453908,0.0566307292343,22.0284080505,False,False,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,130.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.212586184185,-6.44145144988e-05,0.2126505987,614.960961103,False,False,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,131.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.192379844619,0.314013278005,0.121633433385,356.899586201,False,False,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,132.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.11701628903,0.22901816027,0.11200187124,19.6624600887,False,False,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,133.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.295130319467,0.271602832279,0.0235274871873,20.8011360168,False,False,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,134.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.389081107319,0.00328263112596,0.385798476193,555.419736862,False,False,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,135.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.258953295889,0.24080512112,0.0181481747695,330.712149143,False,False,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,136.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.201259575654,0.187213738114,0.01404583754,18.0849351883,False,False,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,137.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.295130319467,0.271602832279,0.0235274871873,20.7862279415,False,False,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,138.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.389081107319,0.00328263112596,0.385798476193,558.855618,False,False,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,139.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.258953295889,0.24080512112,0.0181481747695,328.991017103,False,False,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,140.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.201259575654,0.187213738114,0.01404583754,18.2565100193,False,False,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,141.0,"Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=False, random_state=31415, solver='auto', tol=0.001)",0.295130319467,0.271602832279,0.0235274871873,20.7182440758,False,False,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,142.0,"SVR(C=0.7, cache_size=200, coef0=0.0, degree=3, epsilon=0.3, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",0.389081107319,0.00328263112596,0.385798476193,555.693736076,False,False,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,143.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.258953295889,0.24080512112,0.0181481747695,329.562469006,False,False,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,144.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.201259575654,0.187213738114,0.01404583754,18.2224421501,False,False,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,145.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,9.34353017807,False,True,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,146.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-3.18213810754,-4.93078574866,1.74864764112,5.10110807419,False,True,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,147.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0933854256904,0.134358477036,0.0409730513458,305.170764923,False,True,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,148.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.60654497147,False,True,False,False,-1.0,1.0,0.2,20.0,31415.0
+0,149.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,9.40523695946,False,True,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,150.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-3.18213810754,-4.93078574866,1.74864764112,5.10463285446,False,True,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,151.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0933854256904,0.134358477036,0.0409730513458,305.850178003,False,True,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,152.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.60138678551,False,True,False,False,-1.0,2.0,0.2,20.0,31415.0
+0,153.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.452441983173,0.506570380537,0.0541283973642,9.42486691475,False,True,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,154.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-3.18213810754,-4.93078574866,1.74864764112,5.10982704163,False,True,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,155.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0933854256904,0.134358477036,0.0409730513458,305.173672199,False,True,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,156.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.60080099106,False,True,False,False,-1.0,3.0,0.2,20.0,31415.0
+0,157.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.283964124268,0.264158454761,0.0198056695068,8.85613298416,False,True,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,158.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.37454480591,-1.63311396979,0.258569163876,14.3068869114,False,True,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,159.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0866162908586,0.0924410061303,0.00582471527172,282.98656702,False,True,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,160.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.48451113701,False,True,False,True,-1.0,1.0,0.2,20.0,31415.0
+0,161.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.283964124268,0.264158454761,0.0198056695068,8.79583311081,False,True,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,162.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.37454480591,-1.63311396979,0.258569163876,14.3021249771,False,True,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,163.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0866162908586,0.0924410061303,0.00582471527172,284.129262924,False,True,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,164.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.49095392227,False,True,False,True,-1.0,2.0,0.2,20.0,31415.0
+0,165.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.283964124268,0.264158454761,0.0198056695068,8.8330681324,False,True,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,166.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.37454480591,-1.63311396979,0.258569163876,14.2766189575,False,True,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,167.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=False, l1_ratio=0,
+      max_iter=1000, normalize=True, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.0866162908586,0.0924410061303,0.00582471527172,282.716988802,False,True,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,168.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.49364805222,False,True,False,True,-1.0,3.0,0.2,20.0,31415.0
+0,169.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454339106365,0.51122997398,0.0568908676152,9.33228397369,False,True,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,170.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.83023069434,-3.00297947972,1.17274878538,5.69161105156,False,True,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,171.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.126152720285,0.194894912279,0.0687421919942,306.532109022,False,True,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,172.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.60737895966,False,True,True,False,-1.0,1.0,0.2,20.0,31415.0
+0,173.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454339106365,0.51122997398,0.0568908676152,9.3375480175,False,True,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,174.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.83023069434,-3.00297947972,1.17274878538,5.73685598373,False,True,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,175.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.126152720285,0.194894912279,0.0687421919942,306.646884918,False,True,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,176.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.59856891632,False,True,True,False,-1.0,2.0,0.2,20.0,31415.0
+0,177.0,"Ridge(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.454339106365,0.51122997398,0.0568908676152,9.43869996071,False,True,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,178.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.83023069434,-3.00297947972,1.17274878538,5.703592062,False,True,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,179.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.126152720285,0.194894912279,0.0687421919942,305.156800985,False,True,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,180.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-8.79382714838e-05,8.79382714838e-05,4.58174395561,False,True,True,False,-1.0,3.0,0.2,20.0,31415.0
+0,181.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.295855633655,0.274625020133,0.0212306135227,8.89513111115,False,True,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,182.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.0862934383,-1.2516049809,0.165311542603,17.2117900848,False,True,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,183.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.15124650216,0.157313511774,0.00606700961463,283.270525217,False,True,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,184.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.53753781319,False,True,True,True,-1.0,1.0,0.2,20.0,31415.0
+0,185.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.295855633655,0.274625020133,0.0212306135227,8.83402490616,False,True,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,186.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.0862934383,-1.2516049809,0.165311542603,17.2473390102,False,True,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,187.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.15124650216,0.157313511774,0.00606700961463,283.035074949,False,True,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,188.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.49314808846,False,True,True,True,-1.0,2.0,0.2,20.0,31415.0
+0,189.0,"Ridge(alpha=1.0, copy_X=True, fit_intercept=False, max_iter=1000,
+   normalize=True, random_state=31415, solver='auto', tol=0.001)",0.295855633655,0.274625020133,0.0212306135227,8.94277191162,False,True,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,190.0,"SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)",-1.0862934383,-1.2516049809,0.165311542603,17.1824290752,False,True,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,191.0,"ElasticNet(alpha=0.3, copy_X=True, fit_intercept=True, l1_ratio=0,
+      max_iter=1000, normalize=False, positive=False, precompute=False,
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)",0.15124650216,0.157313511774,0.00606700961463,283.120398998,False,True,True,True,-1.0,3.0,0.2,20.0,31415.0
+0,192.0,"Lasso(alpha=0.3, copy_X=True, fit_intercept=True, max_iter=1000,
+   normalize=True, positive=False, precompute=False, random_state=None,
+   selection='cyclic', tol=0.0001, warm_start=False)",0.0,-2.85555362689e-07,2.85555362689e-07,4.53076601028,False,True,True,True,-1.0,3.0,0.2,20.0,31415.0

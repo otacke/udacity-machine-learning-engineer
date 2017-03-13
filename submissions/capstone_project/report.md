@@ -125,24 +125,24 @@ As we detected above, may not be ready for use and data cleansing is in place. T
 After these steps, we can decide which algorithm we should use. According to the [Scikit-Learn Algorithm Cheat-Sheet](http://scikit-learn.org/stable/tutorial/machine_learning_map), for regressors with less than 100.000 samples we could e.g. use Lasso and Elastic Net, but we cannot be sure that only few features should be important. Alternatively, we should use Ridge Regression and Support Vector Machines with different kernels or even ensemble methods.
 
 Lasso, Elastic Net and Ridge Regression are linear regression algorithms that use regularization to prevent overfitting. They all offer the following parameters that we might tune:
-- _alpha_ is a positive float that indicates the strength of the regularization. The larger the values are, the stronger the effect. Of course, very large values will lead to too simple models that cannot predict anything.
-- _fit_intercept_ is set to True by default and setting it to False assumes the data is centered. Since we have very skewed data, using False should produce worse results.
-- _normalize_ is set to False by default and can be used to, well, normalize the dataset before regression.
-- _max_iter_ is the number of iterations. Larger values may produce better results.
+- `alpha` is a positive float that indicates the strength of the regularization. The larger the values are, the stronger the effect. Of course, very large values will lead to too simple models that cannot predict anything.
+- `fit_intercept` is set to True by default and setting it to False assumes the data is centered. Since we have very skewed data, using False should produce worse results.
+- `normalize` is set to False by default and can be used to, well, normalize the dataset before regression.
+- `max_iter` is the number of iterations. Larger values may produce better results.
 
 Elastic Net Regression also gives us the parameter l1_ratio that we might tweak:
-- _l1_ratio_ is a float between 0 and 1 that determines the type of regularization. If close to 1, the penalty will be of type L2, and if close to 0, it will rather be like type L1.
+- `l1_ratio` is a float between 0 and 1 that determines the type of regularization. If close to 1, the penalty will be of type L2, and if close to 0, it will rather be like type L1.
 
 Ridge Regression also gives us the the parameter solver to set:
-- _solver_ allows us to choose from different computational routines, but can also be set to 'auto' in order to choose the solver automatically based on the type of data.
+- `solver` allows us to choose from different computational routines, but can also be set to 'auto' in order to choose the solver automatically based on the type of data.
 
-Furthermore, we can use a Support Vector Regressor which can be very effective in in high dimensional spaces, and we can also use the kernel trick to create non-linear decision boundaries in order to capture very complex patterns in the data that the linear models fail to grasp. Support Vector Machines don't perform well on large training data sets, but ours is still fine.
+Furthermore, we can use a Support Vector Regressor which can be very effective in in high dimensional spaces, and we can also use the kernel trick to create non-linear decision boundaries in order to capture very complex patterns in the data that the linear models fail to grasp. Support vector machines don't perform well on large training data sets, but ours is still fine.
 
 The following parameters might be worth tuning:
-- _C_
-- _epsilon_
-- _kernel_
-- _gamma_
+- `C` is the regularization parameter of support vector machines. The higher the value of C, the less the model tolerates errors (hard margin) and the more prone to overfitting it becomes.
+- `epsilon` determines the number of support vectors that will be used to define the margin. Increasing epsilon will decrease the number of support vectors and reduce the danger of overfitting, but contrarywise the solution may be less accurate.
+- `kernel` defines the way how the computation is virtually transferred to a higher dimensional space. An appropriate kernel can help us to deal with non-linear problems, and 'rbf' seems to be the right choice.
+- `gamma` defines the sphere of influence a single training example has. If it is low, then the sphere of influence is large and more samples affect the definition of the margin. Vice versa, high values reduce the number of samples defining the margin, but may cause overfitting.
 
 In order to get a more robust result, we are going to apply cross validation (ShuffleSplit): We are going to randomly split our dataset into a training set and a test set several times and compare the performance on both sets. This way we will be able to detect overfitting and underfitting and decide what we can do to improve the results.
 
@@ -222,6 +222,8 @@ In this section, you will need to provide some form of visualization that emphas
 - _Is the visualization thoroughly analyzed and discussed?_
 - _If a plot is provided, are the axes, title, and datum clearly defined?_
 
+learning curve of final model
+
 ### Reflection
 In this section, you will summarize the entire end-to-end problem solution and discuss one or two particular aspects of the project you found interesting or difficult. You are expected to reflect on the project as a whole to show that you have a firm understanding of the entire process employed in your work. Questions to ask yourself when writing this section:
 - _Have you thoroughly summarized the entire process you used for this project?_
@@ -229,11 +231,31 @@ In this section, you will summarize the entire end-to-end problem solution and d
 - _Were there any difficult aspects of the project?_
 - _Does the final model and solution fit your expectations for the problem, and should it be used in a general setting to solve these types of problems?_
 
+- You could also ... finding the balance ...
+- manual data cleansing tedious, but I was pretty thorough
+- difficult: math behind algorithms not fully understood, hard to determine whether useful or not
+- beautification of code necessary
+
 ### Improvement
 In this section, you will need to provide discussion as to how one aspect of the implementation you designed could be improved. As an example, consider ways your implementation can be made more general, and what would need to be modified. You do not need to make this improvement, but the potential solutions resulting from these changes are considered and compared/contrasted to your current solution. Questions to ask yourself when writing this section:
 - _Are there further improvements that could be made on the algorithms or techniques you used in this project?_
 - _Were there algorithms or techniques you researched that you did not know how to implement, but would consider using if you knew how?_
 - _If you used your final solution as the new benchmark, do you think an even better solution exists?_
+
+There are several ways how our solution could be improved.
+
+- Learning curves of linear models: More samples won't help (already converging closely). More features would be better
+- Learning curves of SVM: might get slightly better results with more data, but more features seem to be advisable
+- Features
+  - Check all samples for being part of a bundle
+  - franchise
+  - spendings on advertising
+  - scores from other platforms
+  - price of the game (but that's not stable)
+- Try other algorithms such as neural networks or other regressors
+- Look for differences when using k-fold cross validation
+- Possibly: Principal Component Analysis to make dataset smaller for analysis
+- There's always a better solution.
 
 ## VI. Sources
 * Beaujon, Walter S. (2012). _Predicting Video Game Sales in the European Market._ Retrieved from https://www.few.vu.nl/nl/Images/werkstuk-beaujon_tcm243-264134.pdf (January 12, 2016).

@@ -151,14 +151,8 @@ There are some people at Kaggle who seem to be experimenting with the dataset, t
 
 
 ## III. Methodology
-_(approx. 3-5 pages)_
 
 ### Data Preprocessing
-In this section, all of your preprocessing steps will need to be clearly documented, if any were necessary. From the previous section, any of the abnormalities or characteristics that you identified about the dataset will be addressed and corrected here. Questions to ask yourself when writing this section:
-- _If the algorithms chosen require preprocessing steps like feature selection or feature transformations, have they been properly documented?_
-- _Based on the **Data Exploration** section, if there were abnormalities or characteristics that needed to be addressed, have they been properly corrected?_
-- _If no preprocessing is needed, has it been made clear why?_
-
 The first phase of our data preprocessing was general cleaning that was performed manually on the dataset itself, because those steps can be useful for anyone.
 
 We had to correct some entries of the feature "user score" that contained the string "tbd" instead of a numeric value. Those were replaced by "NaN", because without these changes the data type of the feature would not be detected correctly by Pandas. Afterwards, we deleted some double spaces and leading and trailing spaces in strings.
@@ -216,6 +210,22 @@ In this section, you will need to discuss the process of improvement you made up
 - _Is the process of improvement clearly documented, such as what techniques were used?_
 - _Are intermediate and final solutions clearly reported as the process is improved?_
 
+Our best initial solution was obtained for a preprocessed dataset that has additioally been standardized with StandardScaler. The parameters for the Support Vector Regressor that had been set during the grid search were C, epsilon, gamma and kernel, and the R² score of 0.55 with a gap of 0.022 were achieved with C=1.3, epsilon=0.1, gamma='auto' and kernel='rbf'.
+
+We decided to try to improve the R² score and the gap while setting a maximum gap at 0.010. This should be a very decent indicator for hardly showing any traces of overfitting. By iteratively tweaking C and epsilon manually, we finally got an R² score of 0.591 with a gap of 0.010 when using C = 1.74, epsilon = 0.12 (and still gammma='auto' and kernel='rbf').
+
+| C    | EPSILON | GAMMA | KERNEL | R² (TRAIN) | R² GAP |
+|------|---------|-------|--------|------------|--------|
+| 1.3  |   0.1   |  auto |   rbf  |    0.553   |  0.022 |
+| 1.7  |   0.1   |  auto |   rbf  |    0.587   |  0.008 |
+| 1.8  |   0.1   |  auto |   rbf  |    0.594   |  0.015 |
+| 1.73 |   0.11  |  auto |   rbf  |    0.590   |  0.010 |
+|*1.74*|  *0.12* | *auto*|  *rbf* |   *0.591*  | *0.010*|
+| 1.75 |   0.13  |  auto |   rbf  |    0.592   |  0.011 |
+| 1.74 |   0.14  |  auto |   rbf  |    0.591   |  0.010 |
+| 1.74 |   0.15  |  auto |   rbf  |    0.592   |  0.011 |
+| 1.74 |   0.10  |  auto |   rbf  |    0.590   |  0.010 |
+_Table: Intermediary results_
 
 ## IV. Results
 _(approx. 2-3 pages)_

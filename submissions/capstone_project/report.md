@@ -1,7 +1,7 @@
 # Predicting Video Game Sales
 ## Capstone Project "Machine Learning Engineer"
 Oliver Tacke  
-_December 31st, 2050_
+_March 14th, 2017_
 
 ## I. Definition
 
@@ -254,14 +254,8 @@ Even if we reduce the precision of our model in order to account for some signs 
 TODO: extend.
 
 ## V. Conclusion
-_(approx. 1-2 pages)_
 
 ### Free-Form Visualization
-In this section, you will need to provide some form of visualization that emphasizes an important quality about the project. It is much more free-form, but should reasonably support a significant result or characteristic about the problem that you want to discuss. Questions to ask yourself when writing this section:
-- _Have you visualized a relevant or important quality about the problem, dataset, input data, or results?_
-- _Is the visualization thoroughly analyzed and discussed?_
-- _If a plot is provided, are the axes, title, and datum clearly defined?_
-
 I consider learning curves to be an interesting aspect of machine learning problems in general and for this project in particular. It was quite helpful to have a look at them to assess how the algorithms are performing. We could have a look at the curves of the final solution.
 
 ![learning_curve](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/learning_curve.png "Learning Curve")
@@ -283,20 +277,15 @@ In this section, you will need to provide discussion as to how one aspect of the
 - _Were there algorithms or techniques you researched that you did not know how to implement, but would consider using if you knew how?_
 - _If you used your final solution as the new benchmark, do you think an even better solution exists?_
 
-There are several ways how our solution could be improved.
+There are several ways how our solution could be improved. We could either approach our data or our methodology.
 
-- Learning curves of linear models: More samples won't help (already converging closely). More features would be better
-- Learning curves of SVM: might get slightly better results with more data, but more features seem to be advisable
-- Features
-  - Check all samples for being part of a bundle
-  - franchise
-  - spendings on advertising
-  - scores from other platforms
-  - price of the game (but that's not stable)
-- Try other algorithms such as neural networks or other regressors
-- Look for differences when using k-fold cross validation
-- Possibly: Principal Component Analysis to make dataset smaller for analysis
-- There's always a better solution.
+We already discussed that collecting more samples will hardly help to improve our model. We would have to improve, gather or create more independent features:
+- We could check more games for being part of a console bundle and flag them correctly.
+- We could define a binary feature that indicates whether a game is part of a franchise or not. For example, there might be games that receive a low rating by critics or users, but people buy them anyway because the contain a beloved character such as Super Mario or because they collect all the games from the Final Fantasy series. There might be some debate about the definition of a franchise, but it might be worth a try.
+- It could be helpful to add the spendings on advertising as they might influence sales. Unfortunately, there's probably no good way to get this information.
+- We could scrape scores from other services such as IGN. However, this would require to clean and merge the datasets. Also, we'd probably loose some samples if not all the sources contain information about all games. Finally, we can surmise that the scores might correlate and wouldn't give us relevant information.
+
+Besides improving our data quality, we could try other algorithms and techniques. For example, we could apply a Principal Component Analysis to make our dataset smaller for analysis. This would possibly allow us to compute results quicker and might also give us some more insight into the structure of the data. And, of course, scikit-learn offers a bunch of other algorithms for regression. Also, we could experiment with neural networks that right now create a furor in many areas. If only our lives weren't finite ;-)
 
 ## VI. Sources
 * Beaujon, Walter S. (2012). _Predicting Video Game Sales in the European Market._ Retrieved from https://www.few.vu.nl/nl/Images/werkstuk-beaujon_tcm243-264134.pdf (January 12, 2016).
@@ -306,15 +295,3 @@ There are several ways how our solution could be improved.
 * Dellarocas, Chrysanthos, Zhang, Xiaoquan (Michael) & Awad, Neveen F. (2007). [Exploring the value of online product reviews in forecasting sales: The case of motion pictures.](http://onlinelibrary.wiley.com/doi/10.1002/dir.20087/abstract) _Journal of Interactive Marketing, 21(4)_, 23-45.
 
 * Entertainment Software Association (2015). _Essential Facts About The Computer And Video Game Industry. 2015 Sales, Demographic And Usage Data._ Retrieved from http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf (January 12, 2016).
-
------------
-
-**Before submitting, ask yourself. . .**
-
-- Does the project report you’ve written follow a well-organized structure similar to that of the project template?
-- Is each section (particularly **Analysis** and **Methodology**) written in a clear, concise and specific fashion? Are there any ambiguous terms or phrases that need clarification?
-- Would the intended audience of your project be able to understand your analysis, methods, and results?
-- Have you properly proof-read your project report to assure there are minimal grammatical and spelling mistakes?
-- Are all the resources used for this project correctly cited and referenced?
-- Is the code that implements your solution easily readable and properly commented?
-- Does the code execute without error and produce results similar to those reported?

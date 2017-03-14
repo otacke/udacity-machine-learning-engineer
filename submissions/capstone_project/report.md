@@ -407,10 +407,10 @@ We already discussed that collecting more samples will hardly help to improve ou
 Besides improving our data quality, we could try other algorithms and techniques. For example, we could apply a Principal Component Analysis to make our dataset smaller for analysis. This would possibly allow us to compute results quicker and might also give us some more insight into the structure of the data. And, of course, Scikit-Learn offers a bunch of other algorithms for regression. Also, we could experiment with neural networks that right now create a furor in many areas. If only our lives weren't finite ;-)
 
 ## VI. Sources
-* Beaujon, Walter S. (2012). _Predicting Video Game Sales in the European Market._ Retrieved from https://www.few.vu.nl/nl/Images/werkstuk-beaujon_tcm243-264134.pdf (January 12, 2016).
+* Beaujon, Walter S. (2012). _Predicting Video Game Sales in the European Market._ Retrieved from [https://www.few.vu.nl/nl/Images/werkstuk-beaujon_tcm243-264134.pdf](https://www.few.vu.nl/nl/Images/werkstuk-beaujon_tcm243-264134.pdf) (January 12, 2016).
 
 * Chambers, Raymond L. (1986). Outlier Robust Finite Population Estimation. _Journal of the American Statistical Association_, 81(396), 1063-1069.
 
 * Dellarocas, Chrysanthos, Zhang, Xiaoquan (Michael) & Awad, Neveen F. (2007). [Exploring the value of online product reviews in forecasting sales: The case of motion pictures.](http://onlinelibrary.wiley.com/doi/10.1002/dir.20087/abstract) _Journal of Interactive Marketing, 21(4)_, 23-45.
 
-* Entertainment Software Association (2015). _Essential Facts About The Computer And Video Game Industry. 2015 Sales, Demographic And Usage Data._ Retrieved from http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf (January 12, 2016).
+* Entertainment Software Association (2015). _Essential Facts About The Computer And Video Game Industry. 2015 Sales, Demographic And Usage Data._ Retrieved from [http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf](http://www.theesa.com/wp-content/uploads/2015/04/ESA-Essential-Facts-2015.pdf) (January 12, 2016).

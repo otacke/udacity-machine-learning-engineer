@@ -55,6 +55,7 @@ The raw dataset (Video_Games_Sales_as_at_22_Dec_2016.csv) offers 16 features and
 | User_Count      | Number of subscribers who gave the User_Score                 | Numeric   |
 | Developer       | Party responsible for creating the game                       | String    |
 | Rating          | The [ESRB](https://www.esrb.org/) ratings                     | String    |
+
 _Table: Dataset Features_
 
 Looking for high correlations within the dataset hardly reveals anything surprising. There are very high correlations between the global sales volume and the sales volume of North America (0.94) and Europe (0.90) respectively, because those two are the biggest markets contributing the most to the total sum. Still, there's a fairly high correlation between the other countries excluding Japan and the global sales volume (0.75). Also, there's a fairly high correlation between Europe and North America (0.77) and between Europe and other countries excluding Japan (0.72), suggesting that Europe could be a linking pin between the tastes of the other regions. That's it. The Japanese market seems to work differently.
@@ -81,6 +82,7 @@ When we investigate the feature of global sales, we can easily note some games w
 |    3 | Mario Kart Wii           |        35.52 |
 |    4 | Wii Sports Resort        |        32.77 |
 |    5 | Pokemon Red/Pokemon Blue |        31.37 |
+
 _Table: Top 5 selling games in raw dataset_
 
 Those and other titles have probably been recorded correctly. Yet they could be considered outliers or suggest to add a feature that indicates that the game had been bundled with hardware and might account for the tremendous sales volume.
@@ -94,6 +96,7 @@ We can also detect large very values for the number of votes that come from cust
 |    3 | Counter-Strike: Source (PC)      |           88 |            9 |        8.9 |       9851 |
 |    4 | Diablo III	(PC)                  |           88 |           86 |        4.0 |       9629 |
 |    5 | The Elder Scrolls V: Skyrim (PC) |           94 |           32 |        8.1 |       9073 |
+
 _Table: Top 5 games concerning user count_
 
 Given some of the statistical information above we can already assume that some of the features are skewed, e.g. sales volume or user count. The visualizations in the next chapter will show this fact more clearly, but just looking at the median, mean and standard deviation of the numerical values suggests that merely critic score, critic count and user score could be fairly normally distributed.
@@ -205,6 +208,7 @@ The highest reported R² value for training sets was a magnificent 0.89, but it 
 | SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto', kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False) | 0.553025191106 | 0.574881826474 | 0.0218566353682  | True         | False      | False    | False          | -1.0              | 1.0              | 
 | Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000, normalize=False, random_state=31415, solver='auto', tol=0.001)                 | 0.521573776281 | 0.528185762507 | 0.00661198622636 | True         | False      | False    | False          | 1.5               | 2.0              | 
 | Ridge(alpha=1.7, copy_X=True, fit_intercept=False, max_iter=1000, normalize=True, random_state=31415, solver='auto', tol=0.001)                 | 0.511255839574 | 0.552329013095 | 0.0410731735212  | False        | True       | True     | False          | 1.7               | 2.0              | 
+
 _Table: best results for global large grid search_
 
 The best three results were achieved by a Support Vector Regressor (R² = 0.55, gap = 0.022) and by two different Ridge Regressors (R² = 0.52, gap = 0.006 and R² = 0.51, gap = 0.041). All of them (and most of the top models) used the additional feature indicating game bundles. It seems that this variable is very useful for regression. We decided to use the SVR, not only because it had the higher R² score, but because it didn't rely on removing statistical outliers in contrast to the Ridge Regressors. As already stated, we considered all the samples to be carriers of relevant information. Also, the next best solutions do not show a clear pattern concerning the meta parameters. This might be a sign for rather optimizing the data to fit the model instead vice versa.
@@ -225,6 +229,7 @@ We decided to try to improve the R² score and the gap while setting a maximum g
 | 1.74 |   0.14  |  auto |   rbf  |    0.591   |  0.010 |
 | 1.74 |   0.15  |  auto |   rbf  |    0.592   |  0.011 |
 | 1.74 |   0.10  |  auto |   rbf  |    0.590   |  0.010 |
+
 _Table: Intermediary results_
 
 ## IV. Results
@@ -251,8 +256,6 @@ Unfortunately, we still cannot trust our model. Even our best R^2 value is still
 ### Justification
 Even if we reduce the precision of our model in order to account for some signs of overfitting to the data, we can easily get a higher R^2 score than 0.09 that was achieved by Jonathan Bouchet using a polynomial regression model. Still, we cannot claim to have solved the problem. As we stated in the previous section, an R^2 score of roughly 0.5 still leaves much space for variance that cannot be explained by our model.
 
-TODO: extend.
-
 ## V. Conclusion
 
 ### Free-Form Visualization
@@ -272,11 +275,6 @@ Much more difficult for me was choosing the algorithms and techniques. The linea
 I think that trying to predict global sales for video games could be possible if some things get improved. I am going to elaborate on this aspect in the upcoming section.
 
 ### Improvement
-In this section, you will need to provide discussion as to how one aspect of the implementation you designed could be improved. As an example, consider ways your implementation can be made more general, and what would need to be modified. You do not need to make this improvement, but the potential solutions resulting from these changes are considered and compared/contrasted to your current solution. Questions to ask yourself when writing this section:
-- _Are there further improvements that could be made on the algorithms or techniques you used in this project?_
-- _Were there algorithms or techniques you researched that you did not know how to implement, but would consider using if you knew how?_
-- _If you used your final solution as the new benchmark, do you think an even better solution exists?_
-
 There are several ways how our solution could be improved. We could either approach our data or our methodology.
 
 We already discussed that collecting more samples will hardly help to improve our model. We would have to improve, gather or create more independent features:

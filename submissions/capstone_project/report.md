@@ -244,9 +244,9 @@ We also tested the model with some varying meta parameters:
 - `params_test_size` in [0.2, 0.25, 0.3, 0.5]
 - `params_random_state` in [31415, 42, 123]
 
-TODO: We can see ... still depending on random_state / choosing training sets and test sets => overfitting, might reduce C.
+We can see that even varying those can have a large influence. The R^2 score ranges from 0.51 to 0.61. This seems to be rather significant for me. Luckily, while the gap ranges from 0.001 to 0.06 only, and this result is still pretty good. On the other hand, I have reason to believe that the results are not completely arbitrary, but still not stable. For example, when sorting the data by the R^2 score, they are virtually also sorted by random_state. All top scores result from random_state = 42, then nearly all the next best scores result from random_state = 31415, and finally 123 kicks in. In consequence, the results seem to be quite dependant on the random sampling within the cross validation. We might also be able to find values for random_state that will give us worse results.
 
-Unfortunately, we still cannot trust our model. Even our best R^2 value is still too low. We cannot predict much more than half of the variance within the global sales.
+Unfortunately, we still cannot trust our model. Even our best R^2 value is still too low. We cannot predict much more than half of the variance within the global sales. Also, we'd have to investigate the robustness concerning the random sampling and possible trade some portion of our R^2 score in order to reduce variance and overfitting.
 
 ### Justification
 Even if we reduce the precision of our model in order to account for some signs of overfitting to the data, we can easily get a higher R^2 score than 0.09 that was achieved by Jonathan Bouchet using a polynomial regression model. Still, we cannot claim to have solved the problem. As we stated in the previous section, an R^2 score of roughly 0.5 still leaves much space for variance that cannot be explained by our model.
@@ -262,19 +262,20 @@ In this section, you will need to provide some form of visualization that emphas
 - _Is the visualization thoroughly analyzed and discussed?_
 - _If a plot is provided, are the axes, title, and datum clearly defined?_
 
-TODO: learning curve of final model
+I consider learning curves to be an interesting aspect of machine learning problems in general and for this project in particular. It was quite helpful to have a look at them to assess how the algorithms are performing. We could have a look at the curves of the final solution.
+
+![learning_curve](https://github.com/otacke/udacity-machine-learning-engineer/blob/master/submissions/capstone_project/viz/learning_curve.png "Learning Curve")
+
+We can see that the training score and the test score converge pretty quickly. At roughly 1500 samples, the gap between the two is already very small. This is a good sign. Unfortunately, we also observe two not so nice facts:
+- We already know that 0.591 is our final score which leaves a lot of room for improvement. The progression of the curves also tells us that more samples will hardly help us, but we need more features.
+- We can see a red corridor and a green corridor for our curves. It represents the minimum and maximum score that was achieved by the algorithm for all the random samples that were created by ShuffleSplit. Consequently, while the mean score for training and testing are close, there's still a lot of variance. Depending on the split or random sample, the gap might be as large as about 0.15 which would indicate overfitting. We might want to trade some portion of our R^2 score for less variance.
 
 ### Reflection
-In this section, you will summarize the entire end-to-end problem solution and discuss one or two particular aspects of the project you found interesting or difficult. You are expected to reflect on the project as a whole to show that you have a firm understanding of the entire process employed in your work. Questions to ask yourself when writing this section:
-- _Have you thoroughly summarized the entire process you used for this project?_
-- _Were there any interesting aspects of the project?_
-- _Were there any difficult aspects of the project?_
-- _Does the final model and solution fit your expectations for the problem, and should it be used in a general setting to solve these types of problems?_
+To be fully honest, I was a quite surprised by the results. Although our model is not fit for productive use, I didn't expect to get such a high R^2 score for predicting global sales by basically looking at critic score and user score. Cleaning the data and generating the "bundle" feature was a tedious job, but it seems it has been worth the effort. Also, this process seemed to be pretty straight forward.
 
-- You could also ... finding the balance ...
-- manual data cleansing tedious, but I was pretty thorough
-- difficult: math behind algorithms not fully understood, hard to determine whether useful or not
-- beautification of code necessary
+Much more difficult for me was choosing the algorithms and techniques. The linear regressors that were suggested by scikit-learn for this type of problem had not been covered in the course, and I only found pretty mathematical explanations that were hard to tackle. That's why I rather used a brute force approach by setting up a grid search for what I called meta parameters. Computing these results took my computer more than one day. It is obvious to me that this may have worked in my case, but it is absolutely not feasible for datasets with more samples or features. I will have to learn more about the algorithms in order to know when they might be benefitial or not.
+
+I think that trying to predict global sales for video games could be possible if some things get improved. I am going to elaborate on this aspect in the upcoming section.
 
 ### Improvement
 In this section, you will need to provide discussion as to how one aspect of the implementation you designed could be improved. As an example, consider ways your implementation can be made more general, and what would need to be modified. You do not need to make this improvement, but the potential solutions resulting from these changes are considered and compared/contrasted to your current solution. Questions to ask yourself when writing this section:

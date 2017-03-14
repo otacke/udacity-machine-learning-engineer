@@ -187,7 +187,7 @@ As mentioned before, there are several operations that might be useful or not de
 - `params_outlier_multiety` is a positive integer. Defines the number of features for one given sample that need to be considered outliers for classifying the sample as an outlier to be removed. So, if 1, the sample will be removed if there's just one feature that contains an outlying value. If 2, the sample needs to have at least 2 features with outlying values to be removed, etc. We will use [1, 2, 3] for our initial grid search.
 - `params_standardize_set` can be True or False. If True, all features will be scaled using a StandardScaler, so they have zero mean and unit variance.
 - `params_scale_set_0_1` can be True or False. If True, all features will be scaled to range [0, 1].
-- `params_boxcox_set` can be True or False. If True, the features "Critic Score" and "User Score" will be transformed to be as normal distribution-like as possible. We already discussed that only their skewness seems to be viable for this operation.
+- `params_boxcox_set` can be True or False. If True, the features "Critic Score" and "User Score" will be transformed to be as normal distribution-like as possible -- unless the data have been standardized which could lead to negative values preventing the BoxCox-transformation from working. We already discussed that only their skewness seems to be viable for this operation.
 
 In order to improve our model and prevent overfitting, we also want to use some kind of cross validation. We use scikit-learn's "ShuffleSplit" because it's quite fast. It randomly splits our dataset into a training set and a test set. This allows us to train our model with the training set and then compare the results with the predictions for the test set. This way we can detect overfitting. For ShuffleSplit, we cannot only define the fraction of samples that should be randomly assigned to the training set and the test set, but we can also define how often this procedure should be repeated. This way, we will be able to compute a mean R²-score instead of using one for just one arbitrary training set and test set. Our implementation also allows us to set two "grid search" parameters for ShuffleSplit:
 - `params_n_splits` contains the number of iterations or "splits" used for ShuffleSplit. We will use just [20] for our initial grid search.
@@ -200,16 +200,16 @@ As mentioned in section "Algorithms and Techniques", we are going to use Lasso, 
 
 The highest reported R² value for training sets was a magnificent 0.89, but it was accompanied by an R² value for the test sets of -0.02. This result clearly suffered from overfitting and cannot be used. We decided to go for a maximum threshold of 0.05 for the gap between the R² values and had a look at the best remaining results:
 
-TODO: Include table
+| Regressor                                                                                                                                       | R2_Train       | R2_Test        | R2_Gap           | Standardized | Scaled_0_1 | Boxcoxed | Remove_Bundles | Outlier_Threshold | Outlier_Multiety | 
+|-------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------|------------------|--------------|------------|----------|----------------|-------------------|------------------| 
+| SVR(C=1.3, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto', kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False) | 0.553025191106 | 0.574881826474 | 0.0218566353682  | True         | False      | False    | False          | -1.0              | 1.0              | 
+| Ridge(alpha=1.7, copy_X=True, fit_intercept=True, max_iter=1000, normalize=False, random_state=31415, solver='auto', tol=0.001)                 | 0.521573776281 | 0.528185762507 | 0.00661198622636 | True         | False      | False    | False          | 1.5               | 2.0              | 
+| Ridge(alpha=1.7, copy_X=True, fit_intercept=False, max_iter=1000, normalize=True, random_state=31415, solver='auto', tol=0.001)                 | 0.511255839574 | 0.552329013095 | 0.0410731735212  | False        | True       | True     | False          | 1.7               | 2.0              | 
+_Table: best results for global large grid search_
 
-The best three results were achieved by a Support Vector Regressor (R² = 0.55, gap = 0.022) and by two different Ridge Regressors (R² = 0.52, gap = 0.006 and R² = 0.51, gap = 0.041). All of them (and most of the top models) used the additional feature indicating game bundles. It seems that this variable is very useful for regression. We decided to use the SVR, not only because it had the higher R² score, but because it didn't rely on removing statistical outliers in contrast to the Ridge Regressors. As already stated, we considered all the samples to be carriers of relevant information.
+The best three results were achieved by a Support Vector Regressor (R² = 0.55, gap = 0.022) and by two different Ridge Regressors (R² = 0.52, gap = 0.006 and R² = 0.51, gap = 0.041). All of them (and most of the top models) used the additional feature indicating game bundles. It seems that this variable is very useful for regression. We decided to use the SVR, not only because it had the higher R² score, but because it didn't rely on removing statistical outliers in contrast to the Ridge Regressors. As already stated, we considered all the samples to be carriers of relevant information. Also, the next best solutions do not show a clear pattern concerning the meta parameters. This might be a sign for rather optimizing the data to fit the model instead vice versa.
 
 ### Refinement
-In this section, you will need to discuss the process of improvement you made upon the algorithms and techniques you used in your implementation. For example, adjusting parameters for certain models to acquire improved solutions would fall under the refinement category. Your initial and final solutions should be reported, as well as any significant intermediate results as necessary. Questions to ask yourself when writing this section:
-- _Has an initial solution been found and clearly reported?_
-- _Is the process of improvement clearly documented, such as what techniques were used?_
-- _Are intermediate and final solutions clearly reported as the process is improved?_
-
 Our best initial solution was obtained for a preprocessed dataset that has additioally been standardized with StandardScaler. The parameters for the Support Vector Regressor that had been set during the grid search were C, epsilon, gamma and kernel, and the R² score of 0.55 with a gap of 0.022 were achieved with C=1.3, epsilon=0.1, gamma='auto' and kernel='rbf'.
 
 We decided to try to improve the R² score and the gap while setting a maximum gap at 0.010. This should be a very decent indicator for hardly showing any traces of overfitting. By iteratively tweaking C and epsilon manually, we finally got an R² score of 0.591 with a gap of 0.010 when using C = 1.74, epsilon = 0.12 (and still gammma='auto' and kernel='rbf').
@@ -220,7 +220,7 @@ We decided to try to improve the R² score and the gap while setting a maximum g
 | 1.7  |   0.1   |  auto |   rbf  |    0.587   |  0.008 |
 | 1.8  |   0.1   |  auto |   rbf  |    0.594   |  0.015 |
 | 1.73 |   0.11  |  auto |   rbf  |    0.590   |  0.010 |
-|*1.74*|  *0.12* | *auto*|  *rbf* |   *0.591*  | *0.010*|
+|**1.74**|  **0.12** | **auto**|  **rbf** |   **0.591**  | **0.010**|
 | 1.75 |   0.13  |  auto |   rbf  |    0.592   |  0.011 |
 | 1.74 |   0.14  |  auto |   rbf  |    0.591   |  0.010 |
 | 1.74 |   0.15  |  auto |   rbf  |    0.592   |  0.011 |
@@ -228,21 +228,30 @@ We decided to try to improve the R² score and the gap while setting a maximum g
 _Table: Intermediary results_
 
 ## IV. Results
-_(approx. 2-3 pages)_
 
 ### Model Evaluation and Validation
-In this section, the final model and any supporting qualities should be evaluated in detail. It should be clear how the final model was derived and why this model was chosen. In addition, some type of analysis should be used to validate the robustness of this model and its solution, such as manipulating the input data or environment to see how the model’s solution is affected (this is called sensitivity analysis). Questions to ask yourself when writing this section:
-- _Is the final model reasonable and aligning with solution expectations? Are the final parameters of the model appropriate?_
-- _Has the final model been tested with various inputs to evaluate whether the model generalizes well to unseen data?_
-- _Is the model robust enough for the problem? Do small perturbations (changes) in training data or the input space greatly affect the results?_
-- _Can results found from the model be trusted?_
+The final model is a Support Vector Regressor using the following parameters:
+- `C`: 1.74
+- `epsilon`: 0.12
+- `gamma`: 'auto' (1/number of features by default)
+- `kernel`: 'rbf'
+In order to yield best results, new data should be scaled (standardized) using scikit's StandardScaler that was obtained from the training data. The model was chosen because it returned one of the highest R^2 values while still not overfitting to the training data. It was also chosen because it doesn't require to remove outliers for purely statistical reasons. Thus, it may preserve relevant information that would be lost otherwise.
+
+TODO: test with new input data
+
+We also tested the model with some varying meta parameters:
+- `params_n_splits` in [20, 25, 30, 100]
+- `params_test_size` in [0.2, 0.25, 0.3, 0.5]
+- `params_random_state` in [31415, 42, 123]
+
+TODO: We can see ... still depending on random_state / choosing training sets and test sets => overfitting, might reduce C.
+
+Unfortunately, we still cannot trust our model. Even our best R^2 value is still too low. We cannot predict much more than half of the variance within the global sales.
 
 ### Justification
-In this section, your model’s final solution and its results should be compared to the benchmark you established earlier in the project using some type of statistical analysis. You should also justify whether these results and the solution are significant enough to have solved the problem posed in the project. Questions to ask yourself when writing this section:
-- _Are the final results found stronger than the benchmark result reported earlier?_
-- _Have you thoroughly analyzed and discussed the final solution?_
-- _Is the final solution significant enough to have solved the problem?_
+Even if we reduce the precision of our model in order to account for some signs of overfitting to the data, we can easily get a higher R^2 score than 0.09 that was achieved by Jonathan Bouchet using a polynomial regression model. Still, we cannot claim to have solved the problem. As we stated in the previous section, an R^2 score of roughly 0.5 still leaves much space for variance that cannot be explained by our model.
 
+TODO: extend.
 
 ## V. Conclusion
 _(approx. 1-2 pages)_
@@ -253,7 +262,7 @@ In this section, you will need to provide some form of visualization that emphas
 - _Is the visualization thoroughly analyzed and discussed?_
 - _If a plot is provided, are the axes, title, and datum clearly defined?_
 
-learning curve of final model
+TODO: learning curve of final model
 
 ### Reflection
 In this section, you will summarize the entire end-to-end problem solution and discuss one or two particular aspects of the project you found interesting or difficult. You are expected to reflect on the project as a whole to show that you have a firm understanding of the entire process employed in your work. Questions to ask yourself when writing this section:

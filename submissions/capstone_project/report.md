@@ -356,22 +356,24 @@ The final model is a Support Vector Regressor using the following parameters:
 - `gamma`: 'auto' (1/number of features by default)
 - `kernel`: 'rbf'
 
-In order to yield best results, new data should be scaled (standardized) using Scikit-Learn's StandardScaler that was obtained from the training data. The model was chosen because it returned one of the highest R² values while still not overfitting to the training data. It was also chosen because it doesn't require to remove outliers for purely statistical reasons. Thus, it may preserve relevant information that would be lost otherwise.
+The model was chosen because it returned one of the highest R² values while still not overfitting to the training data. It was also chosen because it doesn't require to remove outliers for purely statistical reasons. Thus, it may preserve relevant information that would be lost otherwise.
 
-TODO: test with new input data
-
-We also tested the model with some varying meta parameters:
+First of all, we tested the model with some varying meta parameters:
 
 - `params_n_splits` in [20, 25, 30, 100]
 - `params_test_size` in [0.2, 0.25, 0.3, 0.5]
 - `params_random_state` in [31415, 42, 123]
 
-We can see that even varying those can have a large influence. The R² score ranges from 0.51 to 0.61. This seems to be rather significant for me. Luckily, while the gap ranges from 0.001 to 0.06 only, and this result is still pretty good. On the other hand, I have reason to believe that the results are not completely arbitrary, but still not stable. For example, when sorting the data by the R² score, they are virtually also sorted by random_state. All top scores result from random_state = 42, then nearly all the next best scores result from random_state = 31415, and finally 123 kicks in. In consequence, the results seem to be quite dependant on the random sampling within the cross validation. We might also be able to find values for random_state that will give us worse results.
+We can see that even varying those can have a large influence. The R² score ranges from 0.51 to 0.61. This seems to be a rather significant difference in my opinion. Luckily, while the gap ranges from 0.001 to 0.06 only, and this result is still pretty good. On the other hand, I have reason to believe that the results are not completely arbitrary, but still not stable. For example, when sorting the data by the R² score, they are virtually also sorted by random_state. All top scores result from random_state = 42, then nearly all the next best scores result from random_state = 31415, and finally 123 kicks in. In consequence, the results seem to be quite dependant on the random sampling within the cross validation. We might also be able to find values for random_state that will give us worse results.
 
 Unfortunately, we still cannot trust our model. Even our best R² value is still too low. We cannot predict much more than half of the variance within the global sales. Also, we'd have to investigate the robustness concerning the random sampling and possible trade some portion of our R² score in order to reduce variance and overfitting.
 
+This might in fact be a good idea as we can conclude from checking the performance for completely new data. Those must be scaled (standardized) using Scikit-Learn's StandardScaler that was obtained from the training data, but then we're good to go. For our sensitivity analysis, we can use the samples from 2016 that had been removed because we didn't have data for the complete year and because the dataset was probably lacking sales information of the Holiday Season. This restriction might influence the reliability of our sensitivity analysis a little bit, but it should still give us some insight about the reliability of our model.
+
+Our previous scepticism was justified. When using our regressor to predict the sales of the games that had been released in 2016, we computed an R² score of 0.38. It's not terrible, but it's definitely not close to 0.59.
+
 ### Justification
-Even if we reduce the precision of our model in order to account for some signs of overfitting to the data, we can easily get a higher R² score than 0.09 that was achieved by Jonathan Bouchet using a polynomial regression model. Still, we cannot claim to have solved the problem. As we stated in the previous section, an R² score of roughly 0.5 still leaves much space for variance that cannot be explained by our model.
+As we learned from the sensitivity analysis, we should consider to reduce the precision of our model in order to account for some signs of overfitting. We should not assert that we have pushed the R² score beyond 0.38, but we still got a significantly higher R² score than 0.09 that was achieved by Jonathan Bouchet using a polynomial regression model. However, we cannot claim to have solved the problem. As we stated in the previous section, an R² score of 0.59 or more realistically of roughly 0.4 still leaves much space for variance that cannot be explained by our model.
 
 ## V. Conclusion
 

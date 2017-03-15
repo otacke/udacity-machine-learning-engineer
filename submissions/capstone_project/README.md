@@ -11,4 +11,9 @@ You are going to find the following resources:
 - a folder called _data_ that contains the raw dataset that has been used
 - a folder calles _viz_ that stores visualizations that have been created for the report
 
-There's no particular other software that you need.
+## TODO (optionally)
+
+- Include background info
+- Add example for R² computation
+- Add information about the coding environment
+- Clean up code and create a kernel for Kaggle (mix of notebook and report)

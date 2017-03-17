@@ -13,10 +13,11 @@ You are going to find the following resources:
 - a folder calles _viz_ that stores visualizations that have been created for the report
 
 ## Software needed
-You will need...
+If you want to experiment with my code, you should have...
 
-- Python 3
-- scikit-learn (1.18)
+- Python
+- scikit-learn
 - NumPy
 - Pandas
 - matplotlib
+- Jupyter
